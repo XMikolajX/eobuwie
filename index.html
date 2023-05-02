@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+
+<html  lang="PL">
+    <head>
+        <meta charset="utf8">
+     
+        <title>A Basic HTML5 Template</title>
+        <meta name="Wensite description" content="A simple HTML5 Template for new projects.">
+        <meta name="Mikolaj" content="SitePoint">
+        <meta property="og:title" content="A Basic HTML5 Template">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+        <meta property="og:description" content="A simple HTML5 Template for new projects.">
+        <meta property="og:image" content="image.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+        <title>
+            
+        </title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style1.css">
+        
+        <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.css">
+        <link rel="preload" href="avertape-regular.woff2" as="font" type="woff2" crossorigin>
+<link rel="preload" href="avertape-bold.woff2" as="font" type="woff2" crossorigin>
+<style>
+    @font-face {
+        font-family: 'avertape';
+        src: url('avertape-regular.woff2') format('woff2'),
+            url('avertape-regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'avertape';
+        src: url('avertape-bold.woff2') format('woff2'),
+            url('avertape-bold.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+</style>
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div id="header_top">
+                
+                <i class="fa-solid fa-paper-plane icon_plane"></i>
+                <span id="header_top_text">Subskrybuj nas i otrzymaj 40zł na Twoje zakupy!</span>
+
+            </div>
+            <!--END OF HEADER TOP-->
+            <div id="header_middle">
+                <div id="header_middle_bar_left">
+                    <i class="fa-solid fa-phone"></i><span class = "sepertor_OR">|</span><span id="contact">Kontakt</span>
+                </div>
+
+                <div id="header_middle_bar_right">
+
+                    <ul id="header_middle_bar_right_list">
+                        <li class="list-item"><span class="special_text_Deecoration">esize<span class="toLowerCase">.me</span></span> </li>
+                        <span class = "sepertor_OR">|</span> <li class="list-item">Sklepy stacjonarne</li>
+                        <span class = "sepertor_OR">|</span><li class="list-item">Trendy</li>
+                        <span class = "sepertor_OR">|</span><li class="list-item">Moje konto</li>
+                        <span class = "sepertor_OR">|</span><li class="list-item"><i class="fa-regular fa-heart"></i>Ulubione (<span id="favorite">0</span>)</li>
+                        <span class = "sepertor_OR">|</span><li class="list-item">Zarejestruj</li>
+                        <span class = "sepertor_OR">|</span> <li class="list-item">Zaloguj</li>
+
+                    </ul>
+                </div>
+      
+            <!--END OF HEADER MIDDLE-->
+            </div>
+            <div id="header_content">
+                <img id="header_content_logo" src="img/eoubiwelogo.png">
+                <form id="search_form">
+                    
+                    <input class="header_content_search_input" type="search" placeholder="Szukaj" autocomplete="off">
+                    
+                    <button class="header_content_search_button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+               
+                </form>
+            <div id="header_tooltips">
+               
+                <div id="header_content_info_container">
+
+                    <i class="fa-solid fa-share"></i>
+                    <div class="header_content_info">100 dni na darmowy zwrot <div class ="header_content_info_description1">zobacz szczególy</div></div>
+                    
+                    <div id="miniToolTip1">Wiecej informacji pod tym linkiem <a href="www.eobuwie.com.pl/zwrot">www.eobuwie.com.pl/zwrot</a></div>
+          
+
+                </div>
+
+               
+                <div id="header_content_info_container2">
+
+                    <i class="fa-solid fa-truck"></i>
+                    <div class="header_content_info"> Darmowa dostawa <div class = "header_content_info_description2">zobacz szczególy</div></div>
+                    
+                    <div id="miniToolTip2">
+                        Darmowa dostawa:
+                        Odbiór w sklepie: 0 zł
+                        Kurier: 0 zł dla zakupów od 100 zł (płatność przelewem)
+                        Paczkomat: 0 zł dla zakupów od 100 zł (płatność przelewem)
+                        Same Day Delivery: 0 zł dla zakupów od 100 zł
+                        
+                        100 dni na darmowy zwrot
+                        <a href="www.eobuwie.com.pl/zwrot">www.eobuwie.com.pl/zwrot</a></div>
+                </div>
+             
+            </div>
+           
+                <div id="header_content_Wallet">
+                    <i class="fa-solid fa-bag-shopping"></i>     <div>Koszyk (0)</div>
+                    <div id="minicart_content"><span id ="minicart_content_text">Nie masz produktów w koszyku</span></div>
+               
+                </div>
+
+               
+
+            </header>
+                <!--END OF HEADER CONTENT-->
+            <nav id="mega_menu">
+                
+                <ul id="mega_menu_list">
+                    <li class="mega_menu_list-item">
+
+                        <div class="mega_menu_item_container New_cont">
+                            <a id="greeeen" class="mega_menu_list_item_link" href="#">NOWOŚCI</a>
+                            <div class="mega_menu_drop_down New_mega_menu">
+                                <div  class="new_mega_menu_down_container" id="mega_menu_drop_down_container" >
+                                    <ul class="mega_menu_drop_down_list New-mega-menu-left-bar ">
+                               
+                                        <h4><li class="mega_menu_drop_down_list_item">ECO</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Damskie</li>
+                                        <li class="mega_menu_drop_down_list_item">Męskie</li>
+                                        <li class="mega_menu_drop_down_list_item">Dziecięce</li>
+                                        
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list New-mega-menu-left-bar ">
+                               
+                                        <h4><li class="mega_menu_drop_down_list_item">TREND RUNNING</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Bieganie</li>
+                                        <li class="mega_menu_drop_down_list_item">Outdoor</li>
+                                        <li class="mega_menu_drop_down_list_item">Fitness</li>
+
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list New-mega-menu-left-bar">
+                               
+                                        <h4><li class="mega_menu_drop_down_list_item">NOWOŚCI</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Półbuty</li>
+                                        <li class="mega_menu_drop_down_list_item">Trekkingi</li>
+                                        
+                                    
+                                    </ul>
+                               
+                                    <div id="New_mega_menu_img_container">
+                                        <a href="#" class="New_mega_menu_img_link">
+                                            <img class="New_mega_menu_img"  src="img/New_mega_menu_img_container_img1.JPG" alt="eco"> <div class="New_mega_menu_img_description">Eco</div>
+                                        </a>
+                                        <a href="#" class="New_mega_menu_img_link">
+                                            <img class="New_mega_menu_img"  src="img/New_mega_menu_img_container_img2.JPG" alt="Street wear"><div class="New_mega_menu_img_description">Street wear</div>
+                                        </a>
+                                        <a href="#" class="New_mega_menu_img_link">
+                                            <img class="New_mega_menu_img"  src="img/New_mega_menu_img_container_img3.JPG" alt="Kids zone"><div class="New_mega_menu_img_description">Kids Zone</div>
+                                        </a>
+                                        <a href="#" class="New_mega_menu_img_link">
+                                            <img class="New_mega_menu_img"  src="img/New_mega_menu_img_container_img4.JPG" alt="Premium Fashion"><div class="New_mega_menu_img_description">Premium Fashion</div>
+                                        </a>
+                                        <a href="#" class="New_mega_menu_img_link">
+                                            <img class="New_mega_menu_img"  src="img/New_mega_menu_img_container_img5.JPG" alt="Fashion Trends"><div class="New_mega_menu_img_description">Fashion Trends</div>
+                                        </a>
+                                        <a href="#" class="New_mega_menu_img_link">
+                                            <img class="New_mega_menu_img"  src="img/New_mega_menu_img_container_img6.JPG" alt="Classic"><div class="New_mega_menu_img_description">Classic</div>
+                                        </a>
+                                        <a href="#" class="New_mega_menu_img_link">
+                                            <img class="New_mega_menu_img"  src="img/New_mega_menu_img_container_img7.JPG" alt="Sport"><div class="New_mega_menu_img_description">Sport</div>
+                                        </a>
+                                        <a href="#" class="New_mega_menu_img_link">
+                                            <img class="New_mega_menu_img"  src="img/New_mega_menu_img_container_img8.JPG" alt="Sneakers Store"><div class="New_mega_menu_img_description">Sneakers Store</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                    
+                            
+                            </div>
+                           
+                 
+                       
+                        </div>
+                    </li>
+                    <li class="mega_menu_list-item">
+                        <div class="mega_menu_item_container woman_cont ">
+
+                            <a class="mega_menu_list_item_link" href="#">DAMSKIE</a>
+
+                            <div class="mega_menu_drop_down  woman_mega_menu">
+                                <div id="mega_menu_drop_down_container">
+                                    <ul class="mega_menu_drop_down_list">
+                               
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty do kostki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Wszystkie</li>
+                                        <li class="mega_menu_drop_down_list_item">Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Trampki</li>
+                                        <li class="mega_menu_drop_down_list_item">Szpilki</li>
+                                        <li class="mega_menu_drop_down_list_item">Oxfordy</li>
+                                        <li class="mega_menu_drop_down_list_item">Mokasyny</li>
+                                        <li class="mega_menu_drop_down_list_item">Trekkingi</li>
+                                        <li class="mega_menu_drop_down_list_item">Czółenka</li>
+                                        <li class="mega_menu_drop_down_list_item">Baleriny</li>
+                                        <li class="mega_menu_drop_down_list_item">Lordsy</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do biegania</li>
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty za kostke</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Wszystkie</li>
+                                        <li class="mega_menu_drop_down_list_item">Trekkingi</li>
+                                        <li class="mega_menu_drop_down_list_item">Botki</li>
+                                        <li class="mega_menu_drop_down_list_item">Sztyblety</li>
+                                        <li class="mega_menu_drop_down_list_item">Kalosze</li>
+                                        <li class="mega_menu_drop_down_list_item">Glany</li>
+                                        <li class="mega_menu_drop_down_list_item">Trapery</li>
+                                        <li class="mega_menu_drop_down_list_item">Śniegowce</li>
+                                        <li class="mega_menu_drop_down_list_item">Kozaki</li>
+                                        <li class="mega_menu_drop_down_list_item">Kowbojki</li>
+                                        <li class="mega_menu_drop_down_list_item">Oficerki</li>
+                                        <li class="mega_menu_drop_down_list_item">Muszkieterki</li>
+                                 
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty odkryte </li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Sandały</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki</li>
+                                        <li class="mega_menu_drop_down_list_item">Japonki</li>
+                                     <li class="mega_menu_drop_down_list_item">Espadryle</li>
+                                        <li class="mega_menu_drop_down_list_item">Koturny</li>
+                                        <li class="mega_menu_drop_down_list_item">Sandały na obcasie</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki na obcasie</li>
+                                        <li class="mega_menu_drop_down_list_item">Ślubne</li>
+                                        <li class="mega_menu_drop_down_list_item">Kapole</li>
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty sportowe</li></h4>
+                                        <li class="mega_menu_drop_down_list_item">Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do biegania </li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do trekkingu </li>
+                                        <li class="mega_menu_drop_down_list_item">Buty na siłownie </li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do fitnessu</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki basenowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty skate</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do wody</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do koszykówki</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do tenisa</li>
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list">
+                                        <h4><li class="mega_menu_drop_down_list_item">Popularne marki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Calvin Klein</li>
+                                        <li class="mega_menu_drop_down_list_item">Karl Lagerfeld</li>
+                                        <li class="mega_menu_drop_down_list_item">Liu Jo</li>
+                                        <li class="mega_menu_drop_down_list_item">Versace Jeasn Couture</li>
+                                        <li class="mega_menu_drop_down_list_item">Tommy Hilfiger</li>
+                                        <li class="mega_menu_drop_down_list_item">Geox</li>
+                                        <li class="mega_menu_drop_down_list_item">Guess</li>
+                                        <li class="mega_menu_drop_down_list_item">Rieker</li>
+                                        <li class="mega_menu_drop_down_list_item">adidas</li>
+                                        <li class="mega_menu_drop_down_list_item">New Balance</li>
+                                        <li class="mega_menu_drop_down_list_item">Birkenstock</li>
+                                        <li class="mega_menu_drop_down_list_item">Skechers</li>
+                                        <li class="mega_menu_drop_down_list_item"><a href="#">Wiecej marek</a></li>
+                            
+                                    </ul>
+                                <ul class="mega_menu_drop_down_list">
+                                    <a href="#"><img src="img/megamenudropdownist_woman.JPG"></a>
+                                </ul>
+                                <ul class="mega_menu_drop_down_list">
+        
+                                    <a href="#"><div class="mega_menu_drop_down_buttons green_button">Nowośc</div></a>
+                                    <a href="#"><div class="mega_menu_drop_down_buttons red_button">Wyprzedaż</div></a>
+                                    <a href="#"><div class="mega_menu_drop_down_buttons black_button">Premium</div></a>
+                                </ul>
+        
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="mega_menu_list-item">
+                        <div class="mega_menu_item_container men_cont">
+                            <a class="mega_menu_list_item_link" href="#">MĘSKIE</a>
+                            <div class="mega_menu_drop_down men_mega_menu">
+                                <div id="mega_menu_drop_down_container">
+                                    <ul class="mega_menu_drop_down_list">
+                               
+                                      
+                                        
+                                        
+                                        
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty do kostki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Wszystkie</li>
+                                        <li class="mega_menu_drop_down_list_item">Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Trampki</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do biegania</li>
+                                        <li class="mega_menu_drop_down_list_item">Półbuty wizytowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Mokasyny</li>
+                                        <li class="mega_menu_drop_down_list_item">Espadryle</li>
+                                        
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty za kostke</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Trekkingi i trapery</li>
+                                        <li class="mega_menu_drop_down_list_item">Sztyblety</li>
+                                        <li class="mega_menu_drop_down_list_item">Trzewiki</li>
+                                        <li class="mega_menu_drop_down_list_item">Kozaki</li>
+                                        <li class="mega_menu_drop_down_list_item">Kalosze</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty taktyczne</li>
+                                        <li class="mega_menu_drop_down_list_item">Śniegowce</li>
+                                       
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty odkryte </li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Wszystkie</li>
+                                        <li class="mega_menu_drop_down_list_item">Espadryle</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki</li>
+                                     <li class="mega_menu_drop_down_list_item">Japonki</li>
+                                        <li class="mega_menu_drop_down_list_item">Sandały</li>
+                                        <li class="mega_menu_drop_down_list_item">Kapcie</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki na obcasie</li>
+                                        <li class="mega_menu_drop_down_list_item">Ślubne</li>
+                                        <li class="mega_menu_drop_down_list_item">Kapole</li>
+                                   
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty sportowe</li></h4>
+                                        <li class="mega_menu_drop_down_list_item">Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do biegania </li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do trekkingu </li>
+                                        <li class="mega_menu_drop_down_list_item">Buty na siłownie </li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki basenowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki basenowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty skate</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do wody</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do piłki nożnej</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do koszykówki</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do tenisa</li>
+                                       
+
+
+
+
+
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list">
+                                        <h4><li class="mega_menu_drop_down_list_item">Popularne marki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >BOSS</li>
+                                        <li class="mega_menu_drop_down_list_item">Calvin Klein</li>
+                                        <li class="mega_menu_drop_down_list_item">Versace Jeans Couture</li>
+                                        <li class="mega_menu_drop_down_list_item">Karl Lagerfeld</li>
+                                        <li class="mega_menu_drop_down_list_item">Tommy Hilfiger</li>
+                                        <li class="mega_menu_drop_down_list_item">Geox</li>
+                                        <li class="mega_menu_drop_down_list_item">Clarks</li>
+                                        <li class="mega_menu_drop_down_list_item">Puma</li>
+                                        <li class="mega_menu_drop_down_list_item">adidas</li>
+                                        <li class="mega_menu_drop_down_list_item">New Balance</li>
+                                        <li class="mega_menu_drop_down_list_item">Asics</li>
+                                        <li class="mega_menu_drop_down_list_item"><a href="#">Wiecej marek</a></li>
+                               
+                                    </ul>
+                                <ul class="mega_menu_drop_down_list">
+                                    <a href="#"><img src="img/megamenudropdownist_men.JPG"></a>
+                                </ul>
+                                <ul class="mega_menu_drop_down_list">
+        
+                                    <a href="#"><div class="mega_menu_drop_down_buttons green_button">Nowośc</div></a>
+                                    <a href="#"><div class="mega_menu_drop_down_buttons red_button">Wyprzedaż</div></a>
+                                    <a href="#"><div class="mega_menu_drop_down_buttons black_button">Premium</div></a>
+                                </ul>
+        
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="mega_menu_list-item">
+                        <div class="mega_menu_item_container kid_cont">
+                            <a class="mega_menu_list_item_link" href="#">DZIECIĘCE</a>
+                            <div class="mega_menu_drop_down kid_mega_menu">
+                                <div id="mega_menu_drop_down_container">
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty dziewczęce</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Trampki</li>
+                                        <li class="mega_menu_drop_down_list_item">Sandały</li>
+                                        <li class="mega_menu_drop_down_list_item">Kapcie</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki</li>
+                                        <li class="mega_menu_drop_down_list_item">Japonki</li>
+                                        <li class="mega_menu_drop_down_list_item">Baleriny</li>
+                           
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list  margin_class">
+                                        <li class="mega_menu_drop_down_list_item" >Półbuty</li>
+                                        <li class="mega_menu_drop_down_list_item">Na rzepy</li>
+                                        <li class="mega_menu_drop_down_list_item">Wsuwane</li>
+                                        <li class="mega_menu_drop_down_list_item">Kalosze</li>
+                                        <li class="mega_menu_drop_down_list_item">Kozaki i inne</li>
+                                        <li class="mega_menu_drop_down_list_item">Trzewiki</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki i sandały </li> 
+                                  
+                               
+                                    </ul>
+                                    
+                                      <ul class="mega_menu_drop_down_list " >
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty chłopięce</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Trampki</li>
+                                        <li class="mega_menu_drop_down_list_item">Sandały</li>
+                                        <li class="mega_menu_drop_down_list_item">Kapcie</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki</li>
+                                        <li class="mega_menu_drop_down_list_item">Japonki</li>
+                                        <li class="mega_menu_drop_down_list_item">Półbuty</li>
+                          
+                            
+                                    </ul>
+                                  
+                                    <ul class="mega_menu_drop_down_list margin_class " >
+                                        <h4><li class="mega_menu_drop_down_list_item"></li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Wsuwane</li>
+                                        <li class="mega_menu_drop_down_list_item">Na rzepy</li>
+                                        <li class="mega_menu_drop_down_list_item">Kalosze</li>
+                                        <li class="mega_menu_drop_down_list_item">Trzewiki</li>
+                                        <li class="mega_menu_drop_down_list_item">Kozaki i inne</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki i sandał</li>
+       
+    </ul>
+                                    <ul class="mega_menu_drop_down_list " >
+                                        <h4><li class="mega_menu_drop_down_list_item">Popularne marki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Calvin Klein</li>
+                                        <li class="mega_menu_drop_down_list_item">Karl Lagerfeld</li>
+                                        <li class="mega_menu_drop_down_list_item">Liu Jo</li>
+                                        <li class="mega_menu_drop_down_list_item">Versace Jeasn Couture</li>
+                                        <li class="mega_menu_drop_down_list_item">Tommy Hilfiger</li>
+                                        <li class="mega_menu_drop_down_list_item">Geox</li>
+                                        <li class="mega_menu_drop_down_list_item">Guess</li>
+                          
+                            
+                                    </ul>
+                                <ul class="mega_menu_drop_down_list">
+                                    <a href="#"><img src="img/megamenudropdownist_kid.JPG"></a>
+                                </ul>
+                                <ul class="mega_menu_drop_down_list">
+        
+                                    <a href="#"><div class="mega_menu_drop_down_buttons green_button">Nowośc</div></a>
+                                    <a href="#"><div class="mega_menu_drop_down_buttons red_button">Wyprzedaż</div></a>
+                                    <a href="#"><div class="mega_menu_drop_down_buttons black_button">Premium</div></a>
+                                </ul>
+        
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="mega_menu_list-item">
+                        <div class="mega_menu_item_container sport_cont">
+                            <a class="mega_menu_list_item_link" href="#">SPORT</a>
+                            <div class="mega_menu_drop_down sport_mega_menu">
+                                <div id="mega_menu_drop_down_container">
+                                    <ul class="mega_menu_drop_down_list">
+                               
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty damskie</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do biegania</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty trekkingowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty trekkingowe wysokie</li>
+                                        <li class="mega_menu_drop_down_list_item">Sandały</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do wody</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do fitnessu</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty wodoodporne</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do koszykówki</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki i japonki</li>
+                                    
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty męskie</li></h4>
+                                        
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+
+                                        <li class="mega_menu_drop_down_list_item" >Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do biegania</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty trekkingowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty trekkingowe wysokie</li>
+                                        <li class="mega_menu_drop_down_list_item">Sandały</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do piłki nożnej</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty na siłownię</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do koszykówki</li>
+                                        <li class="mega_menu_drop_down_list_item"> Buty do tenisa</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty taktyczne</li>
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Buty dziecięce </li></h4>
+                                        <li class="mega_menu_drop_down_list_item">Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item" >Buty do wody</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki i japonki</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do piłki nożnej</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do trekkingu</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do treningu</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do tenisa</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty do koszykówki</li>
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Akcesoria sportowe</li></h4>
+                                        
+                                        <li class="mega_menu_drop_down_list_item">Czapki</li>
+                                        <li class="mega_menu_drop_down_list_item">Okulary</li>
+                                        <li class="mega_menu_drop_down_list_item">Smartwatche</li>
+                                        <li class="mega_menu_drop_down_list_item">Plecaki</li>
+                                        <li class="mega_menu_drop_down_list_item">Torby</li>
+                                        <li class="mega_menu_drop_down_list_item">Saszetki</li>
+                                        <li class="mega_menu_drop_down_list_item">Kominy</li>
+                                        <li class="mega_menu_drop_down_list_item">Kaski</li>
+                                        <li class="mega_menu_drop_down_list_item">Bidony</li>
+                                        <li class="mega_menu_drop_down_list_item">Akcesoria do butów</li>
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list">
+                                        <h4><li class="mega_menu_drop_down_list_item">Dysacypliny</li></h4>
+                                        
+
+
+
+
+
+
+
+
+                                        <li class="mega_menu_drop_down_list_item" >Bieganie</li>
+                                        <li class="mega_menu_drop_down_list_item">Outdoor</li>
+                                        <li class="mega_menu_drop_down_list_item">Fitness</li>
+                                        <li class="mega_menu_drop_down_list_item">Pływanie</li>
+                                        <li class="mega_menu_drop_down_list_item">Piłka nożna</li>
+                                        <li class="mega_menu_drop_down_list_item">Koszykówka</li>
+                                        <li class="mega_menu_drop_down_list_item">Tenis</li>
+                                        <li class="mega_menu_drop_down_list_item">Rolki i wrotki</li>
+                                        <li class="mega_menu_drop_down_list_item">Sporty zimowe</li>
+                                       
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list">
+                                        <h4><li class="mega_menu_drop_down_list_item">Popularne marki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Converse</li>
+                                        <li class="mega_menu_drop_down_list_item">adidas</li>
+                                        <li class="mega_menu_drop_down_list_item">New Balance</li>
+                                        <li class="mega_menu_drop_down_list_item">Puma</li>
+                                        <li class="mega_menu_drop_down_list_item">NIKE</li>
+                                        <li class="mega_menu_drop_down_list_item">Vans</li>
+                                        <li class="mega_menu_drop_down_list_item">Skechers</li>
+                                        <li class="mega_menu_drop_down_list_item">CMP</li>
+                                        <li class="mega_menu_drop_down_list_item">Asics</li>
+                                        <li class="mega_menu_drop_down_list_item">Reebok</li>
+                                        <li class="mega_menu_drop_down_list_item"><a href="#">Wiecej marek</a></li>
+                            
+                                    </ul>
+                                <ul class="mega_menu_drop_down_list">
+                                    <a href="#"><img src="img/megamenudropdownist_SPORT.JPG"></a>
+                                </ul>
+                           
+        
+                            </div>
+                        </div>
+                       
+                    </li>
+                    <li class="mega_menu_list-item">
+                        <div class="mega_menu_item_container accesories_cont">
+                            <a class="mega_menu_list_item_link" href="#">AKCESORIA</a>
+                            <div class="mega_menu_drop_down accesories_mega_menu">
+                                <div id="mega_menu_drop_down_container">
+                                    <ul class="mega_menu_drop_down_list">
+                               
+                                        <h4><li class="mega_menu_drop_down_list_item">Dodatki</li></h4>
+                                        
+
+
+
+
+
+
+                                        <li class="mega_menu_drop_down_list_item" >Paski</li>
+                                        <li class="mega_menu_drop_down_list_item">Portfele</li>
+                                        <li class="mega_menu_drop_down_list_item">Czapki</li>
+                                        <li class="mega_menu_drop_down_list_item">Okulary przeciwsłoneczne</li>
+                                        <li class="mega_menu_drop_down_list_item">Skarpetki</li>
+                                        <li class="mega_menu_drop_down_list_item">Biżuteria i ozdoby</li>
+                                    
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list margin_class">
+                                        <h4><li class="mega_menu_drop_down_list_item"></li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Parasolki</li>
+                                        <li class="mega_menu_drop_down_list_item">Kosmetyczki i kuferki</li>
+                                        <li class="mega_menu_drop_down_list_item">Etui</li>
+                                        <li class="mega_menu_drop_down_list_item">Rękawiczki</li>
+                                        <li class="mega_menu_drop_down_list_item">Szale</li>
+                                        <li class="mega_menu_drop_down_list_item">Zestawy</li>
+                                        
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Torby i plecaki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Torebki</li>
+                                        <li class="mega_menu_drop_down_list_item">Plecaki</li>
+                                        <li class="mega_menu_drop_down_list_item">Na laptopa</li>
+                                        <li class="mega_menu_drop_down_list_item">Sportowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Młodzieżowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Saszetki, nerki</li>
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item "> Zegarki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item">Damskie</li>
+                                        <li class="mega_menu_drop_down_list_item">Męskie</li>
+                                        <li class="mega_menu_drop_down_list_item">Dziecięce</li>
+                                        <li class="mega_menu_drop_down_list_item">Smartwatche</li>
+                                        <li class="mega_menu_drop_down_list_item">Zegarki do 200 zł</li>
+                                        <li class="mega_menu_drop_down_list_item">Zegarki do 500 zł</li>
+                                        
+                                    </ul>
+                           
+                                <ul class="mega_menu_drop_down_list">
+                                    <a href="#"><img src="img/megamenudropdownist_accesories.JPG"></a>
+                                </ul>
+                                <ul class="mega_menu_drop_down_list">
+        
+                                    <a href="#"><div class="mega_menu_drop_down_buttons green_button">Nowośc</div></a>
+                                    <a href="#"><div class="mega_menu_drop_down_buttons red_button">Wyprzedaż</div></a>
+                                    <a href="#"><div class="mega_menu_drop_down_buttons black_button">Premium</div></a>
+                                </ul>
+        
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="mega_menu_list-item">
+                        <div class="mega_menu_item_container premium_cont">
+                            <a class="mega_menu_list_item_link " href="#">PREMIUM</a>
+                            <div class="mega_menu_drop_down premium_mega_menu">
+                                <div id="mega_menu_drop_down_container">
+                                    <ul class="mega_menu_drop_down_list">
+                               
+                                        <h4><li class="mega_menu_drop_down_list_item">Damskie</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Wszystkie kategorie</li>
+                                        <li class="mega_menu_drop_down_list_item">Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Sandały</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki</li>
+                                        <li class="mega_menu_drop_down_list_item">Espadryle</li>
+                                        <li class="mega_menu_drop_down_list_item">Trampki</li>
+                                        <li class="mega_menu_drop_down_list_item">Szpilki</li>
+                                        <li class="mega_menu_drop_down_list_item">Półbuty</li>
+                                        <li class="mega_menu_drop_down_list_item">Mokasyny</li>
+                                        <li class="mega_menu_drop_down_list_item">Lordsy</li>
+                                        <li class="mega_menu_drop_down_list_item">Botki</li>
+                                        <li class="mega_menu_drop_down_list_item">Sztyblety</li>
+                                        <li class="mega_menu_drop_down_list_item">Kozaki</li>
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Męskie</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Wszystkie kategorie</li>
+                                        <li class="mega_menu_drop_down_list_item">Trekkingi</li>
+                                        <li class="mega_menu_drop_down_list_item">Trampki</li>
+                                        <li class="mega_menu_drop_down_list_item">Sandały</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki</li>
+                                        <li class="mega_menu_drop_down_list_item">Japonki</li>
+                                        <li class="mega_menu_drop_down_list_item">Espadryle</li>
+                                        <li class="mega_menu_drop_down_list_item">Półbuty wizytowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Mokasyny</li>
+                                        <li class="mega_menu_drop_down_list_item">Sztyblety</li>
+                                        <li class="mega_menu_drop_down_list_item">Kozaki</li>
+                                        <li class="mega_menu_drop_down_list_item">Kapcie</li>
+                                 
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Dziecięce</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Wszystkie kategorie</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty dziewczęce</li>
+                                        <li class="mega_menu_drop_down_list_item">Buty chłopięce</li>
+                                  
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Akcesoria</li></h4>
+                                        <li class="mega_menu_drop_down_list_item">Wszystkie kategorie</li>
+                                        <li class="mega_menu_drop_down_list_item">Torebki</li>
+                                        <li class="mega_menu_drop_down_list_item">Paski</li>
+                                        <li class="mega_menu_drop_down_list_item">Okulary przeciwsłoneczne</li>
+                                        <li class="mega_menu_drop_down_list_item">Zegarki</li>
+                                        <li class="mega_menu_drop_down_list_item">Czapki</li>
+                                        <li class="mega_menu_drop_down_list_item">Kapelusze</li>
+                                        <li class="mega_menu_drop_down_list_item">Portfele</li>
+                                        <li class="mega_menu_drop_down_list_item">Biżuteria</li>
+                                        <li class="mega_menu_drop_down_list_item">Etui</li>
+                                        <li class="mega_menu_drop_down_list_item">Szale</li>
+                                        <li class="mega_menu_drop_down_list_item">Zestawy</li>
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list">
+                                        <h4><li class="mega_menu_drop_down_list_item">Popularne marki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" > Karl Lagerfeld</li>
+                                        <li class="mega_menu_drop_down_list_item">Calvin Klein Jeans</li>
+                                        <li class="mega_menu_drop_down_list_item">Liu Jo</li>
+                                        <li class="mega_menu_drop_down_list_item">MICHAEL Michael Kors</li>
+                                        <li class="mega_menu_drop_down_list_item">Versace Jeans Couture</li>
+                                        <li class="mega_menu_drop_down_list_item">Pinko</li>
+                                        <li class="mega_menu_drop_down_list_item">LOVE MOSCHINO</li>
+                                        <li class="mega_menu_drop_down_list_item">EA7 Emporio Armani</li>
+                                        <li class="mega_menu_drop_down_list_item">Boss</li>
+                                        <li class="mega_menu_drop_down_list_item">Hugo</li>
+                                        <li class="mega_menu_drop_down_list_item">Furla</li>
+                                        <li class="mega_menu_drop_down_list_item">Kurt Geiger</li>
+                                        <li class="mega_menu_drop_down_list_item">Patrizia Peper</li>
+                                        <li class="mega_menu_drop_down_list_item"><a href="#">Wiecej marek</a></li>
+                            
+                                    </ul>
+                                <ul class="mega_menu_drop_down_list">
+                                    <a href="#"><img src="img/megamenudropdownist_premium.JPG"></a>
+                                </ul>
+                                <ul class="mega_menu_drop_down_list">
+        
+                                    <a href="#"><div class="mega_menu_drop_down_buttons green_button">Nowośc</div></a>
+                                    <a href="#"><div class="mega_menu_drop_down_buttons red_button">Wyprzedaż</div></a>
+                 
+                                </ul>
+        
+                            </div>
+                        </div>
+                       
+                    </li>
+                    <li class="mega_menu_list-item">
+
+                        <div class="mega_menu_item_container handbag_cont">
+                            <a class="mega_menu_list_item_link" href="#">TOREBKI</a>
+                            <div class="mega_menu_drop_down handbag_mega_menu">
+                                <div id="mega_menu_drop_down_container">
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Torebki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Wszystkie</li>
+                                        <li class="mega_menu_drop_down_list_item">Listonoszki</li>
+                                        <li class="mega_menu_drop_down_list_item">Torby plażowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Wieczorowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Ślubne</li>
+                                        <li class="mega_menu_drop_down_list_item">Kopertówki</li>
+                                        <li class="mega_menu_drop_down_list_item">Shopperki</li>
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list  margin_class">
+                                        <li class="mega_menu_drop_down_list_item" >Plecaki</li>
+                                        <li class="mega_menu_drop_down_list_item">Kosze</li>
+                                        <li class="mega_menu_drop_down_list_item">Klasyczne</li>
+                                        <li class="mega_menu_drop_down_list_item">Nerki</li>
+                                        <li class="mega_menu_drop_down_list_item">Worki</li>
+                                        <li class="mega_menu_drop_down_list_item">Na laptopa</li>
+                                        <li class="mega_menu_drop_down_list_item">Saszetki</li> 
+                                    </ul>
+                                    
+                                      <ul class="mega_menu_drop_down_list " >
+                                        <h4><li class="mega_menu_drop_down_list_item">Popularne marki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Tommy Hilfiger</li>
+                                        <li class="mega_menu_drop_down_list_item">Guess</li>
+                                        <li class="mega_menu_drop_down_list_item">Valentino</li>
+                                        <li class="mega_menu_drop_down_list_item">Desigual</li>
+                                        <li class="mega_menu_drop_down_list_item">Creole</li>
+                                        <li class="mega_menu_drop_down_list_item">Nobo</li>
+                                        <li class="mega_menu_drop_down_list_item">Monnari</li>
+                                    </ul>
+                                    
+                                    <ul class="mega_menu_drop_down_list margin_class " >
+                                        <h4><li class="mega_menu_drop_down_list_item"></li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Pinko</li>
+                                        <li class="mega_menu_drop_down_list_item">Calvin Klein</li>
+                                        <li class="mega_menu_drop_down_list_item">MICHAEL Michael Kors</li>
+                                        <li class="mega_menu_drop_down_list_item">Liu Jo</li>
+                                        <li class="mega_menu_drop_down_list_item">Furla</li>
+                                        <li class="mega_menu_drop_down_list_item">Więcej marek</li>
+                                    </ul>
+                                <ul class="mega_menu_drop_down_list">
+                                    <a href="#"><img src="img/megamenudropdownist_handbag.JPG"></a>
+                                </ul>
+                                <ul class="mega_menu_drop_down_list">
+        
+                                    <a href="#"><div class="mega_menu_drop_down_buttons green_button">Nowośc</div></a>
+                                    <a href="#"><div class="mega_menu_drop_down_buttons red_button">Wyprzedaż</div></a>
+                                    <a href="#"><div class="mega_menu_drop_down_buttons black_button">Premium</div></a>
+                                </ul>
+        
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="mega_menu_list-item">
+
+                        <div class="mega_menu_item_container sale_cont">
+                            <a id="reeeeed" class="mega_menu_list_item_link" href="#">WYPRZEDAŻ</a>
+                            <div class="mega_menu_drop_down sale_mega_menu">
+                                <div id="mega_menu_drop_down_container">
+                                    <ul class="mega_menu_drop_down_list">
+                               
+                                        <h4><li class="mega_menu_drop_down_list_item">Damskie</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki i sandały</li>
+                                        <li class="mega_menu_drop_down_list_item">Trampki</li>
+                                        <li class="mega_menu_drop_down_list_item">Botki</li>
+                                        <li class="mega_menu_drop_down_list_item">Półbuty</li>
+                                        <li class="mega_menu_drop_down_list_item">Sportowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Kozaki i inne</li>
+                                        <li class="mega_menu_drop_down_list_item">Na koturnie</li>
+                                        
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Męskie</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Sneakersy</li>
+                                        <li class="mega_menu_drop_down_list_item">Trampki</li>
+                                        <li class="mega_menu_drop_down_list_item">Sportowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Klapki i sandały</li>
+                                        <li class="mega_menu_drop_down_list_item">Trekkingi i trapery</li>
+                                        <li class="mega_menu_drop_down_list_item">Półbuty</li>
+                                        <li class="mega_menu_drop_down_list_item">Kozaki i inne</li>
+                                        <li class="mega_menu_drop_down_list_item">Bieganie</li>
+                                      
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Dziecięce</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Dziewczynka</li>
+                                        <li class="mega_menu_drop_down_list_item">Chłopiec</li>
+                                        <li class="mega_menu_drop_down_list_item">Sportowe</li>
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Torebki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item">Klasyczne</li>
+                                        <li class="mega_menu_drop_down_list_item">Listonoszki</li>
+                                        <li class="mega_menu_drop_down_list_item">Wieczorowe</li>
+                                        <li class="mega_menu_drop_down_list_item">Shopperki</li>
+                                        <li class="mega_menu_drop_down_list_item">Plecaki</li>
+                                        <li class="mega_menu_drop_down_list_item">Na laptopa</li>
+                                        <li class="mega_menu_drop_down_list_item">Nerki</li>
+                                        
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list">
+                                        <h4><li class="mega_menu_drop_down_list_item">Popularne marki</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Calvin Klein</li>
+                                        <li class="mega_menu_drop_down_list_item">Karl Lagerfeld</li>
+                                        <li class="mega_menu_drop_down_list_item">Liu Jo</li>
+                                        <li class="mega_menu_drop_down_list_item">Versace Jeasn Couture</li>
+                                        <li class="mega_menu_drop_down_list_item">Tommy Hilfiger</li>
+                                        <li class="mega_menu_drop_down_list_item">Geox</li>
+                                        <li class="mega_menu_drop_down_list_item">Guess</li>
+                                        <li class="mega_menu_drop_down_list_item">Rieker</li>
+                                        <li class="mega_menu_drop_down_list_item">adidas</li>
+                                        <li class="mega_menu_drop_down_list_item">New Balance</li>
+                                        <li class="mega_menu_drop_down_list_item">Birkenstock</li>
+                                        <li class="mega_menu_drop_down_list_item">Skechers</li>
+                                        <li class="mega_menu_drop_down_list_item"><a href="#">Wiecej marek</a></li>
+                            
+                                    </ul>
+                          
+                            </div>
+                            
+                        </div>
+                       
+                    </li>
+                    <li class="mega_menu_list-item">
+
+                        <div class="mega_menu_item_container modivo_cont">
+                            <a class="mega_menu_list_item_link" href="#">MODIVO</a>
+                            <div class="mega_menu_drop_down modivo_mega_menu">
+                                <div id="mega_menu_drop_down_container" >
+                                    <ul class="mega_menu_drop_down_list">
+                                        <div id="modivo-left-bar">
+                                            <li class="mega_menu_drop_down_list_item" ><a href="#"><img src="img/modivo_logo.JPG"  class="modivo_logo"></a></li>
+                                            <li class="mega_menu_drop_down_list_item" ><a href="#"><img src="img/modivo_diamond.JPG" class="modivo_diamond"></a></li>
+                                            <li class="mega_menu_drop_down_list_item" ><p>Ponad 650 marek premium</p></li>
+                                        </div>
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Kobiety</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Sukienki</li>
+                                        <li class="mega_menu_drop_down_list_item">Dresy</li>
+                                        <li class="mega_menu_drop_down_list_item">Kurtki</li>
+                                        <li class="mega_menu_drop_down_list_item">Trencze i płaszcze</li>
+                                        <li class="mega_menu_drop_down_list_item">Bluzy</li>
+                                        <li class="mega_menu_drop_down_list_item">Spodnie</li>
+                                        <li class="mega_menu_drop_down_list_item">Swetry</li>
+                                        <li class="mega_menu_drop_down_list_item">Bluzki i koszule</li>
+                                        <li class="mega_menu_drop_down_list_item">Kozaki</li>
+                                        <li class="mega_menu_drop_down_list_item">Kowbojki</li>
+                                        <li class="mega_menu_drop_down_list_item">Oficerki</li>
+                                        <li class="mega_menu_drop_down_list_item">Muszkieterki</li>
+                                 
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list margin_class ">
+                                        <h4><li class="mega_menu_drop_down_list_item"></li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >T-shirty</li>
+                                        <li class="mega_menu_drop_down_list_item">Bielizna</li>
+                                        <li class="mega_menu_drop_down_list_item">Marynarki</li>
+                                     <li class="mega_menu_drop_down_list_item">Jeansy</li>
+                                        <li class="mega_menu_drop_down_list_item">Spódnice</li>
+                                        <li class="mega_menu_drop_down_list_item">Szorty</li>
+                                        <li class="mega_menu_drop_down_list_item">Moda plażowa</li>
+                                        <li class="mega_menu_drop_down_list_item">Kamizelki</li>
+                                        <li class="mega_menu_drop_down_list_item">Pokaż wszystko</li>
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list ">
+                                        <h4><li class="mega_menu_drop_down_list_item">Mężczyźni</li></h4>
+                                        <li class="mega_menu_drop_down_list_item">T-shirty i polo</li>
+                                        <li class="mega_menu_drop_down_list_item">Szorty</li>
+                                        <li class="mega_menu_drop_down_list_item">Dresy</li>
+                                        <li class="mega_menu_drop_down_list_item">Bluzy</li>
+                                        <li class="mega_menu_drop_down_list_item">Bielizna</li>
+                                        <li class="mega_menu_drop_down_list_item">Moda plażowa</li>
+                                        <li class="mega_menu_drop_down_list_item">Kurtki i płaszcze</li>
+                                        <li class="mega_menu_drop_down_list_item">Spodnie</li>
+                                        <li class="mega_menu_drop_down_list_item">Pokaż wszystko</li>
+                                        
+                                    
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list">
+                                        <h4><li class="mega_menu_drop_down_list_item">Dzieci</li></h4>
+                                        <li class="mega_menu_drop_down_list_item" >Kurtki i płaszcze</li>
+                                        <li class="mega_menu_drop_down_list_item">T-shirty</li>
+                                        <li class="mega_menu_drop_down_list_item">Bluzy</li>
+                                        <li class="mega_menu_drop_down_list_item">Sukienki</li>
+                                        <li class="mega_menu_drop_down_list_item">Dresy</li>
+                                        <li class="mega_menu_drop_down_list_item">Legginsy</li>
+                                        <li class="mega_menu_drop_down_list_item">Bluzki</li>
+                                        <li class="mega_menu_drop_down_list_item">Odzież niemowlęca</li>
+                                        <li class="mega_menu_drop_down_list_item">Pokaż wszystko</li>
+                                       
+                                    </ul>
+                                    <ul class="mega_menu_drop_down_list">
+                                        
+                                        <p id="modivo-right-bar-header">Dlaczego warto kupować w MODIVO?</p>
+                                        <div id="modivo-right-bar">
+                                            
+                                        <div class="modivo_truck_container">
+                                            <img src="img/truck-modivo.JPG" alt="Truck"><p>Darmowa dostaw</p>
+                                        </div>
+                                        <div class="modivo_package_container">
+                                            <img src="img/package-modivo.JPG" alt="Package"><p>Aż 100 dni na bezpłatny zwrot</p>
+                                        </div>
+                                        <div class="modivo_Wallet_container">
+                                            <img src="img/wallet-modivo.JPG" alt="Wallet"><p>Bezpieczne płatności</p>
+                                        </div>
+                                        </div>
+                                    </ul>
+                           
+        
+                            </div>
+                        </div>
+                       
+                    </li>
+ 
+                
+              
+                </ul>
+            </nav>
+            <!--END OF MEGA MENU-->
+        <main>
+            
+           
+            <div class='home_section_container'>
+                <div class="home_section_content">
+                    <h2>Kolorowe trekkingi</h2>
+                    <button>ZOBACZ WIECEJ</button>
+                </div>
+                <div class="home_section_img_container">
+                    <img src="img/home_images_woman_boots.jpg" alt="woman with boots" width="400px" height="400px">
+                    <img src="img/home_images_woman_on_chair.jpg" alt="woman on chair" width="545px" height="363 pxpx">
+                </div>
+            </div>
+            <div id="home_section_brand_container">
+               <header >	 
+                    <h1 id="title_home_section_brand">
+                        Topowe marki w atrakcyjnych cenach
+
+                    </h1>
+          
+                    <div id="home_section_brand">
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_addidas.JPG">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_newbalance.JPG">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_geox.JPG">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_liuJOJPG.JPG">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_BIGSTAR.JPG">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_LACOSTE.JPG">
+                            </div>
+                        </a>
+                      
+                    </div>
+             
+                    <div id="home_section_brand">
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_RIEKER.JPG">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_cmp.JPG">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_converse.JPG">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_PINKO.JPG">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_GUESS.JPG">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="home_section_brand_box">
+                                <img src="img/home_section_brand_box_img_TOMMYHILFIGER.JPG">
+                            </div>
+                        </a>
+                      
+                    </div>
+               
+                </div>
+              
+            </div>
+
+
+        <header>
+            <div class='home_section_container'>
+               
+                <div class="home_section_content">
+                    <h2>Kolorowe trekkingi</h2>
+                    <button>ZOBACZ WIECEJ</button>
+                </div>
+                
+                <div class="home_section_img_container">
+                    <img src="img/home_images_woman_boots.jpg" alt="woman with boots" width="400px" height="400px">
+                    <img src="img/home_images_woman_on_chair.jpg" alt="woman on chair" width="545px" height="363 pxpx">
+          
+                </div>
+                
+                </div>
+        <header>
+
+                <ul id="bootsProductContainerSlider">
+                  <button id="arrow_right" >
+                    →
+                  </button>
+                    <a  class="bootsProductSlider">
+                        
+                        <li class="productInformation">
+                           
+                                <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG1.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                            
+                                    <span class="bootsdiscount">-15%</span>
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsSalePrince">649,00 zł</span><span class="bootsPrince">549,00 zł</span></section>
+                            
+                            </section>
+                        
+                        </li>
+                    </a>
+
+                    <a  class="bootsProductSlider">
+                        <li class="productInformation">
+                           
+                                <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG2.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                                
+                                    <span class="bootsdiscount">-18%</span>
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsSalePrince">899,00 zł</span><span class="bootsPrince">739,00 zł</span></section>
+                            
+                            </section>
+                        
+                        </li>
+                    </a>
+                
+                    <a  class="bootsProductSlider">
+                        <li class="productInformation">
+                           
+                                <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG3.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                                  
+                                    <span class="bootsNewLabel">Nowość</span>
+                                    <span class="bootsdiscount">-18%</span>
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsSalePrince">899,00 zł</span><span class="bootsPrince">739,00 zł</span></section>
+                            
+                            </section>
+                        
+                        </li>
+                    </a>
+
+                    <a  class="bootsProductSlider">
+                        <li class="productInformation">
+                           
+                                <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG4.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                                 
+                                    <span class="bootsdiscount">-15%</span>
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsPrince">549,99 zł</span></section>
+                            
+                            </section>
+                        
+                        </li>
+                    </a>
+
+                    <a class="bootsProductSlider" >
+                        <li class="productInformation">
+                           
+                            <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG5.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                                 
+                                    <span class="bootsNewLabel">Nowość</span>
+                               
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsPrince">449,00 zł</span></section>
+                            
+                            </section>
+                            
+                        
+                        </li>
+                    </a>
+                    
+                    <a  class="bootsProductSlider">
+                        <li class="productInformation">
+                           
+                                <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG5.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                                   
+                                    
+                                
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsSalePrince">649,00 zł</span><span class="bootsPrince">549,00 zł</span></section>
+                            
+                            </section>
+                        
+                        </li>
+                    </a>
+
+                    <a  class="bootsProductSlider">
+                        
+                        <li class="productInformation">
+                           
+                                <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG1.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                            
+                                    <span class="bootsdiscount">-15%</span>
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsSalePrince">649,00 zł</span><span class="bootsPrince">549,00 zł</span></section>
+                            
+                            </section>
+                        
+                        </li>
+                    </a>
+
+                    <a  class="bootsProductSlider">
+                        <li class="productInformation">
+                           
+                                <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG2.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                                
+                                    <span class="bootsdiscount">-18%</span>
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsSalePrince">899,00 zł</span><span class="bootsPrince">739,00 zł</span></section>
+                            
+                            </section>
+                        
+                        </li>
+                    </a>
+                
+                    <a  class="bootsProductSlider">
+                        <li class="productInformation">
+                           
+                                <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG3.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                                  
+                                    <span class="bootsNewLabel">Nowość</span>
+                                    <span class="bootsdiscount">-18%</span>
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsSalePrince">899,00 zł</span><span class="bootsPrince">739,00 zł</span></section>
+                            
+                            </section>
+                        
+                        </li>
+                    </a>
+
+                    <a  class="bootsProductSlider">
+                        <li class="productInformation">
+                           
+                                <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG4.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                                 
+                                    <span class="bootsdiscount">-15%</span>
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsPrince">549,99 zł</span></section>
+                            
+                            </section>
+                        
+                        </li>
+                    </a>
+
+                    <a  class="bootsProductSlider">
+                        <li class="productInformation">
+                           
+                            <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG5.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                                 
+                                    <span class="bootsNewLabel">Nowość</span>
+                               
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsPrince">449,00 zł</span></section>
+                            
+                            </section>
+                            
+                        
+                        </li>
+                    </a>
+                    
+                    <a  class="bootsProductSlider">
+                        <li class="productInformation">
+                           
+                                <section class="productInformationImg">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <img src="img/bootsProductContainerBootIMG5.jpg" alt="PINK BOOTS">
+                                <section class="bootsMid">
+                                   
+                                    
+                                
+                                </section>
+                                <span class="bootsBrand">Buty adidas</span>
+                                <span class="bootsName">Terrex Hikster W GW2805</span>
+                                <section class="bootsPrinceContainer"><span class="bootsSalePrince">649,00 zł</span><span class="bootsPrince">549,00 zł</span></section>
+                            
+                            </section>
+                        
+                        </li>
+                    </a>
+
+        
+
+                   
+                    <button id="arrow_left">
+                        ←
+                  </button>
+                </ul>
+           
+            
+           
+        </header>
+        <header>
+            <div class='home_section_container'>
+               
+                <div class="home_section_content">
+                    <h2>Kolorowe trekkingi</h2>
+                    <button>ZOBACZ WIECEJ</button>
+                </div>
+                
+                <div class="home_section_img_container">
+                    <img src="img/home_images_woman_boots.jpg" alt="woman with boots" width="400px" height="400px">
+                    <img src="img/home_images_woman_on_chair.jpg" alt="woman on chair" width="545px" height="363 pxpx">
+          
+                </div>
+                
+                </div>
+        <header>
+        <div id="last_view">
+            <div id="home_section_container_heading">
+                <h1> Sponsorowane, wybrane dla Ciebie</h1>
+               
+         
+         
+       
+            <ul class="bootsProductContainer">
+              
+                <a class="bootsProduct">
+                    
+                    <li class="productInformation">
+                       
+                            <section class="productInformationImg">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/bootsProductContainerBootIMG1.jpg" alt="PINK BOOTS">
+                            <section class="bootsMid">
+                        
+                                <span class="bootsdiscount">-15%</span>
+                            </section>
+                            <span class="bootsBrand">Buty adidas</span>
+                            <span class="bootsName">Terrex Hikster W GW2805</span>
+                            <section class="bootsPrinceContainer"><span class="bootsSalePrince">649,00 zł</span><span class="bootsPrince">549,00 zł</span></section>
+                        
+                        </section>
+                    
+                    </li>
+                </a>
+
+                <a class="bootsProduct">
+                    <li class="productInformation">
+                       
+                            <section class="productInformationImg">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/bootsProductContainerBootIMG2.jpg" alt="PINK BOOTS">
+                            <section class="bootsMid">
+                            
+                                <span class="bootsdiscount">-18%</span>
+                            </section>
+                            <span class="bootsBrand">Buty adidas</span>
+                            <span class="bootsName">Terrex Hikster W GW2805</span>
+                            <section class="bootsPrinceContainer"><span class="bootsSalePrince">899,00 zł</span><span class="bootsPrince">739,00 zł</span></section>
+                        
+                        </section>
+                    
+                    </li>
+                </a>
+            
+                <a  class="bootsProduct">
+                    <li class="productInformation">
+                       
+                            <section class="productInformationImg">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/bootsProductContainerBootIMG3.jpg" alt="PINK BOOTS">
+                            <section class="bootsMid">
+                              
+                                <span class="bootsNewLabel">Nowość</span>
+                                <span class="bootsdiscount">-18%</span>
+                            </section>
+                            <span class="bootsBrand">Buty adidas</span>
+                            <span class="bootsName">Terrex Hikster W GW2805</span>
+                            <section class="bootsPrinceContainer"><span class="bootsSalePrince">899,00 zł</span><span class="bootsPrince">739,00 zł</span></section>
+                        
+                        </section>
+                    
+                    </li>
+                </a>
+
+                <a  class="bootsProduct">
+                    <li class="productInformation">
+                       
+                            <section class="productInformationImg">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/bootsProductContainerBootIMG4.jpg" alt="PINK BOOTS">
+                            <section class="bootsMid">
+                             
+                                <span class="bootsdiscount">-15%</span>
+                            </section>
+                            <span class="bootsBrand">Buty adidas</span>
+                            <span class="bootsName">Terrex Hikster W GW2805</span>
+                            <section class="bootsPrinceContainer"><span class="bootsPrince">549,99 zł</span></section>
+                        
+                        </section>
+                    
+                    </li>
+                </a>
+
+                <a  class="bootsProduct">
+                    <li class="productInformation">
+                       
+                        <section class="productInformationImg">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/bootsProductContainerBootIMG5.jpg" alt="PINK BOOTS">
+                            <section class="bootsMid">
+                             
+                                <span class="bootsNewLabel">Nowość</span>
+                           
+                            </section>
+                            <span class="bootsBrand">Buty adidas</span>
+                            <span class="bootsName">Terrex Hikster W GW2805</span>
+                            <section class="bootsPrinceContainer"><span class="bootsPrince">449,00 zł</span></section>
+                        
+                        </section>
+                        
+                    
+                    </li>
+                </a>
+                
+                <a class="bootsProduct">
+                    <li class="productInformation">
+                       
+                            <section class="productInformationImg">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/bootsProductContainerBootIMG5.jpg" alt="PINK BOOTS">
+                            <section class="bootsMid">
+                               
+                                
+                            
+                            </section>
+                            <span class="bootsBrand">Buty adidas</span>
+                            <span class="bootsName">Terrex Hikster W GW2805</span>
+                            <section class="bootsPrinceContainer"><span class="bootsSalePrince">649,00 zł</span><span class="bootsPrince">549,00 zł</span></section>
+                        
+                        </section>
+                    
+                    </li>
+                </a>
+
+    
+
+               
+         
+            </ul>
+       
+            </div>
+        
+        </div>
+
+   <header>
+
+        <div class='home_section_container'>
+       
+            <div class="home_section_content">
+
+                <h2 class="home_section_content_third">Zamów expressowo na eobuwie.pl</h2>
+                <button class="home_section_content_third_button">SPRAWDŹ</button>
+
+            </div>
+        
+            <div class="home_section_img_container">
+
+                <img src="img/home_section_img_container_boot_on_hand.JPG" alt="woman with boots" width="400px" height="400px">
+                <img src="img/home_section_img_container_express_delivery.JPG" alt="woman on chair" width="545px" height="363 pxpx">
+  
+            </div>
+        
+        </div>
+
+    </header>
+
+    <section id="home_section_card_container">
+        <a href="#"><img src="img/home_section_card_container__vans_img.JPG" alt="VansIMG"></a>
+        <a href="#"><img src="img/home_section_card_container__vans_img.JPG" alt="VansIMG"></a>
+        <a href="#"><img src="img/home_section_card_container__vans_img.JPG" alt="VansIMG"></a>
+
+    </section>
+
+    <header>
+
+        <div class='home_section_container'>
+       
+            <div class="home_section_content">
+
+                <h2 class="home_section_content_third">Sporty Teens Aktywność fizyczna bez wymówek</h2>
+                <button class="home_section_content_third_button">ZOBACZ WIECEJ</button>
+
+            </div>
+        
+            <div class="home_section_img_container">
+
+                <img src="img/home_section_img_container_girl_with_boots_and_purple_blouse.JPG" alt="woman with boots on her neck" width="400px" height="400px">
+                <img src="img/home_section_img_container_boys_with_ball.JPG" alt="boys with football" width="545px" height="363 pxpx">
+  
+            </div>
+        
+        </div>
+
+    </header>
+
+    <header>
+
+        <ul class="bootsProductContainer">
+          
+            <a class="bootsProduct">
+                
+                <li class="productInformation">
+                   
+                        <section class="productInformationImg">
+                            <i class="fa-regular fa-heart"></i>
+                            <img src="img/bootsProductContainerBootIMG1.jpg" alt="PINK BOOTS">
+                        <section class="bootsMid">
+                    
+                            <span class="bootsdiscount">-15%</span>
+                        </section>
+                        <span class="bootsBrand">Buty adidas</span>
+                        <span class="bootsName">Terrex Hikster W GW2805</span>
+                        <section class="bootsPrinceContainer"><span class="bootsSalePrince">649,00 zł</span><span class="bootsPrince">549,00 zł</span></section>
+                    
+                    </section>
+                
+                </li>
+            </a>
+
+            <a class="bootsProduct">
+                <li class="productInformation">
+                   
+                        <section class="productInformationImg">
+                            <i class="fa-regular fa-heart"></i>
+                            <img src="img/bootsProductContainerBootIMG2.jpg" alt="PINK BOOTS">
+                        <section class="bootsMid">
+                        
+                            <span class="bootsdiscount">-18%</span>
+                        </section>
+                        <span class="bootsBrand">Buty adidas</span>
+                        <span class="bootsName">Terrex Hikster W GW2805</span>
+                        <section class="bootsPrinceContainer"><span class="bootsSalePrince">899,00 zł</span><span class="bootsPrince">739,00 zł</span></section>
+                    
+                    </section>
+                
+                </li>
+            </a>
+        
+            <a class="bootsProduct">
+                <li class="productInformation">
+                   
+                        <section class="productInformationImg">
+                            <i class="fa-regular fa-heart"></i>
+                            <img src="img/bootsProductContainerBootIMG3.jpg" alt="PINK BOOTS">
+                        <section class="bootsMid">
+                          
+                            <span class="bootsNewLabel">Nowość</span>
+                            <span class="bootsdiscount">-18%</span>
+                        </section>
+                        <span class="bootsBrand">Buty adidas</span>
+                        <span class="bootsName">Terrex Hikster W GW2805</span>
+                        <section class="bootsPrinceContainer"><span class="bootsSalePrince">899,00 zł</span><span class="bootsPrince">739,00 zł</span></section>
+                    
+                    </section>
+                
+                </li>
+            </a>
+
+            <a  class="bootsProduct">
+                <li class="productInformation">
+                   
+                        <section class="productInformationImg">
+                            <i class="fa-regular fa-heart"></i>
+                            <img src="img/bootsProductContainerBootIMG4.jpg" alt="PINK BOOTS">
+                        <section class="bootsMid">
+                         
+                            <span class="bootsdiscount">-15%</span>
+                        </section>
+                        <span class="bootsBrand">Buty adidas</span>
+                        <span class="bootsName">Terrex Hikster W GW2805</span>
+                        <section class="bootsPrinceContainer"><span class="bootsPrince">549,99 zł</span></section>
+                    
+                    </section>
+                
+                </li>
+            </a>
+
+            <a class="bootsProduct">
+                <li class="productInformation">
+                   
+                    <section class="productInformationImg">
+                            <i class="fa-regular fa-heart"></i>
+                            <img src="img/bootsProductContainerBootIMG5.jpg" alt="PINK BOOTS">
+                        <section class="bootsMid">
+                         
+                            <span class="bootsNewLabel">Nowość</span>
+                       
+                        </section>
+                        <span class="bootsBrand">Buty adidas</span>
+                        <span class="bootsName">Terrex Hikster W GW2805</span>
+                        <section class="bootsPrinceContainer"><span class="bootsPrince">449,00 zł</span></section>
+                    
+                    </section>
+                    
+                
+                </li>
+            </a>
+            
+            <a class="bootsProduct">
+                <li class="productInformation">
+                   
+                        <section class="productInformationImg">
+                            <i class="fa-regular fa-heart"></i>
+                            <img src="img/bootsProductContainerBootIMG5.jpg" alt="PINK BOOTS">
+                        <section class="bootsMid">
+                           
+                            
+                        
+                        </section>
+                        <span class="bootsBrand">Buty adidas</span>
+                        <span class="bootsName">Terrex Hikster W GW2805</span>
+                        <section class="bootsPrinceContainer"><span class="bootsSalePrince">649,00 zł</span><span class="bootsPrince">549,00 zł</span></section>
+                    
+                    </section>
+                
+                </li>
+            </a>
+
+
+
+           
+     
+        </ul>
+   
+    
+   
+</header>
+    <div class="home_section_container_Wrapper">
+        <section class="_container_Wrapper">
+            <header>
+                <h1>Kategorie na czasie</h1>
+            
+                   <div class="container_for_items">
+                    
+                        <div class="container_for_item">
+                            <a href="#"><img src="img/home_section_container_popular_img_one.png" width="256px" height="512px"><p>Trapery</p></a>
+                        </div>
+                        <div class="container_for_item">
+                            <a href="#"><img src="img/home_section_container_popular_img_two.png" width="256px" height="256px"><p>Sneakersy</p></a>
+                            <a href="#"><img src="img/home_section_container_popular_img_three.png" width="256px" height="256px"><p>Wsuwane</p></a>
+                        </div>
+                        <div class="container_for_item">
+                            <a href="#"><img src="img/home_section_container_popular_img_four.png" width="256px" height="256px"><p>Czapki</p></a>
+                            <a href="#"><img src="img/home_section_container_popular_img_five.png" width="256px" height="256px"><p>Kapcie</p></a>
+                        </div>
+                        <div class="container_for_item">
+                            <a href="#"><img src="img/home_section_container_popular_img_six.png" width="256px" height="512px"><p>Trzewiki</p></a>
+                        </div>
+                        <div class="container_for_item">
+                            <a href="#"><img src="img/home_section_container_popular_img_seven.png" width="256px" height="256px"><p>Na rzepy</p></a>
+                            <a href="#"><img src="img/home_section_container_popular_img_eight.png" width="256px" height="256px"><p>Plecaki</p></a>
+                        </div>
+                    </div>
+        
+                
+            </header>
+        </section>
+    </div>
+    <header>
+
+        <div class='home_section_container'>
+       
+            <div class="home_section_content">
+
+                <h2 class="home_section_content_third">Zamów expressowo na eobuwie.pl</h2>
+                <button class="home_section_content_third_button">SPRAWDŹ</button>
+
+            </div>
+        
+            <div class="home_section_img_container">
+
+                <img src="img/home_section_img_container_boot_on_hand.JPG" alt="woman with boots" width="400px" height="400px">
+                <img src="img/home_section_img_container_express_delivery.JPG" alt="woman on chair" width="545px" height="363 pxpx">
+  
+            </div>
+        
+        </div>
+
+    </header>
+    <div class="home_section_container_benefits">
+        <section class="_container_Wrapper">
+            <header>
+                <h1>Najlepsza oferta na rynku</h1>
+            
+                   <div class="container_for_items">
+                    
+                        <div class="container_for_item e_card_items" >
+                            <a href="#">
+                                <div class="e_card_item">
+                                    <div class="e_card_item_container_for_img">
+                                        <img src="img/e_card_item_truck.png" alt="" width="64px" height="64px">
+                                       
+                                    </div>
+                                    <span class="e_card_item_description">
+                                        Darmowa dostawa
+                                    </span>
+                                </div>
+                               
+                            </a>
+                        </div>
+                        
+                        <div class="container_for_item e_card_items" >
+                            <a href="#">
+                                <div class="e_card_item">
+                                    <div class="e_card_item_container_for_img">
+                                        <img src="img/e_card_item_loop.png" alt="" width="64px" height="64px">
+                                       
+                                    </div>
+                                    <span class="e_card_item_description">
+                                        100 dni na darmowy zwrot
+                                    </span>
+                                </div>
+                               
+                            </a>
+                        </div>
+
+                        <div class="container_for_item e_card_items" >
+                            <a href="#">
+                                <div class="e_card_item">
+                                    <div class="e_card_item_container_for_img">
+                                        <img src="img/e_card_item_spotify.png" alt="" width="64px" height="64px">
+                                       
+                                    </div>
+                                    <span class="e_card_item_description">
+                                        Odbierz 2 miesiące spotify za darmo
+                                    </span>
+                                </div>
+                               
+                            </a>
+                        </div>
+
+                        <div class="container_for_item e_card_items" >
+                            <a href="#">
+                                <div class="e_card_item">
+                                    <div class="e_card_item_container_for_img">
+                                        <img src="img/e_card_item_bag.png" alt="" width="64px" height="64px">
+                                       
+                                    </div>
+                                    <span class="e_card_item_description">
+                                        35 własnych sklepów stacjonarnych
+                                    </span>
+                                </div>
+                               
+                            </a>
+                        </div>
+
+                        <div class="container_for_item e_card_items" >
+                            <a href="#">
+                                <div class="e_card_item">
+                                    <div class="e_card_item_container_for_img">
+                                        <img src="img/e_card_item_dollar.png" alt="" width="64px" height="64px">
+                                       
+                                    </div>
+                                    <span class="e_card_item_description">
+                                        Zaproś znajomego i odbierz 100zł
+                                    </span>
+                                </div>
+                               
+                            </a>
+                        </div>
+            
+                    </div>
+        
+                
+            </header>
+        </section>
+    </div>
+    <div class='home_section_container mobile-app-ad'>
+       
+        <section class="mobile-app-ad-left">
+            <h1>Pobierz aplikację mobilną eobuwie.pl</h1>
+            <p>Zakupy online zawsze na wyciągnięcie ręki.</p>
+            <ul>
+                <li>Korzystaj z wcześniejszego dostępu do akcji rabatowych</li>
+                <li>Szukaj produktów na podstawie zdjęć</li>
+                <li>Znajdź idealnie dopasowane buty dzięki usłudze esize.me</li>
+            </ul>
+                <section class="mobile-app-ad-left-img-cont">
+                    <a><img src="img/mobile-app-ad-left-img-googleplay.JPG" alt="googleplay" width="137px" height="42px"></a>
+                    <a><img src="img/mobile-app-ad-left-img-appstore.JPG" alt="appstore" width="137px" height="42px"></a>
+                    <a><img src="img/mobile-app-ad-left-img-appgallery.JPG" alt="appgallery" width="137px" height="42px"></a>
+                </section>
+           
+
+        </section>
+        <section class="mobile-app-ad-right">
+          <img src="img/mobile-app-ad-right.JPG" alt="">
+        </section>
+
+    </div>
+    
+
+    <footer class="home_section_container_Wrapper footer_container">
+        
+      <section class="footer_top">
+        <div class="footer_award">
+            <a href=""><img src="img/footer_award_forbes.png" alt=" "></a>
+            <a href=""><img src="img/footer_award_one.png" alt=" "></a>
+            <a href=""><img src="img/footer_award_laur.png" alt=" "></a>
+            <a href=""><img src="img/footer_award_odziez.png" alt=" "></a>
+            <a href=""><img src="img/footer_award_najlepszy_sklep.png" alt=" "></a>
+        </div>
+        <div class="footer_social_media_text">
+            <span>Dołącz do nas</span>
+        </div>
+        <div class="footer_social_media">
+            <a href=""><div class="circle"><i class="fa-brands fa-facebook-f"></i></div></a>
+            <a href=""><div class="circle"><i class="fa-brands fa-instagram"></i></i></div></a>
+            <a href=""><div class="circle"><i class="fa-brands fa-youtube"></i></div></a>
+        </div>
+        <div class="footer_contact"> 
+            <a href=""><div class="circle"><i class="fa-solid fa-tty"></i></div></a>
+            <a href=""><div class="circle"><i class="fa-regular fa-envelope-open"></i></div></a>
+       
+        </div>
+        
+      </section>
+      <section class="footer_middle">
+        <section class="footer_middle_left">
+        <div class="footer_middle_container">
+            <h3 class="footer_middle_list_header">Obsługa klienta</h3>
+            <ul class="footer_middle_list">
+                <a href="#"><li>Koszty dostawy</li></a>
+                <a href="#"><li>Zwrot</li></a>
+                <a href="#"><li>Realizacja zamówienia</li></a>
+                <a href="#"><li>Metody płatności</li></a>
+                <a href="#"><li>Reklamacje</li></a>
+                <a href="#"><li>Śledzenie przesyłki</li></a>
+                <a href="#"><li>FAQ</li></a>
+                <a href="#"><li>Kontakt</li></a>
+            </ul>
+        </div>
+        <div class="footer_middle_container">
+            <h3 class="footer_middle_list_header">Regulaminy</h3>
+            <ul class="footer_middle_list">
+                <a href="#"><li>Regulamin sklepu</li></a>
+                <a href="#"><li>Regulamin usługi newsletter</li></a>
+                <a href="#"><li>Polityka prywatności i cookies</li></a>
+                <a href="#"><li>Ochrona in. danych</li></a>
+                <a href="#"><li>Zasady korzystania z usług esize.me</li></a>
+                <a href="#"><li>Subskrypcja SMS esize.me</li></a>
+                <a href="#"><li>Subskrypcja SMS</li></a>
+                <a href="#"><li> Zmień ustawienia prywatności</li></a>
+ 
+               
+
+
+
+
+
+
+            </ul>
+        </div>
+        <div class="footer_middle_container">
+            <h3 class="footer_middle_list_header">Firma</h3>
+            <ul class="footer_middle_list">
+                <a href="#"><li>Biuro Prasowe</li></a>
+                <a href="#"><li>Nagrody i opinie</li></a>
+                <a href="#"><li>Kariera w eobuwie.pl</li></a>
+                <a href="#"><li>esize.me</li></a>
+                <a href="#"><li>Modivo</li></a>
+                <a href="#"><li>Blog</li></a>
+                
+
+
+
+
+
+            </ul>
+        </div>
+        <div class="footer_middle_container">
+            <h3 class="footer_middle_list_header">Poradniki</h3>
+            <ul class="footer_middle_list">
+                <a href="#"><li>Jak kupować?</li></a>
+                <a href="#"><li>Tabela rozmiarów</li></a>
+                <a href="#"><li>Pielęgnacja obuwia</li></a>
+                <a href="#"><li>Technologie</li></a>
+                <a href="#"><li><b>Program partnerski eobuwie.pl</b></li></a>
+            </ul>
+        </div>
+   
+        
+        
+              
+      
+      
+        
+    </section>
+        <div class="footer_newsletter_subscribe">
+            <p>Zapisz się na nasz newsletter</p>
+            <p class="footer_newsletter_subscribe_title">Zyskaj 40 zł rabatu</p>
+           
+            <input type="text" placeholder="Twój e-mail" id="footer_newsletter_subscribe_input">
+            <button id="footer_newsletter_subscribe_button">ZAPISZ</button>
+            <p>i otrzymuj informacje o nowościach oraz promocjach</p>
+        </div>
+      
+    </section>
+    </footer>
+    <div class="footer_column column_flags">
+        <div id="container_select">
+            <img id="special_countries_element_image" src="img/footer_middle_left_flag_polish.png" alt=""> 
+            <span  id="countries_element_text_special">eobuwie.pl</span>
+        
+            <div id="container_countries">
+                <p class="countries_element">
+                    <img class="thumb" src="img/footer_middle_left_flag_polish.png" alt="">
+                        <span class="countries_element_text">
+                            eobuwie.pl
+                        </span>
+                </p>
+                <p class="countries_element">
+                    <img class="thumb" src="img/footer_middle_left_flag_czech.png" alt="">
+                    <span class="countries_element_text">
+                        eobuv.cz
+                    </span>
+                </p>
+                <p class="countries_element">
+                    <img class="thumb" src="img/footer_middle_left_flag_serbia.png" alt="">
+                    <span class="countries_element_text">
+                        eobuv.sk
+                    </span>
+                </p>
+                <p class="countries_element">
+                    <img class="thumb" src="img/footer_middle_left_flag_rumunia.png" alt="">
+                    <span class="countries_element_text">
+                        epantofi.ro
+                    </span>
+                </p>
+                <p class="countries_element">
+                    <img class="thumb" src="img/footer_middle_left_flag_polish.png" alt="">
+                    <span class="countries_element_text">
+                        eobuwie.pl
+                    </span>
+                </p>
+
+                <p class="countries_element">
+                    <img class="thumb" src="img/footer_middle_left_flag_polish.png" alt="">
+                        <span class="countries_element_text">
+                            eobuwie.pl
+                        </span>
+                </p>
+                <p class="countries_element">
+                    <img class="thumb" src="img/footer_middle_left_flag_czech.png" alt="">
+                    <span class="countries_element_text">
+                        eobuv.cz
+                    </span>
+                </p>
+                <p class="countries_element">
+                    <img class="thumb" src="img/footer_middle_left_flag_serbia.png" alt="">
+                    <span class="countries_element_text">
+                        eobuv.sk
+                    </span>
+                </p>
+                <p class="countries_element">
+                    <img class="thumb" src="img/footer_middle_left_flag_rumunia.png" alt="">
+                    <span class="countries_element_text">
+                        epantofi.ro
+                    </span>
+                </p>
+                <p class="countries_element">
+                    <img class="thumb" src="img/footer_middle_left_flag_polish.png" alt="">
+                    <span class="countries_element_text">
+                        eobuwie.pl
+                    </span>
+                </p>
+              
+            </div>
+            <div id="container_select_right_side">
+                <
+            </div>
+                
+        </div>
+     
+    </div>
+    <footer>
+    <div class="partners_logo">
+        <img src="img/partners_logo_PayU.png" alt="">
+        <img src="img/partners_logo_Visa.png" alt="">
+        <img src="img/partners_logo_MasterCarrd.png" alt="">
+        <img src="img/partners_logo_BLIK.png" alt="">
+        <img src="img/partners_logo_PayPo.png" alt="">
+        <img src="img/partners_logo_PayPal.png" alt="">
+        <img src="img/partners_logo_Inpost.png" alt="">
+        <img src="img/partners_logo_cash_on_delivery.png" alt="">
+        <img src="img/partners_logo_transfer_cash.png" alt="">
+        <img src="img/partners_logo_mybenefit.png" alt="">
+        <img src="img/partners_logo_dpd.png" alt="">
+       
+    </div>
+</footer>
+        <script type="text/javascript" src="script/jquery.js" defer></script>
+        <script type="text/javascript" src="script/modernizer.js" defer></script>
+        <script type="text/javascript" src="script/script1.js" defer></script>
+        
+
+    </body>
+

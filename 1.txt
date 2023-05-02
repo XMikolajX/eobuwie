@@ -1,0 +1,4 @@
+Jak klikne to ten koknkretny element dodaje sie do favorite oraz dostaje atrybut disabled = true 
+Jak dodac to tylko do tego którego klikne w serce ?
+
+Gdzie rodzicem jest ten sam eleement 
