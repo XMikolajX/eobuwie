@@ -3242,7 +3242,7 @@ animation: slideup 0.2s linear forwards alternate;
 
     .bootsProductContainer {
         display: grid;
-        grid-template-columns: auto auto auto ;
+        grid-template-columns: 6.8rem 6.8rem 6.8rem ;
     }
 
    
