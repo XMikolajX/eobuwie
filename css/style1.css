@@ -3300,7 +3300,7 @@ animation: slideup 0.2s linear forwards alternate;
         .e_card_item {
             width: 2rem;
             height: 8rem;
-            padding: 1.5rem;
+            padding: 1rem;
             transition: all 0.2s ease-in-out ;
 }
         header h1 {
@@ -3310,14 +3310,14 @@ animation: slideup 0.2s linear forwards alternate;
         }
         .e_card_items{
             width:auto;
-            margin: 0 0.5rem 0 0.2rem;
+            margin:0;
            
 }
         .e_card_item_container_for_img {
             width: 2.2rem;
 }
         .e_card_item_description {
-            font-size: 0.5rem;
+            font-size: 0.45rem;
             width: 2rem;
 }       
         .mobile-app-ad-left {
@@ -3331,7 +3331,7 @@ animation: slideup 0.2s linear forwards alternate;
             width: 7rem;
 }
         .mobile-app-ad-left {
-            margin: 0 0 0 3rem;
+            margin: 0 0 0 6.5rem;
             transition: all 0.2s ease-in-out ;
 }
         .mobile-app-ad-left h1 {
