@@ -3292,7 +3292,7 @@ animation: slideup 0.2s linear forwards alternate;
 }
        
         .container_for_item a {
-            width: 4rem;
+            width: 3.4rem;
             font-size: 0.8rem;
             transition: all 0.2s ease-in-out ;
 }
@@ -3324,14 +3324,14 @@ animation: slideup 0.2s linear forwards alternate;
             width: 6rem;
 }
         .mobile-app-ad-right  img {
-            width: 20rem;
+            width: 14rem;
             transition: all 0.2s ease-in-out ;
 }
         .mobile-app-ad-left img {
-            width: 7rem;
+            width: 6rem;
 }
         .mobile-app-ad-left {
-            margin: 0 0 0 6.5rem;
+            margin: 0 0 0 0.5rem;
             transition: all 0.2s ease-in-out ;
 }
         .mobile-app-ad-left h1 {
