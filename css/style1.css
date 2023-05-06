@@ -3342,11 +3342,12 @@ animation: slideup 0.2s linear forwards alternate;
             font-size:0.5rem;
 }
        .footer_top {
-            width: 47rem;
+            width: 39rem;
             transition: all 0.2s ease-in-out ;
 }
         .footer_social_media_text {
-            font-size: 1rem
+           
+            display:none;
 }
         .footer_top, .footer_award, .footer_social_media_text, .footer_social_media, .footer_contact {
             white-space: nowrap;
@@ -3363,8 +3364,8 @@ animation: slideup 0.2s linear forwards alternate;
             margin: 0 0 0 10rem;
 }
         .footer_award a img {
-            width: 1.2rem;
-            height: 2rem;
+            width: 1.5rem;
+            height: 2.5rem;
       
           
 }
@@ -3388,7 +3389,7 @@ animation: slideup 0.2s linear forwards alternate;
             padding: 0;
 }
         .footer_newsletter_subscribe input {
-            width: 3rem;
+            width: 2rem;
             font-size:0.4rem
 }       
         .footer_newsletter_subscribe #footer_newsletter_subscribe_button {
@@ -3398,7 +3399,7 @@ animation: slideup 0.2s linear forwards alternate;
             font-size:0.7rem;
 }   
         .footer_newsletter_subscribe_title {
-            font-size:0.6rem;
+            font-size:0.5rem;
 }
       
         .footer_newsletter_subscribe p:last-child {
