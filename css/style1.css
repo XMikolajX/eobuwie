@@ -3043,7 +3043,7 @@ animation: slideup 0.2s linear forwards alternate;
        
     }
     #minicart_content {
-        width: 19rem;
+        width: 18rem;
     }
     
     #miniToolTip1 {
@@ -3304,7 +3304,7 @@ animation: slideup 0.2s linear forwards alternate;
             transition: all 0.2s ease-in-out ;
 }
         header h1 {
-            margin: 0 1.5rem ;
+            margin: 0;
             font-size: 1.5rem;
             
         }
