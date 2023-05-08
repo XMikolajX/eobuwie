@@ -1995,8 +1995,8 @@ animation: slideup 0.2s linear forwards alternate;
         transition: all 0.2s ease-in-out ;
 }
     .bootsProductContainer {
-        display: grid;
-        grid-template-columns: auto auto auto ;
+        display: flex;
+       
     }
    
    
@@ -2413,16 +2413,26 @@ animation: slideup 0.2s linear forwards alternate;
     }
         .bootsProduct img {
         width: 5.5rem;
+     
         transition: all 0.2s ease-in-out ;
    
 }        .bootsProduct{
         width: 7rem;
-        margin: 0.4rem
+        margin: 0.4rem;
+      
 }
         .bootsProductContainer {
         padding-right: 3rem;
         transition: all 0.2s ease-in-out ;
 }
+
+        .bootsProductSlider {
+            height: 17rem;
+        }
+
+        .bootsProductSlider img  {
+            height:10rem;
+        }
         .bootsSalePrince, .bootsPrince {
             font-size: 0.70rem;
 }
@@ -2803,8 +2813,13 @@ animation: slideup 0.2s linear forwards alternate;
 }
     .bootsProductSlider img {
         width: 7.6rem;
+        height: 9rem;
         transition: all 0.2s ease-in-out;
 }
+
+        .bootsProductSlider {
+        height: 16rem;
+        }
 
     .bootsProductContainer {
         display: grid;
@@ -2825,11 +2840,13 @@ animation: slideup 0.2s linear forwards alternate;
     }
         .bootsProduct img {
         width: 5.5rem;
+        height: 9rem;
         transition: all 0.2s ease-in-out ;
    
 }        .bootsProduct{
         width: 7rem;
-        margin: 0.4rem
+        margin: 0.4rem;
+        height: 16rem;
 }
         .bootsProductContainer {
         padding-right: 3rem;
@@ -3236,10 +3253,20 @@ animation: slideup 0.2s linear forwards alternate;
         transition: all 0.2s ease-in-out ;
 }
     .bootsProductSlider img {
-        width: 7.6rem;
+        width: 7.3rem;
+        height: 9rem;
         transition: all 0.2s ease-in-out;
 }
+   .bootsProductSlider {/*tu*/
+        height: 16rem;
+    }
 
+    .bootsProduct img {
+        height: 9rem;
+    }
+    .bootsProduct {
+        height: 16rem;
+    }
     .bootsProductContainer {
         display: grid;
         grid-template-columns: 6.8rem 6.8rem 6.8rem ;
@@ -3290,9 +3317,12 @@ animation: slideup 0.2s linear forwards alternate;
         margin: 0 0.3rem 0 0.3rem;
         transition: all 0.2s ease-in-out ;
 }
+        .container_for_item {
+            margin: 0.1rem;
+}
        
         .container_for_item a {
-            width: 3.4rem;
+            width: 3.7rem;
             font-size: 0.8rem;
             transition: all 0.2s ease-in-out ;
 }
