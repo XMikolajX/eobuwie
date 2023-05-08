@@ -3310,7 +3310,7 @@ animation: slideup 0.2s linear forwards alternate;
         }
         .e_card_items{
             width:auto;
-            margin:0;
+            margin:0 0.3rem 0 0.2rem;
            
 }
         .e_card_item_container_for_img {
