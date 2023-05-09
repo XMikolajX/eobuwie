@@ -2448,18 +2448,26 @@ animation: slideup 0.2s linear forwards alternate;
 
         #home_section_card_container a img {
         width: 7rem;
+        height: 16rem;
         transition: all 0.2s ease-in-out ;
 }
+
+            
+        #home_section_card_container {
+            height: 16rem;
+}
+       
         #home_section_card_container a {
         margin: 0 1.5rem 0 1.5rem;
         transition: all 0.2s ease-in-out ;
 }
-       
+
         .container_for_item a {
             width: 4rem;
             font-size: 0.8rem;
             transition: all 0.2s ease-in-out ;
 }
+
 
         .e_card_item {
             width: 2rem;
@@ -2867,8 +2875,14 @@ animation: slideup 0.2s linear forwards alternate;
 
         #home_section_card_container a img {
         width: 8rem;
+        height: 16rem;
         transition: all 0.2s ease-in-out ;
 }
+
+        
+        #home_section_card_container {
+            height: 16rem;
+ }
         #home_section_card_container a {
         margin: 0 0.3rem 0 0.3rem;
         transition: all 0.2s ease-in-out ;
