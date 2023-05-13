@@ -68,8 +68,11 @@ else
 
       
    
-        element.style.transform += "translateX(-38rem)" ;
-    
+        element.style.transform += "translateX(-18rem)" ;
+
+    //    if(     element.style.transform == "translateX(-72rem)" ) {
+       //     return
+        //};
     })
   }
   else if(target==arrow_left)
@@ -77,7 +80,7 @@ else
     bootsProductSlider.forEach((element) => {
       
   
-      element.style.transform += "translateX(38rem)";
+      element.style.transform += "translateX(18rem)";
 
      
    
