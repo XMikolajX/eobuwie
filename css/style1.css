@@ -1356,8 +1356,29 @@ animation: slideup 0.2s linear forwards alternate;
 
  
 }
+/*index2.html*/
+#home_section_container_heading .subheader {
+    margin: 1rem 0 0 3rem;
+}
+.popularBrandsCategoriesHeader {
+    font-size: 1.6rem;
+    font-weight: 550;
+}
+.popularBrandsCategoriesHeader {
+    text-align: center;
+}
 
-
+.popularBrandsCategoriesHeader .footer_middle_container_headers {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+   
+}
+.popularBrandsCategoriesHeader .footer_middle_container_headers li {
+    color: rgb(66 68 90);
+}
+/* index2.html END*/
  /*Desktop media */
 
  @media screen and (max-width: 1200px) {
@@ -3467,4 +3488,5 @@ animation: slideup 0.2s linear forwards alternate;
             width: 6rem;
  }
  }
+    
 /* SMALL media device END*/
