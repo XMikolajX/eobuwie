@@ -1357,6 +1357,22 @@ animation: slideup 0.2s linear forwards alternate;
  
 }
 /*index2.html*/
+
+
+.container_recommendation {
+    
+    display: flex;
+}
+.recommendation {
+
+}
+.container_recommendation .recommendation {
+
+}
+
+.container_recommendation img {
+
+}
 #home_section_container_heading .subheader {
     margin: 1rem 0 0 3rem;
 }
