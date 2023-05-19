@@ -1362,6 +1362,10 @@ animation: slideup 0.2s linear forwards alternate;
 .container_recommendation {
     
     display: flex;
+    justify-content: center;
+    align-items: center;
+  
+ 
 }
 .recommendation {
 
@@ -1370,8 +1374,19 @@ animation: slideup 0.2s linear forwards alternate;
 
 }
 
-.container_recommendation img {
+.imgRecommendation {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid rgb(205, 203, 203);
+    padding: 1rem;
+    margin: 0.2rem;
+}
 
+.imgRecommendation:hover {
+   
+    border: 1.3px solid rgb(149, 149, 149);
+    cursor:pointer
+    
 }
 #home_section_container_heading .subheader {
     margin: 1rem 0 0 3rem;
