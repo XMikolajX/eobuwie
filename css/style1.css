@@ -1374,7 +1374,7 @@ animation: slideup 0.2s linear forwards alternate;
 
 }
 
-.imgRecommendation {
+.container_recommendation .imgRecommendation {
     width: 1rem;
     height: 1rem;
     border: 1px solid rgb(205, 203, 203);
@@ -1382,17 +1382,15 @@ animation: slideup 0.2s linear forwards alternate;
     margin: 0.2rem;
 }
 
-.imgRecommendation:hover {
-   
+.container_recommendation .imgRecommendation:hover {
     border: 1.3px solid rgb(149, 149, 149);
-    cursor:pointer
-    
+    cursor: pointer;
 }
 #home_section_container_heading .subheader {
     margin: 1rem 0 0 3rem;
 }
 .popularBrandsCategoriesHeader {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 550;
 }
 .popularBrandsCategoriesHeader {
@@ -1405,6 +1403,9 @@ animation: slideup 0.2s linear forwards alternate;
     justify-content: center;
     gap: 4rem;
    
+}
+.popularBrandsCategoriesHeader .footer_middle_container_headers .footer_middle_container .footer_middle_list a li {
+    font-size: 1rem;
 }
 .popularBrandsCategoriesHeader .footer_middle_container_headers li {
     color: rgb(66 68 90);
