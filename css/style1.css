@@ -1358,7 +1358,20 @@ animation: slideup 0.2s linear forwards alternate;
 }
 /*index2.html*/
 
+#productSlider {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
 
+
+}
+#Choosen img {
+    width: 30rem;
+    height: 30rem;
+}
+#productVariants img {
+    width: 10rem;
+}
 .container_recommendation {
     
     display: flex;
@@ -1367,12 +1380,7 @@ animation: slideup 0.2s linear forwards alternate;
   
  
 }
-.recommendation {
 
-}
-.container_recommendation .recommendation {
-
-}
 
 .container_recommendation .imgRecommendation {
     width: 1rem;
