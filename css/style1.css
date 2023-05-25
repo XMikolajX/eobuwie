@@ -1357,20 +1357,31 @@ animation: slideup 0.2s linear forwards alternate;
  
 }
 /*index2.html*/
-
+#galleryContent {
+   display: flex;
+   justify-content: center;
+}
+#gallery {
+    display: flex;
+    flex-direction: row;
+}
 #productSlider {
     display: flex;
     flex-direction: column;
-    width: 10rem;
+    width: 8rem;
 
 
 }
-#Choosen img {
-    width: 30rem;
+#productVariants #Choosen img {
+    width: 100%;
     height: 30rem;
 }
 #productVariants img {
-    width: 10rem;
+    width: 8rem;
+}
+#purchaseDetails {
+    display: flex;
+    flex-direction: column;
 }
 .container_recommendation {
     
