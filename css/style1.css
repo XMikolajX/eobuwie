@@ -1360,6 +1360,7 @@ animation: slideup 0.2s linear forwards alternate;
 #galleryContent {
    display: flex;
    justify-content: center;
+   margin: 4rem 0 4rem 0;
 }
 #gallery {
     display: flex;
@@ -1368,16 +1369,33 @@ animation: slideup 0.2s linear forwards alternate;
 #productSlider {
     display: flex;
     flex-direction: column;
-    width: 8rem;
+    width: 4rem;
 
 
+}
+#Choosen {
+    margin: 0 6rem 0 6rem;
+}
+#purchaseDetails img {
+    width: 9.6rem;
+    
+}
+#purchaseDetails h1{
+    margin-bottom:  0;
+}
+#purchaseDetails p{
+    margin-top:  0;
+}
+#purchaseDetails  p:first-of-type {
+   color:red
 }
 #productVariants #Choosen img {
     width: 100%;
     height: 30rem;
+   
 }
 #productVariants img {
-    width: 8rem;
+    width: 4rem;
 }
 #purchaseDetails {
     display: flex;
