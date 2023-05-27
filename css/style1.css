@@ -1386,8 +1386,11 @@ animation: slideup 0.2s linear forwards alternate;
 #purchaseDetails p{
     margin-top:  0;
 }
-#purchaseDetails  p:first-of-type {
-   color:red
+#purchaseDetails p:nth-child(3)  {
+   color:gray
+}
+#galleryContent #purchaseDetails section p:nth-child(1) {
+    color: #c30000;
 }
 #productVariants #Choosen img {
     width: 100%;

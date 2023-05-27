@@ -21,7 +21,12 @@ favorite  = document.getElementById('favorite'),
 minicart_content = document.getElementById('minicart_content'),
 minicart_content_text = document.getElementById('minicart_content_text'),
 
-hearts  = document.querySelectorAll('.fa-heart');
+hearts  = document.querySelectorAll('.fa-heart'),
+
+/*INDEX2.HTML */
+finalPrince = document.getElementById("final-prince");
+regularPrice = document.getElementById("regular-price");
+resultSubstraction = document.getElementById("resultSubstraction");
 
 
 function showBlock(element) {
@@ -101,7 +106,13 @@ else
   else if(favorite.textContent  < 0 )   favorite.textContent = parseInt(favorite.textContent) + 1;
 
 }
+/*INDEX2.html */
 
+function SubstractionPrince(finalPrince, regularPrice)
+{
+  resultSubstraction = 0
+  return resultSubstraction =  finalPrince - regularPrice
+}
 
 container_select.addEventListener('click', function()
  {showBlock(container_countries),
