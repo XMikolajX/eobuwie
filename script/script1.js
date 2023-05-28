@@ -24,8 +24,8 @@ minicart_content_text = document.getElementById('minicart_content_text'),
 hearts  = document.querySelectorAll('.fa-heart'),
 
 /*INDEX2.HTML */
-finalPrince = document.getElementById("final-prince");
-regularPrice = document.getElementById("regular-price");
+finalPrince = document.getElementById("final-prince"),
+regularPrice = document.getElementById("regular-price"),
 resultSubstraction = document.getElementById("resultSubstraction");
 
 
@@ -108,7 +108,7 @@ else
 }
 /*INDEX2.html */
 
-function SubstractionPrince(finalPrince, regularPrice)
+function substractionPrince(finalPrince, regularPrice, resultSubstraction)
 {
   resultSubstraction = 0
   return resultSubstraction =  finalPrince - regularPrice
@@ -120,7 +120,7 @@ container_select.addEventListener('click', function()
   changeOpacity(countries_element_text_special)});
   
 container_countries.addEventListener("click", function(event){changeElement(event)});
-
+substractionPrince(finalPrince, regularPrice)
 bootsProductContainerSlider.addEventListener("click", function(event){arrowAnimation(bootsProductSlider, event, bootsProductContainerSlider)});
 
 header_content_info_container2.addEventListener('click', function(){showBlock(miniToolTip2)});

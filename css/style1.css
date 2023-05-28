@@ -1404,6 +1404,22 @@ animation: slideup 0.2s linear forwards alternate;
     display: flex;
     flex-direction: column;
 }
+#princeContainer {
+    display: flex;
+    align-items: center;
+   
+}
+#princeContainer div {
+    margin: 0 0.5rem 0 0.5rem;
+}
+#princeContainer #final-prince {
+   font-size: 2rem;
+   color:#c30000
+}
+#princeContainer #regular-price {
+  text-decoration: line-through;
+  color: #757575;
+ }
 .container_recommendation {
     
     display: flex;
