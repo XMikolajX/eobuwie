@@ -113,14 +113,14 @@ function substractionPrince(finalPrince, regularPrice, resultSubstraction)
   resultSubstraction = 0
   return resultSubstraction =  finalPrince - regularPrice
 }
-
+substractionPrince(finalPrince, regularPrice, resultSubstraction)
 container_select.addEventListener('click', function()
  {showBlock(container_countries),
   transform(container_select_right_side), 
   changeOpacity(countries_element_text_special)});
   
 container_countries.addEventListener("click", function(event){changeElement(event)});
-substractionPrince(finalPrince, regularPrice)
+
 bootsProductContainerSlider.addEventListener("click", function(event){arrowAnimation(bootsProductSlider, event, bootsProductContainerSlider)});
 
 header_content_info_container2.addEventListener('click', function(){showBlock(miniToolTip2)});
