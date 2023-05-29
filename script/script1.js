@@ -24,9 +24,9 @@ minicart_content_text = document.getElementById('minicart_content_text'),
 hearts  = document.querySelectorAll('.fa-heart'),
 
 /*INDEX2.HTML */
-finalPrince = document.getElementById("final-prince"),
-regularPrice = document.getElementById("regular-price"),
-resultSubstraction = document.getElementById("resultSubstraction");
+finalPrince = parseFloat(document.getElementById("final-prince").textContent),
+  regularPrice = parseFloat(document.getElementById("regular-price").textContent),
+   resultSubstraction = document.getElementById("resultSubstraction");
 
 
 function showBlock(element) {
@@ -108,12 +108,14 @@ else
 }
 /*INDEX2.html */
 
-function substractionPrince(finalPrince, regularPrice, resultSubstraction)
-{
-  resultSubstraction = 0
-  return resultSubstraction =  finalPrince - regularPrice
+function substractionPrince(finalPrince, regularPrice) {
+	
+  return  regularPrice - finalPrince + " zł"
 }
-substractionPrince(finalPrince, regularPrice, resultSubstraction)
+
+
+resultSubstraction.textContent = substractionPrince(finalPrince, regularPrice, resultSubstraction)
+
 container_select.addEventListener('click', function()
  {showBlock(container_countries),
   transform(container_select_right_side), 
