@@ -1391,6 +1391,15 @@ animation: slideup 0.2s linear forwards alternate;
 }
 #galleryContent #purchaseDetails section p:nth-child(1) {
     color: #c30000;
+    font-weight: bold;
+}
+#lowestPrince {
+    color:#757575;
+    font-size: 0.8rem;
+    
+}
+#subDetails p:first-of-type {
+    margin-bottom: 0;
 }
 #productVariants #Choosen img {
     width: 100%;
@@ -1414,6 +1423,7 @@ animation: slideup 0.2s linear forwards alternate;
 }
 #princeContainer #final-prince {
    font-size: 2rem;
+
    color:#c30000
 }
 #princeContainer #regular-price {
