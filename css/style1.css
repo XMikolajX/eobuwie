@@ -1430,6 +1430,33 @@ animation: slideup 0.2s linear forwards alternate;
   text-decoration: line-through;
   color: #757575;
  }
+
+ #containerEsize {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+ }
+
+ 
+ #containerEsize #containerSelectSize {
+
+    width: 25rem;
+ }
+
+ #containerEsize #sizeChart {
+    background-color: white;
+    border: none;
+    width: 9rem;
+    text-align: left;
+    padding: 0;
+    margin:  1rem 0 1rem;
+    font-weight: bold;
+ }
+ #containerEsize #sizeChart:hover {
+    border-bottom:  1px solid black;
+    cursor:pointer
+ }
 .container_recommendation {
     
     display: flex;
