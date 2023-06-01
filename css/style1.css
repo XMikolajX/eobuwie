@@ -1454,8 +1454,27 @@ animation: slideup 0.2s linear forwards alternate;
     font-weight: bold;
  }
  #containerEsize #sizeChart:hover {
-    border-bottom:  1px solid black;
-    cursor:pointer
+    text-decoration-line: underline;
+    cursor:pointer;
+   
+ }
+
+ 
+ #purchaseZone button:first-child {
+    margin: 0 1rem 0 0;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #289b37;
+    color:white;
+    font-weight: bold;
+    border: none;
+    width: 23rem;
+ }
+ #purchaseZone button:nth-child(2) {
+    border: gray 1px solid ;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 0.5rem;
+
  }
 .container_recommendation {
     
