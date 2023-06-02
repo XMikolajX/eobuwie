@@ -1435,6 +1435,7 @@ animation: slideup 0.2s linear forwards alternate;
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
     
  }
 
@@ -1442,8 +1443,21 @@ animation: slideup 0.2s linear forwards alternate;
  #containerEsize #containerSelectSize {
 
     width: 25rem;
+    background-color: white;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    height: 3rem;
  }
 
+ #containerEsize #containerSelectSize p  {
+
+ margin:  0 0 0 1rem;
+ }
+ #containerEsize #containerSelectSize  p.list-item span.special_text_Deecoration:hover {
+    border: none;
+    text-decoration-line: none;
+ }
  #containerEsize #sizeChart {
     background-color: white;
     border: none;
