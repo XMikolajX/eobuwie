@@ -1473,7 +1473,7 @@ animation: slideup 0.2s linear forwards alternate;
    
  }
 
- 
+
  #purchaseZone button:first-child {
     margin: 0 1rem 0 0;
     padding: 1rem 2rem 1rem 2rem;
@@ -1488,6 +1488,30 @@ animation: slideup 0.2s linear forwards alternate;
     font-size: 1.5rem;
     background-color: white;
     padding: 0.5rem;
+
+ }
+ #purchaseZone {
+    margin:  0  0 2rem 0 ; 
+ }
+
+
+ .PayPo {
+    color:#2f2f2f;
+    font-weight: 700;
+    font-size: 0.9rem;
+
+ }
+ #shoppingAdditionalInfo {
+    display: flex;
+    flex-direction: column;
+ }
+ #shoppingAdditionalInfo ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    width: 24rem;
+ }
+ .additionalItemContainer {
 
  }
 .container_recommendation {
