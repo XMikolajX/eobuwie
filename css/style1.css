@@ -1509,9 +1509,9 @@ animation: slideup 0.2s linear forwards alternate;
     list-style-type: none;
     padding: 0;
     display: flex;
-    width: 24rem;
+    width: 100%;
  }
- .additionalItemContainer {
+ #shoppingAdditionalInfo .more {
 
  }
 .container_recommendation {
