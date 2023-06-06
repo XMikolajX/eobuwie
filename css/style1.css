@@ -1494,7 +1494,6 @@ animation: slideup 0.2s linear forwards alternate;
     margin:  0  0 2rem 0 ; 
  }
 
-
  .PayPo {
     color:#2f2f2f;
     font-weight: 700;
@@ -1509,9 +1508,10 @@ animation: slideup 0.2s linear forwards alternate;
     list-style-type: none;
     padding: 0;
     display: flex;
+    row-gap: 5rem;
     width: 100%;
  }
- #shoppingAdditionalInfo .more {
+ #shoppingAdditionalInfo .mpre{
 
  }
 .container_recommendation {
