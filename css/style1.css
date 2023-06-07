@@ -1510,9 +1510,11 @@ animation: slideup 0.2s linear forwards alternate;
     display: flex;
     row-gap: 5rem;
     width: 100%;
- }
- #shoppingAdditionalInfo .mpre{
+    
 
+ }
+ #shoppingAdditionalInfo .more {
+    margin:  0 0 0 5rem;
  }
 .container_recommendation {
     
