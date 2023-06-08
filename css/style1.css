@@ -1508,14 +1508,36 @@ animation: slideup 0.2s linear forwards alternate;
     list-style-type: none;
     padding: 0;
     display: flex;
-    row-gap: 5rem;
+    justify-content: space-between;
     width: 100%;
-    
+    position: relative;
 
  }
- #shoppingAdditionalInfo .more {
-    margin:  0 0 0 5rem;
+ 
+ .hiddenShipment, .hiddenFreeDelivery, .hiddenSafety, .hiddenDelivery {
+    position: absolute;
+    background-color: black;
+   
+    display: none;
+    color:white
+
  }
+ 
+  #shoppingAdditionalInfo .moreShipment:hover  .hiddenShipment {
+    display: flex;
+    cursor:pointer
+ }
+ #shoppingAdditionalInfo .moreFreeDelivery:hover  .hiddenFreeDelivery {
+    display: flex;
+ }
+ #shoppingAdditionalInfo .moreSafety:hover  .hiddenSafety {
+    display: flex;
+ }
+ .moreDelivery:hover  .hiddenDelivery {
+    display: flex;
+ }
+
+
 .container_recommendation {
     
     display: flex;
