@@ -1517,9 +1517,13 @@ animation: slideup 0.2s linear forwards alternate;
  .hiddenShipment, .hiddenFreeDelivery, .hiddenSafety, .hiddenDelivery {
     position: absolute;
     background-color: #2F2F2F;
-   
+  
     display: none;
-    color:white
+    color:white;
+    top:0;
+    right: 0;
+    margin: 0 5rem 0 0 ;
+    padding: 1rem;
 
  }
  .more {
@@ -1530,14 +1534,10 @@ animation: slideup 0.2s linear forwards alternate;
    
  
  }
- .hiddenShipment,  .hiddenFreeDelivery, .hiddenSafety, .hiddenDelivery {
-    top:0;
-    right: 0;
-    margin: 0 5rem 0 0 ;
-    padding: 1rem;
- }
+
   #shoppingAdditionalInfo .moreShipment:hover  .hiddenShipment {
     display: flex;
+  
  }
  #shoppingAdditionalInfo .moreFreeDelivery:hover  .hiddenFreeDelivery {
     display: flex;
@@ -1547,6 +1547,7 @@ animation: slideup 0.2s linear forwards alternate;
  }
  .moreDelivery:hover  .hiddenDelivery {
     display: flex;
+  
  }
 
 
