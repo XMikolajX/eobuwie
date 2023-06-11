@@ -1550,7 +1550,16 @@ animation: slideup 0.2s linear forwards alternate;
   
  }
 
+#producSpecification {
+    display: flex;
+    justify-content: flex-start;
 
+}
+#producSpecification {
+    display: flex;
+    justify-content: center;
+
+}
 .container_recommendation {
     
     display: flex;
