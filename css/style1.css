@@ -1550,15 +1550,23 @@ animation: slideup 0.2s linear forwards alternate;
   
  }
 
-#producSpecification {
+#productSpecification {
     display: flex;
-    justify-content: flex-start;
+   justify-content: center;
 
 }
-#producSpecification {
+#productSpecificationHeader {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 
+}
+.productSpecificationRowItem {
+    display: flex;
+}
+
+#productSpecificationRow h2 {
+    margin: 0 6rem 2rem 0;
 }
 .container_recommendation {
     
@@ -1568,7 +1576,9 @@ animation: slideup 0.2s linear forwards alternate;
   
  
 }
-
+#productSpecificationRow {
+    display: flex;
+}
 
 .container_recommendation .imgRecommendation {
     width: 1rem;
