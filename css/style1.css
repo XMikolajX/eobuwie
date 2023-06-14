@@ -1553,23 +1553,15 @@ animation: slideup 0.2s linear forwards alternate;
 #productSpecification {
     display: flex;
    justify-content: center;
-
+   align-items: center;
+   flex-direction: column;
 }
-#productSpecificationHeader {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-weight:250;
 
-}
 .productSpecificationRowItem {
     display: flex;
 
 }
-#productSpecificationHeader {
-    border-bottom:  1px solid #e4e1e1;
-    
-}
+
 .productSpecificationRowItem p {
     margin: 0.5rem 0 0.5rem 0;
     font-size: 1rem;
@@ -1581,16 +1573,23 @@ animation: slideup 0.2s linear forwards alternate;
 #productSpecificationRow span {
     margin: 0 6rem 2rem 0;
 }
+
+#productSpecificationRow {
+    display: flex;
+}
+#productSpecificationSubContainer {
+  border-top: 1px solid #e4e1e1;
+}
+
+#productSpecificationSubContainer div {
+    padding: 0.5rem;
+    background-color: #ebebeb;
+}
 .container_recommendation {
-    
     display: flex;
     justify-content: center;
     align-items: center;
   
- 
-}
-#productSpecificationRow {
-    display: flex;
 }
 
 .container_recommendation .imgRecommendation {
