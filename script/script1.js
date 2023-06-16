@@ -25,8 +25,10 @@ hearts  = document.querySelectorAll('.fa-heart'),
 
 /*INDEX2.HTML */
 finalPrince = parseFloat(document.getElementById("final-prince").textContent),
-  regularPrice = parseFloat(document.getElementById("regular-price").textContent),
-   resultSubstraction = document.getElementById("resultSubstraction");
+regularPrice = parseFloat(document.getElementById("regular-price").textContent),
+resultSubstraction = document.getElementById("resultSubstraction"),
+showMore = document.getElementsByClassName("showMore"),
+productSpecification = document.getElementById("productSpecification");
 
 
 function showBlock(element) {
@@ -115,6 +117,9 @@ function substractionPrince(finalPrince, regularPrice) {
 
 
 resultSubstraction.textContent = substractionPrince(finalPrince, regularPrice, resultSubstraction)
+productSpecification.addEventListener("click" () => {
+  productSpecification.classList.add("showMore")
+}) /*tuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
 
 container_select.addEventListener('click', function()
  {showBlock(container_countries),

@@ -1609,10 +1609,9 @@ animation: slideup 0.2s linear forwards alternate;
         height: 5rem;
     }
 }
-.showMore:hover {
+.showMore{
 
-    animation: showMore 1s ease  alternate infinite;
-   
+    animation: showMore 1s ease forwards alternate infinite;
     animation-iteration-count: 1;
 
 }
