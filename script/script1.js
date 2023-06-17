@@ -28,9 +28,11 @@ finalPrince = parseFloat(document.getElementById("final-prince").textContent),
 regularPrice = parseFloat(document.getElementById("regular-price").textContent),
 resultSubstraction = document.getElementById("resultSubstraction"),
 showMore = document.getElementsByClassName("showMore"),
-productSpecification = document.getElementById("productSpecification");
+showButton = document.getElementsByClassName("showButton"),
+productSpecification = document.getElementById("productSpecification"),
+productSpecificationHeader = document.getElementById("productSpecificationHeader");
 
-
+/*INDEX2.html */
 function showBlock(element) {
 (element.style.display === "none" || element.style.display === "")?  element.style.display = "block": element.style.display = "none";
 };
@@ -77,9 +79,7 @@ else
    
         element.style.transform += "translateX(-18rem)" ;
 
-    //    if(     element.style.transform == "translateX(-72rem)" ) {
-       //     return
-        //};
+ 
     })
   }
   else if(target==arrow_left)
@@ -117,10 +117,14 @@ function substractionPrince(finalPrince, regularPrice) {
 
 
 resultSubstraction.textContent = substractionPrince(finalPrince, regularPrice, resultSubstraction)
-productSpecification.addEventListener("click" () => {
-  productSpecification.classList.add("showMore")
-}) /*tuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
 
+productSpecification.addEventListener("click", () => {
+
+  productSpecification.classList.add("showMore");
+  productSpecificationHeader.classList.add("showMore");
+}) 
+
+/*INDEX2.html */
 container_select.addEventListener('click', function()
  {showBlock(container_countries),
   transform(container_select_right_side), 

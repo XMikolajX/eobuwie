@@ -1598,6 +1598,7 @@ animation: slideup 0.2s linear forwards alternate;
     font-size: 0.8rem;
     position: absolute;
     bottom: 0;
+    transition: all 1s ease;
  
 }
 @keyframes showMore {
@@ -1606,7 +1607,7 @@ animation: slideup 0.2s linear forwards alternate;
     }
 
     to {
-        height: 5rem;
+        height: 30rem
     }
 }
 .showMore{
