@@ -1598,22 +1598,23 @@ animation: slideup 0.2s linear forwards alternate;
     font-size: 0.8rem;
     position: absolute;
     bottom: 0;
-    transition: all 1s ease;
- 
+    transition: all 0.5s ease;
 }
 @keyframes showMore {
     from {
-
-    }
-
-    to {
-        height: 30rem
-    }
+        height: 0;
+      }
+    
+      to {
+        height: 4rem;
+      }
 }
 .showMore{
 
-    animation: showMore 1s ease forwards alternate infinite;
+    animation: showMore 1s ease forwards;
     animation-iteration-count: 1;
+   
+    transition: height 0.5s ease;
 
 }
 .container_recommendation {

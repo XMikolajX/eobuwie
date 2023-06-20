@@ -28,10 +28,10 @@ finalPrince = parseFloat(document.getElementById("final-prince").textContent),
 regularPrice = parseFloat(document.getElementById("regular-price").textContent),
 resultSubstraction = document.getElementById("resultSubstraction"),
 showMore = document.getElementsByClassName("showMore"),
-showButton = document.getElementsByClassName("showButton"),
+showButton = document.getElementsByClassName("showButton")[0],
 productSpecification = document.getElementById("productSpecification"),
-productSpecificationHeader = document.getElementById("productSpecificationHeader");
-
+productSpecificationHeader = document.getElementById("productSpecificationHeader"),
+productSpecificationSubContainer = document.getElementById("productSpecificationHeader")
 /*INDEX2.html */
 function showBlock(element) {
 (element.style.display === "none" || element.style.display === "")?  element.style.display = "block": element.style.display = "none";
@@ -118,10 +118,11 @@ function substractionPrince(finalPrince, regularPrice) {
 
 resultSubstraction.textContent = substractionPrince(finalPrince, regularPrice, resultSubstraction)
 
-productSpecification.addEventListener("click", () => {
+showButton.addEventListener("click", () => {
 
-  productSpecification.classList.add("showMore");
-  productSpecificationHeader.classList.add("showMore");
+  
+  productSpecification.classList.toggle("showMore")
+
 }) 
 
 /*INDEX2.html */
