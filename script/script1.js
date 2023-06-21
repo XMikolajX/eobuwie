@@ -121,7 +121,7 @@ resultSubstraction.textContent = substractionPrince(finalPrince, regularPrice, r
 showButton.addEventListener("click", () => {
 
   
-  productSpecification.classList.toggle("showMore")
+  productSpecificationHeader.classList.toggle("showMore")
 
 }) 
 
