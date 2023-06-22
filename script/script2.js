@@ -24,7 +24,15 @@ minicart_content_text = document.getElementById('minicart_content_text'),
 hearts  = document.querySelectorAll('.fa-heart');
 
 /*INDEX2.HTML */
-
+let
+finalPrince = parseFloat(document.getElementById("final-prince").textContent),
+regularPrice = parseFloat(document.getElementById("regular-price").textContent),
+resultSubstraction = document.getElementById("resultSubstraction"),
+showMore = document.getElementsByClassName("showMore"),
+showButton = document.getElementsByClassName("showButton")[0],
+productSpecification = document.getElementById("productSpecification"),
+productSpecificationHeader = document.getElementById("productSpecificationHeader"),
+productSpecificationSubContainer = document.getElementById("productSpecificationHeader")
 /*INDEX2.html */
 function showBlock(element) {
 (element.style.display === "none" || element.style.display === "")?  element.style.display = "block": element.style.display = "none";
@@ -103,6 +111,20 @@ else
 }
 /*INDEX2.html */
 
+function substractionPrince(finalPrince, regularPrice) {
+	
+  return  regularPrice - finalPrince + " zł"
+}
+
+
+resultSubstraction.textContent = substractionPrince(finalPrince, regularPrice, resultSubstraction)
+
+showButton.addEventListener("click", () => {
+
+  
+  productSpecificationHeader.classList.toggle("showMore")
+
+}) 
 
 /*INDEX2.html */
 container_select.addEventListener('click', function()
@@ -112,7 +134,7 @@ container_select.addEventListener('click', function()
   
 container_countries.addEventListener("click", function(event){changeElement(event)});
 
-bootsProductContainerSlider.addEventListener("click", function(event){arrowAnimation(bootsProductSlider, event, bootsProductContainerSlider)});
+
 
 header_content_info_container2.addEventListener('click', function(){showBlock(miniToolTip2)});
 header_content_info_container.addEventListener('click', function(){showBlock(miniToolTip1)});
