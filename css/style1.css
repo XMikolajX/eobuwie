@@ -1590,13 +1590,16 @@ animation: slideup 0.2s linear forwards alternate;
 #productSpecificationHeader {
     position: relative;
     z-index: 999;
-    height: 2rem;
+  
 }
 #showButtonContainer {
-    background-color: red;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: red;
     box-shadow: #869094 1px 1px 50px;
+    position: absolute;
+
 }
 
 .showButton {
@@ -1616,14 +1619,17 @@ animation: slideup 0.2s linear forwards alternate;
       }
     
       to {
+
         height: 100vh;
+     
       }
 }
 .showMore{
 
     animation: showMore 1s ease forwards;
     animation-iteration-count: 1;
-    transition: height 0.5s ease;
+ 
+    
 
 }
 .container_recommendation {

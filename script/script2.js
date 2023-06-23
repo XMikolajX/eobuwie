@@ -33,6 +33,7 @@ showButton = document.getElementsByClassName("showButton")[0],
 productSpecification = document.getElementById("productSpecification"),
 productSpecificationHeader = document.getElementById("productSpecificationHeader"),
 productSpecificationSubContainer = document.getElementById("productSpecificationHeader")
+
 /*INDEX2.html */
 function showBlock(element) {
 (element.style.display === "none" || element.style.display === "")?  element.style.display = "block": element.style.display = "none";
