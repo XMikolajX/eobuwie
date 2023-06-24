@@ -1592,15 +1592,6 @@ animation: slideup 0.2s linear forwards alternate;
     z-index: 999;
   
 }
-#showButtonContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-    box-shadow: #869094 1px 1px 50px;
-    position: absolute;
-
-}
 
 .showButton {
     margin: 1rem 0 0 0;
@@ -1612,10 +1603,29 @@ animation: slideup 0.2s linear forwards alternate;
     text-transform: uppercase;
     font-size: 0.8rem;
     transition: all 0.5s ease;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transition: all 0.2s ease;
 }
+@keyframes slide {
+    from{
+    
+    }
+    to{
+       
+    }
+}
+.moveClass {
+    
+    animation: slide 1s 1 forwards ease;
+    
+}
+
+
 @keyframes showMore {
     from {
-     
+        height: 0;
       }
     
       to {

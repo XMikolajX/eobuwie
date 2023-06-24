@@ -30,6 +30,7 @@ regularPrice = parseFloat(document.getElementById("regular-price").textContent),
 resultSubstraction = document.getElementById("resultSubstraction"),
 showMore = document.getElementsByClassName("showMore"),
 showButton = document.getElementsByClassName("showButton")[0],
+moveClass = document.getElementsByClassName("moveClass"),
 productSpecification = document.getElementById("productSpecification"),
 productSpecificationHeader = document.getElementById("productSpecificationHeader"),
 productSpecificationSubContainer = document.getElementById("productSpecificationHeader")
@@ -124,6 +125,7 @@ showButton.addEventListener("click", () => {
 
   
   productSpecificationHeader.classList.toggle("showMore")
+  showButton.classList.toggle("moveClass")
 
 }) 
 
