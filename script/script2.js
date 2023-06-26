@@ -33,7 +33,7 @@ showButton = document.getElementsByClassName("showButton")[0],
 moveClass = document.getElementsByClassName("moveClass"),
 productSpecification = document.getElementById("productSpecification"),
 productSpecificationHeader = document.getElementById("productSpecificationHeader"),
-productSpecificationSubContainer = document.getElementById("productSpecificationHeader")
+productSpecificationSubContainer = document.getElementById("productSpecificationSubContainer")
 
 /*INDEX2.html */
 function showBlock(element) {
@@ -123,9 +123,10 @@ resultSubstraction.textContent = substractionPrince(finalPrince, regularPrice, r
 
 showButton.addEventListener("click", () => {
 
-  
-  productSpecificationHeader.classList.toggle("showMore")
   showButton.classList.toggle("moveClass")
+  if (showButton.classList.contains("moveClass")) {
+    productSpecificationSubContainer.style.display = "block"
+  }
 
 }) 
 

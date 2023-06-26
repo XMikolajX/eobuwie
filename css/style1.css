@@ -1580,6 +1580,7 @@ animation: slideup 0.2s linear forwards alternate;
 }
 #productSpecificationSubContainer {
   border-top: 1px solid #e4e1e1;
+  display: none;
 }
 
 #productSpecificationSubContainer div {
@@ -1613,7 +1614,7 @@ animation: slideup 0.2s linear forwards alternate;
     
     }
     to{
-       
+       transform: translateY(33vh);
     }
 }
 .moveClass {
@@ -1622,7 +1623,7 @@ animation: slideup 0.2s linear forwards alternate;
     
 }
 
-
+/*
 @keyframes showMore {
     from {
         height: 0;
@@ -1631,9 +1632,10 @@ animation: slideup 0.2s linear forwards alternate;
       to {
 
         height: 100vh;
-     
+        display: block;
       }
 }
+Na chwile*/
 .showMore{
 
     animation: showMore 1s ease forwards;
