@@ -1603,18 +1603,17 @@ animation: slideup 0.2s linear forwards alternate;
     font-weight: 500;
     text-transform: uppercase;
     font-size: 0.8rem;
-    transition: all 0.5s ease;
     position: absolute;
     top:50%;
     left:50%;
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
 }
 @keyframes slide {
     from{
     
     }
     to{
-       transform: translateY(33vh);
+       transform: translateY(25vh);
     }
 }
 .moveClass {
