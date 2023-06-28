@@ -1579,14 +1579,19 @@ animation: slideup 0.2s linear forwards alternate;
     display: flex;
 }
 #productSpecificationSubContainer {
-  border-top: 1px solid #e4e1e1;
-  display: none;
+    border-top: 1px solid #e4e1e1;
+    display: none;
+    opacity: 0;
+    transition: opacity 2s ease;
 }
 
 #productSpecificationSubContainer div {
     padding: 0.5rem;
     background-color: #ebebeb;
     margin: 0 0 3rem 0;
+}
+#productSpecificationSubContainer.transitionClass /*if has this class*/ {
+    opacity: 1;
 }
 #productSpecificationHeader {
     position: relative;

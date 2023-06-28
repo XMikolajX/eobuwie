@@ -126,10 +126,12 @@ showButton.addEventListener("click", () => {
   showButton.classList.toggle("moveClass")
   if (showButton.classList.contains("moveClass")) {
     productSpecificationSubContainer.style.display = "block";
+    productSpecificationSubContainer.classList.add("transitionClass")
     showButton.textContent = "pokaz mniej";
   }
   else{
     productSpecificationSubContainer.style.display = "none";
+    productSpecificationSubContainer.classList.remove("transitionClass")
     showButton.textContent = "pokaz wiecej";
   }
 
