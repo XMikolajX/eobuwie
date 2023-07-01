@@ -1373,7 +1373,10 @@ animation: slideup 0.2s linear forwards alternate;
 
 
 }
-#Choosen {
+.productSliderElement {
+    cursor: pointer;
+}
+#ChoosenImgElement {
     margin: 0 6rem 0 6rem;
 }
 #purchaseDetails img {
@@ -1401,7 +1404,7 @@ animation: slideup 0.2s linear forwards alternate;
 #subDetails p:first-of-type {
     margin-bottom: 0;
 }
-#productVariants #Choosen img {
+#productVariants #ChoosenImgElement img {
     width: 100%;
     height: 30rem;
    

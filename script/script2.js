@@ -33,7 +33,9 @@ showButton = document.getElementsByClassName("showButton")[0],
 moveClass = document.getElementsByClassName("moveClass"),
 productSpecification = document.getElementById("productSpecification"),
 productSpecificationHeader = document.getElementById("productSpecificationHeader"),
-productSpecificationSubContainer = document.getElementById("productSpecificationSubContainer")
+productSpecificationSubContainer = document.getElementById("productSpecificationSubContainer"),
+productSliderElement = document.getElementsByClassName("productSliderElement"),
+ChoosenImgElement = document.getElementById("ChoosenImgElement");
 
 /*INDEX2.html */
 function showBlock(element) {
@@ -136,6 +138,13 @@ showButton.addEventListener("click", () => {
   }
 
 }) 
+Array.from(productSliderElement).forEach((productSlider) => {
+  productSlider.addEventListener("click", (event) => {
+    let target = event.target
+    ChoosenImgElement.src =   target.src 
+  })
+})
+
 
 /*INDEX2.html */
 container_select.addEventListener('click', function()
