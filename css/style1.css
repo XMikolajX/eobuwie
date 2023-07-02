@@ -1360,7 +1360,7 @@ animation: slideup 0.2s linear forwards alternate;
 #galleryContent {
    display: flex;
    justify-content: center;
-   margin: 4rem 0 4rem 0;
+   margin: 8vh 0 8vh  0;
 }
 #gallery {
     display: flex;
@@ -1369,7 +1369,7 @@ animation: slideup 0.2s linear forwards alternate;
 #productSlider {
     display: flex;
     flex-direction: column;
-    width: 4rem;
+    width: 8vh;
 
 
 }
@@ -1377,10 +1377,10 @@ animation: slideup 0.2s linear forwards alternate;
     cursor: pointer;
 }
 #ChoosenImgElement {
-    margin: 0 6rem 0 6rem;
+    margin: 0 12vh 0 12vh;
 }
 #purchaseDetails img {
-    width: 9.6rem;
+    width: 19vh;
     
 }
 #purchaseDetails h1{
@@ -1404,13 +1404,13 @@ animation: slideup 0.2s linear forwards alternate;
 #subDetails p:first-of-type {
     margin-bottom: 0;
 }
-#productVariants #ChoosenImgElement img {
-    width: 100%;
-    height: 30rem;
+#productVariants #ChoosenImgContainer img {
+    width: 30vw;
+    height:60vh;
    
 }
 #productVariants img {
-    width: 4rem;
+    width: 4vw;
 }
 #purchaseDetails {
     display: flex;
@@ -1422,7 +1422,7 @@ animation: slideup 0.2s linear forwards alternate;
    
 }
 #princeContainer div {
-    margin: 0 0.5rem 0 0.5rem;
+    margin: 0 2vw 0 2vw;
 }
 #princeContainer #final-prince {
    font-size: 2rem;
@@ -1445,17 +1445,17 @@ animation: slideup 0.2s linear forwards alternate;
  
  #containerEsize #containerSelectSize {
 
-    width: 25rem;
+    width: 25vw;
     background-color: white;
     border: 1px solid gray;
     display: flex;
     align-items: center;
-    height: 3rem;
+    height: 6vh;
  }
 
  #containerEsize #containerSelectSize p  {
 
- margin:  0 0 0 1rem;
+    margin:  0 0 0 1vh;
  }
  #containerEsize #containerSelectSize  p.list-item span.special_text_Deecoration:hover {
     border: none;
@@ -1464,10 +1464,10 @@ animation: slideup 0.2s linear forwards alternate;
  #containerEsize #sizeChart {
     background-color: white;
     border: none;
-    width: 9rem;
+    width: 18vw;
     text-align: left;
     padding: 0;
-    margin:  1rem 0 1rem;
+    margin:  4vh 0 4vh  0;
     font-weight: bold;
  }
  #containerEsize #sizeChart:hover {
@@ -1495,6 +1495,7 @@ animation: slideup 0.2s linear forwards alternate;
  }
  #purchaseZone {
     margin:  0  0 2rem 0 ; 
+    white-space: nowrap;
  }
 
  .PayPo {
