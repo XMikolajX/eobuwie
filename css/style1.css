@@ -1422,7 +1422,7 @@ animation: slideup 0.2s linear forwards alternate;
    
 }
 #princeContainer div {
-    margin: 0 2vw 0 2vw;
+    margin: 0 2vw 0 0;
 }
 #princeContainer #final-prince {
    font-size: 2rem;
@@ -1451,6 +1451,10 @@ animation: slideup 0.2s linear forwards alternate;
     display: flex;
     align-items: center;
     height: 6vh;
+    white-space: nowrap;
+ }
+ #containerEsize #containerSelectSize .list-item .toLowerCase {
+    color: rgb(37, 104, 228);
  }
 
  #containerEsize #containerSelectSize p  {
@@ -1478,8 +1482,8 @@ animation: slideup 0.2s linear forwards alternate;
 
 
  #purchaseZone button:first-child {
-    margin: 0 1rem 0 0;
-    padding: 1rem 2rem 1rem 2rem;
+    margin: 0 1vw 0 0;
+    padding: 2vh 2vw 2vh 2vw;
     background-color: #289b37;
     color:white;
     font-weight: bold;
@@ -1490,11 +1494,11 @@ animation: slideup 0.2s linear forwards alternate;
     border: gray 1px solid ;
     font-size: 1.5rem;
     background-color: white;
-    padding: 0.5rem;
+    padding: 1.2vh;
 
  }
  #purchaseZone {
-    margin:  0  0 2rem 0 ; 
+    margin:  0  0 2vh 0 ; 
     white-space: nowrap;
  }
 
@@ -1526,8 +1530,8 @@ animation: slideup 0.2s linear forwards alternate;
     color:white;
     top:0;
     right: 0;
-    margin: 0 5rem 0 0 ;
-    padding: 1rem;
+    margin: 0 5vw 0 0 ;
+    padding: 1vw;
 
  }
  .more {
@@ -1572,7 +1576,7 @@ animation: slideup 0.2s linear forwards alternate;
 }
 
 .productSpecificationRowItem p {
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.5vh 0 0.5vh 0;
     font-size: 1rem;
     font-weight: 250;
 }
@@ -1580,7 +1584,7 @@ animation: slideup 0.2s linear forwards alternate;
     color:#757575;
 }
 #productSpecificationRow span {
-    margin: 0 6rem 2rem 0;
+    margin: 0 6vw 2vh 0;
 }
 
 #productSpecificationRow {
@@ -1595,9 +1599,9 @@ animation: slideup 0.2s linear forwards alternate;
 }
 
 #productSpecificationSubContainer div {
-    padding: 0.5rem;
+    padding: 0.5vw;
     background-color: #ebebeb;
-    margin: 0 0 3rem 0;
+    margin: 0 0 3vh 0;
 }
 #productSpecificationSubContainer.transitionClass /*if has this class*/ {
     opacity: 1;
@@ -1609,8 +1613,8 @@ animation: slideup 0.2s linear forwards alternate;
 }
 
 .showButton {
-    margin: 1rem 0 0 0;
-    padding: 0.7rem;
+    margin: 1vh 0 0 0;
+    padding: 0.7vw;
     background-color: white;
     color: black;
     border: 1.3px solid black;
@@ -1653,11 +1657,11 @@ Na chwile*/
 }
 
 .container_recommendation .imgRecommendation {
-    width: 1rem;
-    height: 1rem;
+    width:1vw;
+    height: 2vh;
     border: 1px solid rgb(205, 203, 203);
-    padding: 1rem;
-    margin: 0.2rem;
+    padding: 1vw;
+    margin: 0.2vh;
 }
 
 .container_recommendation .imgRecommendation:hover {
@@ -1665,7 +1669,7 @@ Na chwile*/
     cursor: pointer;
 }
 #home_section_container_heading .subheader {
-    margin: 1rem 0 0 3rem;
+    margin: 1vh 0 0 3vw;
 }
 .popularBrandsCategoriesHeader {
     font-size: 2rem;
@@ -1679,7 +1683,7 @@ Na chwile*/
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 4vw;
    
 }
 .popularBrandsCategoriesHeader .footer_middle_container_headers .footer_middle_container .footer_middle_list a li {
