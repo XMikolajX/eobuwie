@@ -1479,7 +1479,17 @@ animation: slideup 0.2s linear forwards alternate;
     cursor:pointer;
    
  }
+.hiddenSize {
+    position: fixed;
+    top:0;
+    right:0.1vw;
+    background-color: white;
+    z-index: 999;
+    height: 100%;
+    width: 15vw;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 
+}
 
  #purchaseZone button:first-child {
     margin: 0 1vw 0 0;
