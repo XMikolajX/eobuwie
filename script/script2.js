@@ -35,6 +35,9 @@ productSpecification = document.getElementById("productSpecification"),
 productSpecificationHeader = document.getElementById("productSpecificationHeader"),
 productSpecificationSubContainer = document.getElementById("productSpecificationSubContainer"),
 productSliderElement = document.getElementsByClassName("productSliderElement"),
+closeBtn = document.getElementById("closeBtn"),
+chooseSize  = document.getElementById("chooseSize"),
+containerSelectSize = document.getElementById("containerSelectSize"),
 ChoosenImgElement = document.getElementById("ChoosenImgElement");
 
 /*INDEX2.html */
@@ -145,6 +148,12 @@ Array.from(productSliderElement).forEach((productSlider) => {
   })
 })
 
+containerSelectSize.addEventListener("click", () => {
+  chooseSize.style.display = "block"
+})
+closeBtn.addEventListener("click", () => {
+  chooseSize.style.display = "none"
+})
 
 /*INDEX2.html */
 container_select.addEventListener('click', function()

@@ -1494,7 +1494,7 @@ animation: slideup 0.2s linear forwards alternate;
  }
  #chooseSize {
     
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+  
     animation: show-from-left 1s ease 1 forwards ;
     z-index: 99999;
  }
