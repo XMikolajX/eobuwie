@@ -38,6 +38,7 @@ productSliderElement = document.getElementsByClassName("productSliderElement"),
 closeBtn = document.getElementById("closeBtn"),
 chooseSize  = document.getElementById("chooseSize"),
 containerSelectSize = document.getElementById("containerSelectSize"),
+
 ChoosenImgElement = document.getElementById("ChoosenImgElement");
 
 /*INDEX2.html */
@@ -150,10 +151,14 @@ Array.from(productSliderElement).forEach((productSlider) => {
 
 containerSelectSize.addEventListener("click", () => {
   chooseSize.style.display = "block"
+  if( chooseSize.style.display = "block") {
+  closeBtn.addEventListener("click", () => {
+    chooseSize.style.display = "none";
+  
+  })
+}
 })
-closeBtn.addEventListener("click", () => {
-  chooseSize.style.display = "none"
-})
+
 
 /*INDEX2.html */
 container_select.addEventListener('click', function()
