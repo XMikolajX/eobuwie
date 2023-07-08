@@ -150,15 +150,26 @@ Array.from(productSliderElement).forEach((productSlider) => {
 })
 
 containerSelectSize.addEventListener("click", () => {
-  chooseSize.style.display = "block"
-  if( chooseSize.style.display = "block") {
-  closeBtn.addEventListener("click", () => {
-    chooseSize.style.display = "none";
+  chooseSize.style.display = "block";
   
-  })
-}
-})
+});
+closeBtn.addEventListener("click", () => {
+  chooseSize.style.display = "none";
 
+});
+/* dziala
+containerSelectSize.addEventListener("click", () => {
+  chooseSize.style.display = "block";
+  if (chooseSize.style.display == "block") {
+    closeBtn.addEventListener("click", () => {
+      chooseSize.style.display = "none";
+      containerSelectSize.addEventListener("click", () => {
+        chooseSize.style.display = "none";
+      })
+    });
+  }
+});
+*/
 
 /*INDEX2.html */
 container_select.addEventListener('click', function()
