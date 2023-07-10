@@ -150,10 +150,12 @@ Array.from(productSliderElement).forEach((productSlider) => {
 })
 
 containerSelectSize.addEventListener("click", () => {
+  alert("containerSelectSize")
   chooseSize.style.display = "block";
   
 });
 closeBtn.addEventListener("click", () => {
+  alert("closeBtn")
   chooseSize.style.display = "none";
 
 });
