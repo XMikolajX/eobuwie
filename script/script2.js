@@ -1,4 +1,5 @@
 "use strict"
+
 let header_content_info_container = document.getElementById("header_content_info_container"),
  header_content_info_container2 = document.getElementById("header_content_info_container2"),
 
@@ -38,7 +39,7 @@ productSliderElement = document.getElementsByClassName("productSliderElement"),
 closeBtn = document.getElementById("closeBtn"),
 chooseSize  = document.getElementById("chooseSize"),
 containerSelectSize = document.getElementById("containerSelectSize"),
-
+chooseSizeListItem = document.getElementsByClassName("chooseSizeListItem"),
 ChoosenImgElement = document.getElementById("ChoosenImgElement");
 
 /*INDEX2.html */
@@ -150,16 +151,22 @@ Array.from(productSliderElement).forEach((productSlider) => {
 })
 
 containerSelectSize.addEventListener("click", () => {
-  alert("containerSelectSize")
+ 
   chooseSize.style.display = "block";
   
 });
 closeBtn.addEventListener("click", () => {
-  alert("closeBtn")
+
   chooseSize.style.display = "none";
 
 });
-/* dziala
+
+Array.from(chooseSizeListItem).forEach((item) =>{
+  item.addEventListener("click", () => {
+    containerSelectSize.textContent = item.textContent
+  })
+})
+/* 
 containerSelectSize.addEventListener("click", () => {
   chooseSize.style.display = "block";
   if (chooseSize.style.display == "block") {
