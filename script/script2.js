@@ -164,6 +164,7 @@ closeBtn.addEventListener("click", () => {
 Array.from(chooseSizeListItem).forEach((item) =>{
   item.addEventListener("click", () => {
     containerSelectSize.textContent = item.textContent
+    chooseSize.style.display = "none";
   })
 })
 /* 
