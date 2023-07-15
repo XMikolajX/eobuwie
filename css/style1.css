@@ -1554,8 +1554,30 @@ animation: slideup 0.2s linear forwards alternate;
 #purchaseButton {
     cursor: pointer;
 }
-#purchaseButton:hover {
-    background-color: #0d3312;
+#purchaseZone #purchaseButton:hover {
+    background-color: #258f33;
+}
+@keyframes appears-opacity {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+.purchaseButtonAfter {
+    position: absolute;
+    top: 50%;
+    box-shadow: 0 0 30px rgb(0 0 0 / 20%);
+    background-color: white;
+    padding: 1vw;
+    border-radius: 2vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    animation: appears-opacity 0.5s ease 1  forwards ;
 }
  .PayPo {
     color:#2f2f2f;

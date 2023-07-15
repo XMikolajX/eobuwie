@@ -40,7 +40,10 @@ closeBtn = document.getElementById("closeBtn"),
 chooseSize  = document.getElementById("chooseSize"),
 containerSelectSize = document.getElementById("containerSelectSize"),
 chooseSizeListItem = document.getElementsByClassName("chooseSizeListItem"),
-ChoosenImgElement = document.getElementById("ChoosenImgElement");
+ChoosenImgElement = document.getElementById("ChoosenImgElement"),
+
+purchaseButton  = document.getElementById("purchaseButton"),
+purchaseButtonAfter = document.getElementById("purchaseButtonAfter");
 
 /*INDEX2.html */
 function showBlock(element) {
@@ -167,20 +170,12 @@ Array.from(chooseSizeListItem).forEach((item) =>{
     chooseSize.style.display = "none";
   })
 })
-/* 
-containerSelectSize.addEventListener("click", () => {
-  chooseSize.style.display = "block";
-  if (chooseSize.style.display == "block") {
-    closeBtn.addEventListener("click", () => {
-      chooseSize.style.display = "none";
-      containerSelectSize.addEventListener("click", () => {
-        chooseSize.style.display = "none";
-      })
-    });
-  }
-});
-*/
 
+
+purchaseButton.addEventListener("click", () => {
+  purchaseButtonAfter.style.display = "flex";
+
+})
 /*INDEX2.html */
 container_select.addEventListener('click', function()
  {showBlock(container_countries),
