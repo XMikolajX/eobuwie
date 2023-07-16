@@ -41,9 +41,10 @@ chooseSize  = document.getElementById("chooseSize"),
 containerSelectSize = document.getElementById("containerSelectSize"),
 chooseSizeListItem = document.getElementsByClassName("chooseSizeListItem"),
 ChoosenImgElement = document.getElementById("ChoosenImgElement"),
-
+purchaseDetailsBootsName =  document.getElementById("purchaseDetailsBootsName"),
+purchaseDetailsModelName =  document.getElementById("purchaseDetailsModelName"),
 purchaseButton  = document.getElementById("purchaseButton"),
-purchaseButtonAfter = document.getElementById("purchaseButtonAfter");
+purchaseButtonAfter = document.getElementsByClassName("purchaseButtonAfter")[0];
 
 /*INDEX2.html */
 function showBlock(element) {
@@ -174,7 +175,21 @@ Array.from(chooseSizeListItem).forEach((item) =>{
 
 purchaseButton.addEventListener("click", () => {
   purchaseButtonAfter.style.display = "flex";
-
+  let minicart_product = document.createElement("div")
+  let minicart_productImg = document.createElement("div")
+  let minicart_productName = document.createElement("div")
+   let img = document.createElement("img")
+  img.src = "img/bootsProductContainerBootIMG1.jpg"
+  img.classList.add("minicart_product_img_class")
+  minicart_productImg.appendChild(img)
+  minicart_productName.appendChild(purchaseDetailsBootsName)//CloneNode musi byc
+  minicart_productName.appendChild(purchaseDetailsModelName)
+  minicart_content_text.replaceWith(minicart_product)
+  minicart_product.appendChild(minicart_productImg)
+  minicart_product.appendChild(minicart_productName)
+  minicart_product.classList.add("minicart_product")
+  minicart_productName.classList.add("minicart_productName")
+ 
 })
 /*INDEX2.html */
 container_select.addEventListener('click', function()

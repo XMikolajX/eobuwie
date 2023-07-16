@@ -1579,6 +1579,16 @@ animation: slideup 0.2s linear forwards alternate;
     
     animation: appears-opacity 0.5s ease 1  forwards ;
 }
+.minicart_product_img_class {
+    height: 20vh;
+    width:10vw;
+}
+.minicart_product {
+    display: flex;
+}
+.minicart_productName h1, p  {
+    font-size: 0.5rem;
+}
  .PayPo {
     color:#2f2f2f;
     font-weight: 700;
