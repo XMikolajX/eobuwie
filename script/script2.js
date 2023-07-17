@@ -176,19 +176,26 @@ Array.from(chooseSizeListItem).forEach((item) =>{
 purchaseButton.addEventListener("click", () => {
   purchaseButtonAfter.style.display = "flex";
   let minicart_product = document.createElement("div")
+  let minicart_productInfo = document.createElement("div")
   let minicart_productImg = document.createElement("div")
   let minicart_productName = document.createElement("div")
+  let minicart_ModelName = document.createElement("div")
    let img = document.createElement("img")
   img.src = "img/bootsProductContainerBootIMG1.jpg"
   img.classList.add("minicart_product_img_class")
   minicart_productImg.appendChild(img)
-  minicart_productName.appendChild(purchaseDetailsBootsName)//CloneNode musi byc
-  minicart_productName.appendChild(purchaseDetailsModelName)
+  minicart_productName = purchaseDetailsBootsName.cloneNode(true)//CloneNode musi byc
+  minicart_ModelName = purchaseDetailsModelName.cloneNode(true)
   minicart_content_text.replaceWith(minicart_product)
   minicart_product.appendChild(minicart_productImg)
-  minicart_product.appendChild(minicart_productName)
+  minicart_product.appendChild(minicart_productInfo)
+  minicart_productInfo.appendChild(minicart_productName)
+  minicart_productInfo.appendChild(minicart_ModelName)
+  
+  minicart_product.classList.add("minicart_productInfo")
   minicart_product.classList.add("minicart_product")
   minicart_productName.classList.add("minicart_productName")
+  minicart_productName.classList.add("minicart_ModelName")
  
 })
 /*INDEX2.html */

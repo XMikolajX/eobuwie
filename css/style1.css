@@ -1585,9 +1585,17 @@ animation: slideup 0.2s linear forwards alternate;
 }
 .minicart_product {
     display: flex;
+    align-items: center;
 }
-.minicart_productName h1, p  {
-    font-size: 0.5rem;
+.minicart_product {
+    flex-direction: column;
+}
+.minicart_productInfo{
+    flex-direction: row;
+}
+#minicart_content .minicart_ModelName, .minicart_productName h1, p  {
+   font-size: 0.5rem;
+  
 }
  .PayPo {
     color:#2f2f2f;
