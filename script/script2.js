@@ -175,6 +175,9 @@ Array.from(chooseSizeListItem).forEach((item) =>{
 
 purchaseButton.addEventListener("click", () => {
   purchaseButtonAfter.style.display = "flex";
+  setTimeout(() => {
+    purchaseButtonAfter.style.display = "none";
+  }, 1000);
   let minicart_product = document.createElement("div")
   let minicart_productInfo = document.createElement("div")
   let minicart_productImg = document.createElement("div")
@@ -192,7 +195,7 @@ purchaseButton.addEventListener("click", () => {
   minicart_productInfo.appendChild(minicart_productName)
   minicart_productInfo.appendChild(minicart_ModelName)
   
-  minicart_product.classList.add("minicart_productInfo")
+  minicart_productInfo.classList.add("minicart_productInfo")
   minicart_product.classList.add("minicart_product")
   minicart_productName.classList.add("minicart_productName")
   minicart_productName.classList.add("minicart_ModelName")

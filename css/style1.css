@@ -252,12 +252,14 @@ margin: 0 0.8rem 0 0.8rem;
     z-index: 1000;
     padding: 1rem;
     white-space: normal;
+    align-items: center;
 }
 
 #header_content_Wallet:hover  #minicart_content
 {
-    display: block;
+    display: flex;
     transition: 0.5s;
+
 }
 /*END OF HEADER CONTENT*/
 #mega_menu_list
@@ -1576,25 +1578,28 @@ animation: slideup 0.2s linear forwards alternate;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     animation: appears-opacity 0.5s ease 1  forwards ;
 }
+
 .minicart_product_img_class {
-    height: 20vh;
-    width:10vw;
+    height: 17vh;
+    width:11vw;
+
+
 }
 .minicart_product {
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
-.minicart_product {
-    flex-direction: column;
-}
+
 .minicart_productInfo{
     flex-direction: row;
 }
 #minicart_content .minicart_ModelName, .minicart_productName h1, p  {
-   font-size: 0.5rem;
+   font-size: 0.8rem;
+   text-align: left;
+   padding: 0.5vh 0;
   
 }
  .PayPo {
