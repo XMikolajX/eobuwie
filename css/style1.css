@@ -1598,7 +1598,7 @@ animation: slideup 0.2s linear forwards alternate;
 }
 #minicart_content .minicart_ModelName, .minicart_productName h1, p  {
    font-size: 0.8rem;
-   text-align: left;
+ 
    padding: 0.5vh 0;
   
 }

@@ -44,7 +44,10 @@ ChoosenImgElement = document.getElementById("ChoosenImgElement"),
 purchaseDetailsBootsName =  document.getElementById("purchaseDetailsBootsName"),
 purchaseDetailsModelName =  document.getElementById("purchaseDetailsModelName"),
 purchaseButton  = document.getElementById("purchaseButton"),
+header_content_WalletSum = document.getElementById("header_content_WalletSum"),
+
 purchaseButtonAfter = document.getElementsByClassName("purchaseButtonAfter")[0];
+
 
 /*INDEX2.html */
 function showBlock(element) {
@@ -174,6 +177,8 @@ Array.from(chooseSizeListItem).forEach((item) =>{
 
 
 purchaseButton.addEventListener("click", () => {
+  header_content_WalletSum = header_content_WalletSum++;
+  
   purchaseButtonAfter.style.display = "flex";
   setTimeout(() => {
     purchaseButtonAfter.style.display = "none";
@@ -183,7 +188,7 @@ purchaseButton.addEventListener("click", () => {
   let minicart_productImg = document.createElement("div")
   let minicart_productName = document.createElement("div")
   let minicart_ModelName = document.createElement("div")
-   let img = document.createElement("img")
+  let img = document.createElement("img")
   img.src = "img/bootsProductContainerBootIMG1.jpg"
   img.classList.add("minicart_product_img_class")
   minicart_productImg.appendChild(img)
