@@ -43,10 +43,13 @@ chooseSizeListItem = document.getElementsByClassName("chooseSizeListItem"),
 ChoosenImgElement = document.getElementById("ChoosenImgElement"),
 purchaseDetailsBootsName =  document.getElementById("purchaseDetailsBootsName"),
 purchaseDetailsModelName =  document.getElementById("purchaseDetailsModelName"),
+
 purchaseButton  = document.getElementById("purchaseButton"),
 header_content_WalletSum = document.getElementById("header_content_WalletSum"),
 
+
 purchaseButtonAfter = document.getElementsByClassName("purchaseButtonAfter")[0];
+
 
 
 /*INDEX2.html */
@@ -177,7 +180,7 @@ Array.from(chooseSizeListItem).forEach((item) =>{
 
 
 purchaseButton.addEventListener("click", () => {
-  header_content_WalletSum = header_content_WalletSum++;
+
   
   purchaseButtonAfter.style.display = "flex";
   setTimeout(() => {
@@ -195,6 +198,7 @@ purchaseButton.addEventListener("click", () => {
   minicart_productName = purchaseDetailsBootsName.cloneNode(true)//CloneNode musi byc
   minicart_ModelName = purchaseDetailsModelName.cloneNode(true)
   minicart_content_text.replaceWith(minicart_product)
+
   minicart_product.appendChild(minicart_productImg)
   minicart_product.appendChild(minicart_productInfo)
   minicart_productInfo.appendChild(minicart_productName)
@@ -204,7 +208,13 @@ purchaseButton.addEventListener("click", () => {
   minicart_product.classList.add("minicart_product")
   minicart_productName.classList.add("minicart_productName")
   minicart_productName.classList.add("minicart_ModelName")
- 
+
+
+
+  header_content_WalletSum.textContent = (minicart_content.childElementCount === 0)? 0 :  minicart_content.childElementCount;
+  
+
+
 })
 /*INDEX2.html */
 container_select.addEventListener('click', function()
