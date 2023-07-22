@@ -43,8 +43,14 @@ chooseSizeListItem = document.getElementsByClassName("chooseSizeListItem"),
 ChoosenImgElement = document.getElementById("ChoosenImgElement"),
 purchaseDetailsBootsName =  document.getElementById("purchaseDetailsBootsName"),
 purchaseDetailsModelName =  document.getElementById("purchaseDetailsModelName"),
-
 purchaseButton  = document.getElementById("purchaseButton"),
+
+productSlider = document.getElementById("productSlider"),
+prevButton = document.getElementsByClassName("prev-button"),
+nextButton = document.getElementsByClassName("next-button"),
+currentIndex = 0,
+
+
 header_content_WalletSum = document.getElementById("header_content_WalletSum"),
 
 
@@ -216,6 +222,29 @@ purchaseButton.addEventListener("click", () => {
 
 
 })
+
+function showImage(index) {
+  productSliderElement.forEach((image, i) => {
+    image.style.transform = `translateX(${(i - index) * 100}%)`;
+  });
+}
+
+nextButton.addEventListener("click", () => {
+  if (currentIndex < productSliderElement.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  showImage(currentIndex);
+});
+prevButton.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = productSliderElement.length - 1;
+  }
+  showImage(currentIndex);
+});
 /*INDEX2.html */
 container_select.addEventListener('click', function()
  {showBlock(container_countries),
