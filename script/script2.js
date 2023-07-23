@@ -36,6 +36,7 @@ productSpecification = document.getElementById("productSpecification"),
 productSpecificationHeader = document.getElementById("productSpecificationHeader"),
 productSpecificationSubContainer = document.getElementById("productSpecificationSubContainer"),
 productSliderElement = document.getElementsByClassName("productSliderElement"),
+
 closeBtn = document.getElementById("closeBtn"),
 chooseSize  = document.getElementById("chooseSize"),
 containerSelectSize = document.getElementById("containerSelectSize"),
@@ -46,8 +47,9 @@ purchaseDetailsModelName =  document.getElementById("purchaseDetailsModelName"),
 purchaseButton  = document.getElementById("purchaseButton"),
 
 productSlider = document.getElementById("productSlider"),
-prevButton = document.getElementsByClassName("prev-button"),
-nextButton = document.getElementsByClassName("next-button"),
+prevButton = document.getElementsByClassName("prev-button")[0],
+nextButton = document.getElementsByClassName("next-button")[0],
+carouselControlsItems = document.getElementsByClassName("carousel-controls-items"),
 currentIndex = 0,
 
 
@@ -224,24 +226,25 @@ purchaseButton.addEventListener("click", () => {
 })
 
 function showImage(index) {
-  productSliderElement.forEach((image, i) => {
+  carouselControlsItems.forEach((image, i) => {
     image.style.transform = `translateX(${(i - index) * 100}%)`;
   });
 }
 
 nextButton.addEventListener("click", () => {
-  if (currentIndex < productSliderElement.length - 1) {
+  if (currentIndex < carouselControlsItems.length - 1) {
     currentIndex++;
   } else {
     currentIndex = 0;
   }
   showImage(currentIndex);
 });
+
 prevButton.addEventListener("click", () => {
   if (currentIndex > 0) {
     currentIndex--;
   } else {
-    currentIndex = productSliderElement.length - 1;
+    currentIndex = carouselControlsItems.length - 1;
   }
   showImage(currentIndex);
 });
