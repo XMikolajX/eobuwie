@@ -46,11 +46,11 @@ purchaseDetailsBootsName =  document.getElementById("purchaseDetailsBootsName"),
 purchaseDetailsModelName =  document.getElementById("purchaseDetailsModelName"),
 purchaseButton  = document.getElementById("purchaseButton"),
 
-productSlider = document.getElementById("productSlider"),
+productVariants = document.getElementById("productVariants"),
 prevButton = document.getElementsByClassName("prev-button")[0],
 nextButton = document.getElementsByClassName("next-button")[0],
-carouselControlsItems = document.getElementsByClassName("carousel-controls-items"),
-currentIndex = 0,
+
+
 
 
 header_content_WalletSum = document.getElementById("header_content_WalletSum"),
@@ -161,12 +161,7 @@ showButton.addEventListener("click", () => {
   }
 
 }) 
-Array.from(productSliderElement).forEach((productSlider) => {
-  productSlider.addEventListener("click", (event) => {
-    let target = event.target
-    ChoosenImgElement.src =   target.src 
-  })
-})
+
 
 containerSelectSize.addEventListener("click", () => {
  
@@ -225,29 +220,32 @@ purchaseButton.addEventListener("click", () => {
 
 })
 
-function showImage(index) {
-  carouselControlsItems.forEach((image, i) => {
-    image.style.transform = `translateX(${(i - index) * 100}%)`;
-  });
+Array.from(productSliderElement).forEach((productSlider) => {
+  productSlider.addEventListener("click", (event) => {
+    let target = event.target
+    ChoosenImgElement.src =   target.src 
+  })
+})
+
+let  currentImageIndex = 0;
+function updateDisplayedImage() {
+  let sliderImages = productSlider.querySelectorAll('.productSliderElement');
+  if ((sliderImages.length > 0 && currentImageIndex >= 0) && (currentImageIndex < sliderImages.length)) { //check if (sliderImages.length is bigger then  0 and currentImageIndex is higher or equel zero) and currentImageIndex is smaller then  sliderImages.length
+      let imageUrl = sliderImages[currentImageIndex].getAttribute('src'); // we pick from sliderImages array   currentImageIndex
+      ChoosenImgElement.setAttribute('src', imageUrl); // and we assign to ChoosenImgElement new src from imageUrl 
+  }
 }
 
-nextButton.addEventListener("click", () => {
-  if (currentIndex < carouselControlsItems.length - 1) {
-    currentIndex++;
-  } else {
-    currentIndex = 0;
-  }
-  showImage(currentIndex);
+nextButton.addEventListener('click', function() {
+  currentImageIndex = (currentImageIndex + 1) % productSlider.childElementCount; // if we are on last currentImageIndex 4 then add one and we divide  our result by productSlider.childElementCount 5 and we get 0 so currentImageIndex takes this index 0 
+  updateDisplayedImage();
+});
+prevButton.addEventListener('click', function() {
+  currentImageIndex = (currentImageIndex - 1 + productSlider.childElementCount) % productSlider.childElementCount; //if we are on first currentImageIndex 0  then add one and we divide  our result by productSlider.childElementCount 5 and we get 4 change  so currentImageIndex takes this index 4 
+  updateDisplayedImage();
 });
 
-prevButton.addEventListener("click", () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-  } else {
-    currentIndex = carouselControlsItems.length - 1;
-  }
-  showImage(currentIndex);
-});
+
 /*INDEX2.html */
 container_select.addEventListener('click', function()
  {showBlock(container_countries),
