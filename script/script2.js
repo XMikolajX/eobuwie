@@ -195,7 +195,7 @@ purchaseButton.addEventListener("click", () => {
   let minicart_productName = document.createElement("div")
   let minicart_ModelName = document.createElement("div")
   let img = document.createElement("img")
-  img.src = "img/bootsProductContainerBootIMG1.jpg"
+  img.src = ChoosenImgElement.getAttribute("src")
   img.classList.add("minicart_product_img_class")
   minicart_productImg.appendChild(img)
   minicart_productName = purchaseDetailsBootsName.cloneNode(true)//CloneNode musi byc
@@ -227,21 +227,20 @@ Array.from(productSliderElement).forEach((productSlider) => {
   })
 })
 
-let  currentImageIndex = 0;
+let currentImageIndex = 0;
 function updateDisplayedImage() {
-  let sliderImages = productSlider.querySelectorAll('.productSliderElement');
-  if ((sliderImages.length > 0 && currentImageIndex >= 0) && (currentImageIndex < sliderImages.length)) { //check if (sliderImages.length is bigger then  0 and currentImageIndex is higher or equel zero) and currentImageIndex is smaller then  sliderImages.length
-      let imageUrl = sliderImages[currentImageIndex].getAttribute('src'); // we pick from sliderImages array   currentImageIndex
-      ChoosenImgElement.setAttribute('src', imageUrl); // and we assign to ChoosenImgElement new src from imageUrl 
-  }
-}
-
-nextButton.addEventListener('click', function() {
-  currentImageIndex = (currentImageIndex + 1) % productSlider.childElementCount; // if we are on last currentImageIndex 4 then add one and we divide  our result by productSlider.childElementCount 5 and we get 0 so currentImageIndex takes this index 0 
+  let sliderImages = productSlider.getElementsByClassName("productSliderElement");
+  if((sliderImages.length > 0 && currentImageIndex >= 0) && ( currentImageIndex < sliderImages.length)) {
+    let imageUrl = sliderImages[currentImageIndex].getAttribute("src");
+    ChoosenImgElement.setAttribute("src", imageUrl);
+  };
+};
+nextButton.addEventListener("click", ()=>{
+  currentImageIndex = (currentImageIndex + 1 ) % productSlider.childElementCount;
   updateDisplayedImage();
 });
-prevButton.addEventListener('click', function() {
-  currentImageIndex = (currentImageIndex - 1 + productSlider.childElementCount) % productSlider.childElementCount; //if we are on first currentImageIndex 0  then add one and we divide  our result by productSlider.childElementCount 5 and we get 4 change  so currentImageIndex takes this index 4 
+prevButton.addEventListener("click", ()=>{
+  currentImageIndex = (currentImageIndex - 1  + productSlider.childElementCount) % productSlider.childElementCount;
   updateDisplayedImage();
 });
 
