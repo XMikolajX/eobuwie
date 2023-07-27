@@ -220,28 +220,33 @@ purchaseButton.addEventListener("click", () => {
 
 })
 
-Array.from(productSliderElement).forEach((productSlider) => {
-  productSlider.addEventListener("click", (event) => {
-    let target = event.target
-    ChoosenImgElement.src =   target.src 
-  })
-})
-
+//change boot photo by click on prevButton to move back or nextButton to move forward
 let currentImageIndex = 0;
 function updateDisplayedImage() {
   let sliderImages = productSlider.getElementsByClassName("productSliderElement");
   if((sliderImages.length > 0 && currentImageIndex >= 0) && ( currentImageIndex < sliderImages.length)) {
     let imageUrl = sliderImages[currentImageIndex].getAttribute("src");
     ChoosenImgElement.setAttribute("src", imageUrl);
-  };
-};
-nextButton.addEventListener("click", ()=>{
+  }
+}
+nextButton.addEventListener("click", () => {
   currentImageIndex = (currentImageIndex + 1 ) % productSlider.childElementCount;
-  updateDisplayedImage();
+  updateDisplayedImage()
 });
-prevButton.addEventListener("click", ()=>{
-  currentImageIndex = (currentImageIndex - 1  + productSlider.childElementCount) % productSlider.childElementCount;
-  updateDisplayedImage();
+prevButton.addEventListener("click", () => {
+  currentImageIndex = (currentImageIndex - 1 + productSlider.childElementCount ) % productSlider.childElementCount;
+  updateDisplayedImage()
+});
+
+//replace boot photo on click on it
+let  sliderImages = productSlider.querySelectorAll('.productSliderElement');
+
+sliderImages.forEach(function(image, index) { //make call on every sliderImage element with argument image, index
+  image.addEventListener('click', function() { // on on every sliderImage element  add addEventListener 
+    currentImageIndex = index;// if currentImageIndex was clicked then assign to currentImageIndex  this index 
+    updateDisplayedImage();//call    updateDisplayedImage()
+
+  })
 });
 
 
