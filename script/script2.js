@@ -194,10 +194,13 @@ purchaseButton.addEventListener("click", () => {
   let minicart_productImg = document.createElement("div")
   let minicart_productName = document.createElement("div")
   let minicart_ModelName = document.createElement("div")
+  let  minicart_size = document.createElement("div")
   let img = document.createElement("img")
   img.src = ChoosenImgElement.getAttribute("src")
   img.classList.add("minicart_product_img_class")
   minicart_productImg.appendChild(img)
+
+  minicart_size.textContent = containerSelectSize.textContent
   minicart_productName = purchaseDetailsBootsName.cloneNode(true)//CloneNode musi byc
   minicart_ModelName = purchaseDetailsModelName.cloneNode(true)
   minicart_content_text.replaceWith(minicart_product)
@@ -206,13 +209,15 @@ purchaseButton.addEventListener("click", () => {
   minicart_product.appendChild(minicart_productInfo)
   minicart_productInfo.appendChild(minicart_productName)
   minicart_productInfo.appendChild(minicart_ModelName)
+
+  minicart_productInfo.appendChild(minicart_size)
+ 
   
   minicart_productInfo.classList.add("minicart_productInfo")
   minicart_product.classList.add("minicart_product")
   minicart_productName.classList.add("minicart_productName")
   minicart_productName.classList.add("minicart_ModelName")
-
-
+  minicart_size.classList.add("minicart_ModelName")
 
   header_content_WalletSum.textContent = (minicart_content.childElementCount === 0)? 0 :  minicart_content.childElementCount;
   
