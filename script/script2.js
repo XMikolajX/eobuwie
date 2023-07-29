@@ -204,6 +204,12 @@ purchaseButton.addEventListener("click", () => {
   minicart_productName = purchaseDetailsBootsName.cloneNode(true)//CloneNode musi byc
   minicart_ModelName = purchaseDetailsModelName.cloneNode(true)
   minicart_content_text.replaceWith(minicart_product)
+  minicart_product.appendChild(closeBtn.cloneNode(true))
+  closeBtn.addEventListener("click", () => {
+
+      minicart_product.replaceWith(minicart_content_text)
+      
+  }) 
 
   minicart_product.appendChild(minicart_productImg)
   minicart_product.appendChild(minicart_productInfo)
@@ -218,8 +224,9 @@ purchaseButton.addEventListener("click", () => {
   minicart_productName.classList.add("minicart_productName")
   minicart_productName.classList.add("minicart_ModelName")
   minicart_size.classList.add("minicart_ModelName")
+  let  minicart_products = document.querySelectorAll('.minicart_product');
 
-  header_content_WalletSum.textContent = (minicart_content.childElementCount === 0)? 0 :  minicart_content.childElementCount;
+  header_content_WalletSum.textContent = (minicart_products.length === 0) ? "0" : minicart_products.length;
   
 
 

@@ -1616,8 +1616,13 @@ animation: slideup 0.2s linear forwards alternate;
     display: flex;
     align-items: center;
     flex-direction: row;
+    position: relative;
 }
-
+.minicart_product #closeBtn {
+    position: absolute;
+    top: 0;
+    right:0;
+}
 .minicart_productInfo{
     flex-direction: row;
 }
