@@ -168,11 +168,11 @@ containerSelectSize.addEventListener("click", () => {
   chooseSize.style.display = "block";
   
 });
-closeBtn.addEventListener("click", () => {
+closeBtn.addEventListener("click", () =>{
 
   chooseSize.style.display = "none";
 
-});
+}); 
 
 Array.from(chooseSizeListItem).forEach((item) =>{
   item.addEventListener("click", () => {
@@ -184,51 +184,52 @@ Array.from(chooseSizeListItem).forEach((item) =>{
 
 purchaseButton.addEventListener("click", () => {
 
+
+    purchaseButtonAfter.style.display = "flex";
+    setTimeout(() => {
+      purchaseButtonAfter.style.display = "none";
+    }, 1000);
+    let minicart_product = document.createElement("div")
+    let minicart_productInfo = document.createElement("div")
+    let minicart_productImg = document.createElement("div")
+    let minicart_productName = document.createElement("div")
+    let minicart_ModelName = document.createElement("div")
+    let  minicart_size = document.createElement("div")
+    let img = document.createElement("img")
+    img.src = ChoosenImgElement.getAttribute("src")
+    img.classList.add("minicart_product_img_class")
+    minicart_productImg.appendChild(img)
+
+    minicart_size.textContent = containerSelectSize.textContent
+    minicart_productName = purchaseDetailsBootsName.cloneNode(true)//CloneNode musi byc
+    minicart_ModelName = purchaseDetailsModelName.cloneNode(true)
+    minicart_content_text.replaceWith(minicart_product)
+    minicart_product.appendChild(closeBtn.cloneNode(true))
+
+
+    minicart_product.appendChild(minicart_productImg)
+    minicart_product.appendChild(minicart_productInfo)
+    minicart_productInfo.appendChild(minicart_productName)
+    minicart_productInfo.appendChild(minicart_ModelName)
+
+    minicart_productInfo.appendChild(minicart_size)
   
-  purchaseButtonAfter.style.display = "flex";
-  setTimeout(() => {
-    purchaseButtonAfter.style.display = "none";
-  }, 1000);
-  let minicart_product = document.createElement("div")
-  let minicart_productInfo = document.createElement("div")
-  let minicart_productImg = document.createElement("div")
-  let minicart_productName = document.createElement("div")
-  let minicart_ModelName = document.createElement("div")
-  let  minicart_size = document.createElement("div")
-  let img = document.createElement("img")
-  img.src = ChoosenImgElement.getAttribute("src")
-  img.classList.add("minicart_product_img_class")
-  minicart_productImg.appendChild(img)
+    
+    minicart_productInfo.classList.add("minicart_productInfo")
+    minicart_product.classList.add("minicart_product")
+    minicart_productName.classList.add("minicart_productName")
+    minicart_productName.classList.add("minicart_ModelName")
+    minicart_size.classList.add("minicart_ModelName")
+  
 
-  minicart_size.textContent = containerSelectSize.textContent
-  minicart_productName = purchaseDetailsBootsName.cloneNode(true)//CloneNode musi byc
-  minicart_ModelName = purchaseDetailsModelName.cloneNode(true)
-  minicart_content_text.replaceWith(minicart_product)
-  minicart_product.appendChild(closeBtn.cloneNode(true))
-  closeBtn.addEventListener("click", () => {
-
-      minicart_product.replaceWith(minicart_content_text)
+    
+    let  minicart_products = document.querySelectorAll('.minicart_product');
+    header_content_WalletSum.textContent = (minicart_products.length === 0) ? "0" : minicart_products.length;
+    closeBtn.addEventListener("click", () => {
+      minicart_product.replaceWith(minicart_content_text);
+      header_content_WalletSum.textContent = (minicart_products.length === 0) ? "0" : minicart_products.length;
       
-  }) 
-
-  minicart_product.appendChild(minicart_productImg)
-  minicart_product.appendChild(minicart_productInfo)
-  minicart_productInfo.appendChild(minicart_productName)
-  minicart_productInfo.appendChild(minicart_ModelName)
-
-  minicart_productInfo.appendChild(minicart_size)
- 
-  
-  minicart_productInfo.classList.add("minicart_productInfo")
-  minicart_product.classList.add("minicart_product")
-  minicart_productName.classList.add("minicart_productName")
-  minicart_productName.classList.add("minicart_ModelName")
-  minicart_size.classList.add("minicart_ModelName")
-  let  minicart_products = document.querySelectorAll('.minicart_product');
-
-  header_content_WalletSum.textContent = (minicart_products.length === 0) ? "0" : minicart_products.length;
-  
-
+    });
 
 })
 
