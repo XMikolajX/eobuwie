@@ -224,12 +224,13 @@ purchaseButton.addEventListener("click", () => {
 
     
     let  minicart_products = document.querySelectorAll('.minicart_product');
-    header_content_WalletSum.textContent = (minicart_products.length === 0) ? "0" : minicart_products.length;
+  
     closeBtn.addEventListener("click", () => {
       minicart_product.replaceWith(minicart_content_text);
-      header_content_WalletSum.textContent = (minicart_products.length === 0) ? "0" : minicart_products.length;
-      
+    
+      header_content_WalletSum.value = (minicart_products.length === 0) ? "0" : minicart_products.length;
     });
+    header_content_WalletSum.textContent = (minicart_products.length === 0) ? "0" : minicart_products.length;
 
 })
 
