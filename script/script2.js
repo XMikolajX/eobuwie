@@ -180,7 +180,10 @@ Array.from(chooseSizeListItem).forEach((item) =>{
     chooseSize.style.display = "none";
   })
 })
-
+function updateMinicartCount() {
+  let minicart_products = document.querySelectorAll('.minicart_product');
+  header_content_WalletSum.textContent = (minicart_products.length === 0) ? "0" : minicart_products.length;
+}
 
 purchaseButton.addEventListener("click", () => {
 
@@ -204,7 +207,8 @@ purchaseButton.addEventListener("click", () => {
     minicart_productName = purchaseDetailsBootsName.cloneNode(true)//CloneNode musi byc
     minicart_ModelName = purchaseDetailsModelName.cloneNode(true)
     minicart_content_text.replaceWith(minicart_product)
-    minicart_product.appendChild(closeBtn.cloneNode(true))
+    let minicarCloseBtn = closeBtn.cloneNode(true)
+    minicart_product.appendChild(minicarCloseBtn)
 
 
     minicart_product.appendChild(minicart_productImg)
@@ -220,18 +224,19 @@ purchaseButton.addEventListener("click", () => {
     minicart_productName.classList.add("minicart_productName")
     minicart_productName.classList.add("minicart_ModelName")
     minicart_size.classList.add("minicart_ModelName")
+    minicarCloseBtn.classList.add("minicarCloseBtn")
   
 
     
     let  minicart_products = document.querySelectorAll('.minicart_product');
   
-    closeBtn.addEventListener("click", () => {
+    minicarCloseBtn.addEventListener("click", () => {
       minicart_product.replaceWith(minicart_content_text);
     
-      header_content_WalletSum.value = (minicart_products.length === 0) ? "0" : minicart_products.length;
+      updateMinicartCount()
     });
-    header_content_WalletSum.textContent = (minicart_products.length === 0) ? "0" : minicart_products.length;
 
+    updateMinicartCount()
 })
 
 //change boot photo by click on prevButton to move back or nextButton to move forward

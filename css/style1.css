@@ -1513,7 +1513,12 @@ animation: slideup 0.2s linear forwards alternate;
  }
  #closeBtn, .chooseSizeListItem {
     cursor: pointer;
+
  }
+#closeBtn {
+    display: inline-block;
+    box-shadow: #1d1c1c 0 10px 10px;
+}
  @keyframes show-from-left {
     from {
         width: 0;
@@ -1618,11 +1623,7 @@ animation: slideup 0.2s linear forwards alternate;
     flex-direction: row;
     position: relative;
 }
-.minicart_product #closeBtn {
-    position: absolute;
-    top: 0;
-    right:0;
-}
+
 .minicart_productInfo{
     flex-direction: row;
 }
@@ -1631,6 +1632,17 @@ animation: slideup 0.2s linear forwards alternate;
  
    padding: 0.5vh 0;
   
+}
+.minicarCloseBtn {
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    top:0;
+    right:0;
+
+}
+.minicarCloseBtn:hover{
+   
 }
  .PayPo {
     color:#2f2f2f;
