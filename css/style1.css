@@ -240,7 +240,7 @@ margin: 0 0.8rem 0 0.8rem;
     position: absolute;
     background-color: white;
     width: 26rem;
-
+   
     top: 3.1rem;
     right: 0;
     display: none;
@@ -1632,12 +1632,17 @@ animation: slideup 0.2s linear forwards alternate;
 
 .minicart_productInfo{
     flex-direction: row;
+    text-align: left;
 }
 #minicart_content .minicart_ModelName, .minicart_productName h1, p  {
    font-size: 0.8rem;
    
    
   
+}
+#minicart_content #resultSubstraction {
+    font-size: 1rem;
+    font-weight: 100;
 }
 .minicarCloseBtn {
     width: 5vw;

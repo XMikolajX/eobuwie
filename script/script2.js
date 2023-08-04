@@ -144,7 +144,7 @@ function substractionPrince(finalPrince, regularPrice) {
 }
 
 
-resultSubstraction.textContent = substractionPrince(finalPrince, regularPrice, resultSubstraction)
+resultSubstraction.textContent = substractionPrince(finalPrince, regularPrice)
 
 showButton.addEventListener("click", () => {
 
@@ -203,7 +203,7 @@ purchaseButton.addEventListener("click", () => {
     img.classList.add("minicart_product_img_class")
     minicart_productImg.appendChild(img)
 
-    minicart_size.textContent = containerSelectSize.textContent
+    minicart_size.textContent = + "Rozmiar" + containerSelectSize.textContent
     minicart_productName = purchaseDetailsBootsName.cloneNode(true)//CloneNode musi byc
     minicart_ModelName = purchaseDetailsModelName.cloneNode(true)
     minicart_content_text.replaceWith(minicart_product)
@@ -216,14 +216,16 @@ purchaseButton.addEventListener("click", () => {
     minicart_productInfo.appendChild(minicart_productName)
     minicart_productInfo.appendChild(minicart_ModelName)
 
-    minicart_productInfo.appendChild(minicart_size)
-  
+    minicart_productInfo.appendChild(  minicart_size)
+
+    minicart_productInfo.appendChild(resultSubstraction)
     
     minicart_productInfo.classList.add("minicart_productInfo")
     minicart_product.classList.add("minicart_product")
     minicart_productName.classList.add("minicart_productName")
     minicart_productName.classList.add("minicart_ModelName")
     minicart_size.classList.add("minicart_ModelName")
+    minicarCloseBtn.classList.add("minicart_resultSubstraction")
     minicarCloseBtn.classList.add("minicarCloseBtn")
   
 
