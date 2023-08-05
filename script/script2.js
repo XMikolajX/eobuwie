@@ -182,7 +182,7 @@ Array.from(chooseSizeListItem).forEach((item) =>{
 })
 function updateMinicartCount() {
   let minicart_products = document.querySelectorAll('.minicart_product');
-  header_content_WalletSum.textContent = (minicart_products.length === 0) ? "0" : minicart_products.length;
+  header_content_WalletSum.textContent = (minicart_products.length === 0) ? 0 : minicart_products.length;
 }
 
 purchaseButton.addEventListener("click", () => {
@@ -202,8 +202,11 @@ purchaseButton.addEventListener("click", () => {
     img.src = ChoosenImgElement.getAttribute("src")
     img.classList.add("minicart_product_img_class")
     minicart_productImg.appendChild(img)
-
-    minicart_size.textContent = + "Rozmiar" + containerSelectSize.textContent
+  
+    if(!isNaN(containerSelectSize.textContent)) {
+      minicart_size.textContent =  "Rozmiar:" +  containerSelectSize.textContent
+    }
+ 
     minicart_productName = purchaseDetailsBootsName.cloneNode(true)//CloneNode musi byc
     minicart_ModelName = purchaseDetailsModelName.cloneNode(true)
     minicart_content_text.replaceWith(minicart_product)
@@ -216,7 +219,7 @@ purchaseButton.addEventListener("click", () => {
     minicart_productInfo.appendChild(minicart_productName)
     minicart_productInfo.appendChild(minicart_ModelName)
 
-    minicart_productInfo.appendChild(  minicart_size)
+    minicart_productInfo.appendChild(minicart_size)
 
     minicart_productInfo.appendChild(resultSubstraction)
     
@@ -230,7 +233,7 @@ purchaseButton.addEventListener("click", () => {
   
 
     
-    let  minicart_products = document.querySelectorAll('.minicart_product');
+ 
   
     minicarCloseBtn.addEventListener("click", () => {
       minicart_product.replaceWith(minicart_content_text);
