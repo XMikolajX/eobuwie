@@ -1642,7 +1642,7 @@ animation: slideup 0.2s linear forwards alternate;
    
   
 }
-#minicart_content #resultSubstraction {
+#minicart_content .minicart_resultSubstraction {
     font-size: 1rem;
     font-weight: 100;
 }
@@ -1654,9 +1654,7 @@ animation: slideup 0.2s linear forwards alternate;
     right:0;
 
 }
-.minicarCloseBtn:hover{
-   
-}
+
  .PayPo {
     color:#2f2f2f;
     font-weight: 700;

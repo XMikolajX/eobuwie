@@ -139,8 +139,8 @@ else
 /*INDEX2.html */
 
 function substractionPrince(finalPrince, regularPrice) {
-	
-  return  regularPrice - finalPrince + " zł"
+	let result = regularPrice - finalPrince 
+  return  result.toFixed(2) + " zł"
 }
 
 
@@ -198,6 +198,7 @@ purchaseButton.addEventListener("click", () => {
     let minicart_productName = document.createElement("div")
     let minicart_ModelName = document.createElement("div")
     let  minicart_size = document.createElement("div")
+    let minicart_resultSubstraction = document.createElement("span")
     let img = document.createElement("img")
     img.src = ChoosenImgElement.getAttribute("src")
     img.classList.add("minicart_product_img_class")
@@ -220,15 +221,15 @@ purchaseButton.addEventListener("click", () => {
     minicart_productInfo.appendChild(minicart_ModelName)
 
     minicart_productInfo.appendChild(minicart_size)
-
-    minicart_productInfo.appendChild(resultSubstraction)
+     minicart_resultSubstraction.textContent =   finalPrince.toFixed(2) + "zł"
+    minicart_productInfo.appendChild(minicart_resultSubstraction)
     
     minicart_productInfo.classList.add("minicart_productInfo")
     minicart_product.classList.add("minicart_product")
     minicart_productName.classList.add("minicart_productName")
     minicart_productName.classList.add("minicart_ModelName")
     minicart_size.classList.add("minicart_ModelName")
-    minicarCloseBtn.classList.add("minicart_resultSubstraction")
+    minicart_resultSubstraction.classList.add("minicart_resultSubstraction")
     minicarCloseBtn.classList.add("minicarCloseBtn")
   
 
