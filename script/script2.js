@@ -205,7 +205,7 @@ purchaseButton.addEventListener("click", () => {
     minicart_productImg.appendChild(img)
   
     if(!isNaN(containerSelectSize.textContent)) {
-      minicart_size.textContent =  "Rozmiar:" +  containerSelectSize.textContent
+      minicart_size.textContent =  "Rozmiar:" +  containerSelectSize.textContent//test
     }
  
     minicart_productName = purchaseDetailsBootsName.cloneNode(true)
