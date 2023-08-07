@@ -208,7 +208,7 @@ purchaseButton.addEventListener("click", () => {
       minicart_size.textContent =  "Rozmiar:" +  containerSelectSize.textContent
     }
  
-    minicart_productName = purchaseDetailsBootsName.cloneNode(true)//CloneNode musi byc
+    minicart_productName = purchaseDetailsBootsName.cloneNode(true)
     minicart_ModelName = purchaseDetailsModelName.cloneNode(true)
     minicart_content_text.replaceWith(minicart_product)
     let minicarCloseBtn = closeBtn.cloneNode(true)
@@ -221,7 +221,7 @@ purchaseButton.addEventListener("click", () => {
     minicart_productInfo.appendChild(minicart_ModelName)
 
     minicart_productInfo.appendChild(minicart_size)
-     minicart_resultSubstraction.textContent =   finalPrince.toFixed(2) + "zł"
+    minicart_resultSubstraction.textContent =   finalPrince.toFixed(2) + "zł"
     minicart_productInfo.appendChild(minicart_resultSubstraction)
     
     minicart_productInfo.classList.add("minicart_productInfo")
