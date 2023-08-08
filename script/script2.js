@@ -266,13 +266,15 @@ prevButton.addEventListener("click", () => {
 //replace boot photo on click on it
 let  sliderImages = productSlider.querySelectorAll('.productSliderElement');
 
+
 sliderImages.forEach(function(image, index) { //make call on every sliderImage element with argument image, index
   image.addEventListener('click', function() { // on on every sliderImage element  add addEventListener 
     currentImageIndex = index;// if currentImageIndex was clicked then assign to currentImageIndex  this index 
     updateDisplayedImage();//call    updateDisplayedImage()
 
   })
-});
+
+});//tuuu
 
 
 /*INDEX2.html */

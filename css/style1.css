@@ -1380,6 +1380,7 @@ animation: slideup 0.2s linear forwards alternate;
 }
 #ChoosenImgElement {
     margin: 0 12vh 0 12vh;
+   
 }
 
 
@@ -1387,19 +1388,25 @@ animation: slideup 0.2s linear forwards alternate;
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    
   }
   
   .prev-button,
   .next-button {
     background-color: #f0f0f0;
     border: none;
-    padding: 8px 12px;
-    font-size: 18px;
+    padding: 1vh 1vw;
+    font-size: 1.5rem;
     cursor: pointer;
+    position: absolute;
+    top:50%
   }
-  
+  .next-button {
+    right:0;
+  }
   .prev-button {
     margin-right: 10px;
+    left: 0;
   }
   
   .next-button:hover,
@@ -1431,11 +1438,15 @@ animation: slideup 0.2s linear forwards alternate;
 #subDetails p:first-of-type {
     margin-bottom: 0;
 }
+#ChoosenImgContainer{
+    position: relative;
+}
 #productVariants #ChoosenImgContainer img {
     width: 30vw;
     height:60vh;
    
 }
+
 #productVariants img {
     width: 4vw;
 }
