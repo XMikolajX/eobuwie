@@ -1517,7 +1517,7 @@ animation: slideup 0.2s linear forwards alternate;
     cursor:pointer;
    
  }
- #chooseSizeTitle{
+ #chooseSizeTitle, #sizeChartMenuTitle{
     display: flex;
     align-items: center;
     margin: 1vh 1vw 1vh 1vw;
@@ -1544,7 +1544,7 @@ animation: slideup 0.2s linear forwards alternate;
         width: 30vh;
     }
  }
- #chooseSize {
+ #chooseSize, #sizeChartMenu {
     
     display: none;
     position: fixed;

@@ -248,7 +248,7 @@ purchaseButton.addEventListener("click", () => {
 //change boot photo by click on prevButton to move back or nextButton to move forward
 let currentImageIndex = 0;
 function updateDisplayedImage() {
-  let sliderImages = productSlider.getElementsByClassName("productSliderElement");
+  let sliderImages = document.getElementsByClassName("productSliderElement");
   if((sliderImages.length > 0 && currentImageIndex >= 0) && ( currentImageIndex < sliderImages.length)) {
     let imageUrl = sliderImages[currentImageIndex].getAttribute("src");
     ChoosenImgElement.setAttribute("src", imageUrl);
@@ -264,7 +264,7 @@ prevButton.addEventListener("click", () => {
 });
 
 //replace boot photo on click on it
-let  sliderImages = productSlider.querySelectorAll('.productSliderElement');
+let  sliderImages = document.querySelectorAll('.productSliderElement');
 
 
 sliderImages.forEach(function(image, index) { //make call on every sliderImage element with argument image, index
@@ -274,7 +274,7 @@ sliderImages.forEach(function(image, index) { //make call on every sliderImage e
 
   })
 
-});//tuuu
+});
 
 
 /*INDEX2.html */
