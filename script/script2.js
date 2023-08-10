@@ -1,3 +1,5 @@
+// Define variables for various DOM elements
+
 "use strict"
 
 let header_content_info_container = document.getElementById("header_content_info_container"),
@@ -24,7 +26,9 @@ minicart_content_text = document.getElementById('minicart_content_text'),
 
 hearts  = document.querySelectorAll('.fa-heart');
 
+// Define variables for elements specific to index2.html
 /*INDEX2.HTML */
+
 let
 finalPrince = parseFloat(document.getElementById("final-prince").textContent),
 regularPrice = parseFloat(document.getElementById("regular-price").textContent),
@@ -39,6 +43,8 @@ productSliderElement = document.getElementsByClassName("productSliderElement"),
 
 closeBtn = document.getElementById("closeBtn"),
 chooseSize  = document.getElementById("chooseSize"),
+sizeChart  = document.getElementById("sizeChart"),
+sizeChartMenu =  document.getElementById("sizeChartMenu"),
 containerSelectSize = document.getElementById("containerSelectSize"),
 chooseSizeListItem = document.getElementsByClassName("chooseSizeListItem"),
 ChoosenImgElement = document.getElementById("ChoosenImgElement"),
@@ -143,8 +149,10 @@ function substractionPrince(finalPrince, regularPrice) {
   return  result.toFixed(2) + " zł"
 }
 
-
+// Function to calculate and update the price subtraction result
 resultSubstraction.textContent = substractionPrince(finalPrince, regularPrice)
+
+// Add event listener to show more/less button
 
 showButton.addEventListener("click", () => {
 
@@ -161,16 +169,24 @@ showButton.addEventListener("click", () => {
   }
 
 }) 
-//
+
+// Add event listener to size selection
 
 containerSelectSize.addEventListener("click", () => {
  
   chooseSize.style.display = "block";
   
 });
+sizeChart.addEventListener("click", () => {
+ 
+  sizeChartMenu.style.display = "block";
+  
+});
+
 closeBtn.addEventListener("click", () =>{
 
   chooseSize.style.display = "none";
+
 
 }); 
 
@@ -180,10 +196,15 @@ Array.from(chooseSizeListItem).forEach((item) =>{
     chooseSize.style.display = "none";
   })
 })
+
+// Update the count of products in the minicart
+
 function updateMinicartCount() {
   let minicart_products = document.querySelectorAll('.minicart_product');
   header_content_WalletSum.textContent = (minicart_products.length === 0) ? 0 : minicart_products.length;
 }
+
+// Add event listener to purchase button
 
 purchaseButton.addEventListener("click", () => {
 
@@ -245,7 +266,8 @@ purchaseButton.addEventListener("click", () => {
     updateMinicartCount()
 })
 
-//change boot photo by click on prevButton to move back or nextButton to move forward
+// Function to change the displayed boot image on clicking prev/next buttons
+
 let currentImageIndex = 0;
 function updateDisplayedImage() {
   let sliderImages = document.getElementsByClassName("productSliderElement");
@@ -278,6 +300,9 @@ sliderImages.forEach(function(image, index) { //make call on every sliderImage e
 
 
 /*INDEX2.html */
+
+// Add event listeners for toggling elements' visibility and behavior
+
 container_select.addEventListener('click', function()
  {showBlock(container_countries),
   transform(container_select_right_side), 
@@ -289,6 +314,8 @@ container_countries.addEventListener("click", function(event){changeElement(even
 
 header_content_info_container2.addEventListener('click', function(){showBlock(miniToolTip2)});
 header_content_info_container.addEventListener('click', function(){showBlock(miniToolTip1)});
+
+// Add event listeners to heart icons for counting and toggling
 
 for (let heart of hearts) {
   heart.addEventListener('click', function(event) {
