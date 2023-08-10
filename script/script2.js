@@ -27,7 +27,7 @@ minicart_content_text = document.getElementById('minicart_content_text'),
 hearts  = document.querySelectorAll('.fa-heart');
 
 // Define variables for elements specific to index2.html
-/*--------------------------------------------------------INDEX2.HTML-------------------------------------------------------- */
+/*--------------------------------------- INDEX2.html --------------------------------------- */
 
 let
 finalPrince = parseFloat(document.getElementById("final-prince").textContent),
@@ -66,8 +66,7 @@ purchaseButtonAfter = document.getElementsByClassName("purchaseButtonAfter")[0];
 
 
 
-/*--------------------------------------------------------END INDEX2.HTML-------------------------------------------------------- */
-
+/*--------------------------------------- END INDEX2.HTML--------------------------------------- */
 
 // Toggles the display property of the provided element between "none" and "block".
 
@@ -155,7 +154,7 @@ else
   else if(favorite.textContent  < 0 )   favorite.textContent = parseInt(favorite.textContent) + 1;
 
 }
-/*--------------------------------------------------------INDEX2.HTML-------------------------------------------------------- */
+/*--------------------------------------- INDEX2.html --------------------------------------- */
 
 // Function to calculate and update the price subtraction result
 
@@ -284,43 +283,40 @@ purchaseButton.addEventListener("click", () => {
   updateMinicartCount();
 });
 
-// Tracks the current index of the displayed image.
-let currentImageIndex = 0;
+// Function to change the displayed boot image on clicking prev/next buttons
 
-// Updates the displayed image based on the currentImageIndex.
+let currentImageIndex = 0;
 function updateDisplayedImage() {
   let sliderImages = document.getElementsByClassName("productSliderElement");
-  
-  // Check if the currentImageIndex is within valid range and sliderImages exist.
-  if ((sliderImages.length > 0 && currentImageIndex >= 0) && (currentImageIndex < sliderImages.length)) {
-    // Get the URL of the image at the currentImageIndex.
+  if((sliderImages.length > 0 && currentImageIndex >= 0) && ( currentImageIndex < sliderImages.length)) {
     let imageUrl = sliderImages[currentImageIndex].getAttribute("src");
-    
-    // Set the source of ChoosenImgElement to the new image URL.
     ChoosenImgElement.setAttribute("src", imageUrl);
   }
 }
-
-// Add click event listener to the "Next" button.
 nextButton.addEventListener("click", () => {
-  // Calculate the next index with circular wrapping.
-  currentImageIndex = (currentImageIndex + 1) % productSlider.childElementCount;
-  
-  // Update the displayed image.
-  updateDisplayedImage();
+  currentImageIndex = (currentImageIndex + 1 ) % productSlider.childElementCount;
+  updateDisplayedImage()
 });
-
-// Add click event listener to the "Previous" button.
 prevButton.addEventListener("click", () => {
-  // Calculate the previous index with circular wrapping.
-  currentImageIndex = (currentImageIndex - 1 + productSlider.childElementCount) % productSlider.childElementCount;
-  
-  // Update the displayed image.
-  updateDisplayedImage();
+  currentImageIndex = (currentImageIndex - 1 + productSlider.childElementCount ) % productSlider.childElementCount;
+  updateDisplayedImage()
+});
+
+//replace boot photo on click on it
+let  sliderImages = document.querySelectorAll('.productSliderElement');
+
+
+sliderImages.forEach(function(image, index) { //make call on every sliderImage element with argument image, index
+  image.addEventListener('click', function() { // on on every sliderImage element  add addEventListener 
+    currentImageIndex = index;// if currentImageIndex was clicked then assign to currentImageIndex  this index 
+    updateDisplayedImage();//call    updateDisplayedImage()
+
+  })
+
 });
 
 
-/*--------------------------------------------------------END INDEX2.HTML-------------------------------------------------------- */
+/*--------------------------------------- END INDEX2.HTML--------------------------------------- */
 
 // Add event listeners for toggling elements' visibility and behavior
 
@@ -330,6 +326,7 @@ container_select.addEventListener('click', function()
   changeOpacity(countries_element_text_special)});
   
 container_countries.addEventListener("click", function(event){changeElement(event)});
+
 
 
 header_content_info_container2.addEventListener('click', function(){showBlock(miniToolTip2)});
