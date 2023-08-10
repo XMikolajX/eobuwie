@@ -27,7 +27,7 @@ minicart_content_text = document.getElementById('minicart_content_text'),
 hearts  = document.querySelectorAll('.fa-heart');
 
 // Define variables for elements specific to index2.html
-/*INDEX2.HTML */
+/*--------------------------------------------------------INDEX2.HTML-------------------------------------------------------- */
 
 let
 finalPrince = parseFloat(document.getElementById("final-prince").textContent),
@@ -66,18 +66,27 @@ purchaseButtonAfter = document.getElementsByClassName("purchaseButtonAfter")[0];
 
 
 
-/*INDEX2.html */
+/*--------------------------------------------------------END INDEX2.HTML-------------------------------------------------------- */
+
+
+// Toggles the display property of the provided element between "none" and "block".
+
 function showBlock(element) {
 (element.style.display === "none" || element.style.display === "")?  element.style.display = "block": element.style.display = "none";
 };
 
+// Toggles the rotation of the provided element.
+
 function transform(element) {
   (element.style.transform === 'rotate(0deg)' || element.style.transform === 'rotate(90deg)')?   element.style.transform = 'rotate(270deg)':element.style.transform = 'rotate(90deg)';  
 };
-
+// Toggles the opacity of the provided element's color property.
 function changeOpacity(element) {
 (element.style.color  === "" || element.style.color  === "rgb(0, 0, 0)")?  element.style.color  = "rgba(0, 0, 0, 0.5)":  element.style.color  = "rgba(0, 0, 0, 1)";
 };
+
+// Changes the content and image of certain elements based on the event target.
+
 
 function changeElement(event) {
  
@@ -101,6 +110,8 @@ else
 }
 
  };
+
+// Animates the sliding of product sliders to the left or right based on the arrow button clicked.
 
  function arrowAnimation(bootsProductSlider, event)
  {
@@ -130,6 +141,8 @@ else
   };
  }
 
+// Calculates and returns the result of subtracting finalPrince from regularPrice.
+
  function count(favorite, event, heart) {
   if ((typeof favorite.textContent === "string")  && (event.target == heart && !event.target.classList.toggle("disabledBootsProduct"))) {
     
@@ -142,14 +155,15 @@ else
   else if(favorite.textContent  < 0 )   favorite.textContent = parseInt(favorite.textContent) + 1;
 
 }
-/*INDEX2.html */
+/*--------------------------------------------------------INDEX2.HTML-------------------------------------------------------- */
+
+// Function to calculate and update the price subtraction result
 
 function substractionPrince(finalPrince, regularPrice) {
 	let result = regularPrice - finalPrince 
   return  result.toFixed(2) + " zł"
 }
 
-// Function to calculate and update the price subtraction result
 resultSubstraction.textContent = substractionPrince(finalPrince, regularPrice)
 
 // Add event listener to show more/less button
@@ -204,102 +218,109 @@ function updateMinicartCount() {
   header_content_WalletSum.textContent = (minicart_products.length === 0) ? 0 : minicart_products.length;
 }
 
-// Add event listener to purchase button
 
+
+// Handles the click event on the purchase button.
 purchaseButton.addEventListener("click", () => {
 
+  // Display the purchase confirmation message for a brief duration.
+  purchaseButtonAfter.style.display = "flex";
+  setTimeout(() => {
+    purchaseButtonAfter.style.display = "none";
+  }, 1000);
 
-    purchaseButtonAfter.style.display = "flex";
-    setTimeout(() => {
-      purchaseButtonAfter.style.display = "none";
-    }, 1000);
-    let minicart_product = document.createElement("div")
-    let minicart_productInfo = document.createElement("div")
-    let minicart_productImg = document.createElement("div")
-    let minicart_productName = document.createElement("div")
-    let minicart_ModelName = document.createElement("div")
-    let  minicart_size = document.createElement("div")
-    let minicart_resultSubstraction = document.createElement("span")
-    let img = document.createElement("img")
-    img.src = ChoosenImgElement.getAttribute("src")
-    img.classList.add("minicart_product_img_class")
-    minicart_productImg.appendChild(img)
+  // Create elements to represent a product in the minicart.
+  let minicart_product = document.createElement("div");
+  let minicart_productInfo = document.createElement("div");
+  let minicart_productImg = document.createElement("div");
+  let minicart_productName = document.createElement("div");
+  let minicart_ModelName = document.createElement("div");
+  let  minicart_size = document.createElement("div");
+  let minicart_resultSubstraction = document.createElement("span");
+  let img = document.createElement("img");
+  img.src = ChoosenImgElement.getAttribute("src");
+  img.classList.add("minicart_product_img_class");
+  minicart_productImg.appendChild(img);
+
+  // Display the selected size in the minicart product.
+  if (!isNaN(containerSelectSize.textContent)) {
+    minicart_size.textContent =  "Size: " +  containerSelectSize.textContent; // Display the selected size
+  }
+
+  // Clone and replace product details for the minicart display.
+  minicart_productName = purchaseDetailsBootsName.cloneNode(true);
+  minicart_ModelName = purchaseDetailsModelName.cloneNode(true);
+  minicart_content_text.replaceWith(minicart_product);
+  let minicarCloseBtn = closeBtn.cloneNode(true);
+  minicart_product.appendChild(minicarCloseBtn);
+
+  // Assemble the minicart product elements.
+  minicart_product.appendChild(minicart_productImg);
+  minicart_product.appendChild(minicart_productInfo);
+  minicart_productInfo.appendChild(minicart_productName);
+  minicart_productInfo.appendChild(minicart_ModelName);
+  minicart_productInfo.appendChild(minicart_size);
   
-    if(!isNaN(containerSelectSize.textContent)) {
-      minicart_size.textContent =  "Rozmiar:" +  containerSelectSize.textContent//test
-    }
- 
-    minicart_productName = purchaseDetailsBootsName.cloneNode(true)
-    minicart_ModelName = purchaseDetailsModelName.cloneNode(true)
-    minicart_content_text.replaceWith(minicart_product)
-    let minicarCloseBtn = closeBtn.cloneNode(true)
-    minicart_product.appendChild(minicarCloseBtn)
-
-
-    minicart_product.appendChild(minicart_productImg)
-    minicart_product.appendChild(minicart_productInfo)
-    minicart_productInfo.appendChild(minicart_productName)
-    minicart_productInfo.appendChild(minicart_ModelName)
-
-    minicart_productInfo.appendChild(minicart_size)
-    minicart_resultSubstraction.textContent =   finalPrince.toFixed(2) + "zł"
-    minicart_productInfo.appendChild(minicart_resultSubstraction)
-    
-    minicart_productInfo.classList.add("minicart_productInfo")
-    minicart_product.classList.add("minicart_product")
-    minicart_productName.classList.add("minicart_productName")
-    minicart_productName.classList.add("minicart_ModelName")
-    minicart_size.classList.add("minicart_ModelName")
-    minicart_resultSubstraction.classList.add("minicart_resultSubstraction")
-    minicarCloseBtn.classList.add("minicarCloseBtn")
+  // Display the discounted price in the minicart product.
+  minicart_resultSubstraction.textContent =   finalPrince.toFixed(2) + " zł";
+  minicart_productInfo.appendChild(minicart_resultSubstraction);
   
+  // Add classes for styling to minicart product elements.
+  minicart_productInfo.classList.add("minicart_productInfo");
+  minicart_product.classList.add("minicart_product");
+  minicart_productName.classList.add("minicart_productName");
+  minicart_productName.classList.add("minicart_ModelName");
+  minicart_size.classList.add("minicart_ModelName");
+  minicart_resultSubstraction.classList.add("minicart_resultSubstraction");
+  minicarCloseBtn.classList.add("minicarCloseBtn");
 
-    
- 
-  
-    minicarCloseBtn.addEventListener("click", () => {
-      minicart_product.replaceWith(minicart_content_text);
-    
-      updateMinicartCount()
-    });
+  // Add click event listener to close button for removing the minicart product.
+  minicarCloseBtn.addEventListener("click", () => {
+    minicart_product.replaceWith(minicart_content_text);
+    updateMinicartCount();
+  });
 
-    updateMinicartCount()
-})
+  // Update the minicart product count.
+  updateMinicartCount();
+});
 
-// Function to change the displayed boot image on clicking prev/next buttons
-
+// Tracks the current index of the displayed image.
 let currentImageIndex = 0;
+
+// Updates the displayed image based on the currentImageIndex.
 function updateDisplayedImage() {
   let sliderImages = document.getElementsByClassName("productSliderElement");
-  if((sliderImages.length > 0 && currentImageIndex >= 0) && ( currentImageIndex < sliderImages.length)) {
+  
+  // Check if the currentImageIndex is within valid range and sliderImages exist.
+  if ((sliderImages.length > 0 && currentImageIndex >= 0) && (currentImageIndex < sliderImages.length)) {
+    // Get the URL of the image at the currentImageIndex.
     let imageUrl = sliderImages[currentImageIndex].getAttribute("src");
+    
+    // Set the source of ChoosenImgElement to the new image URL.
     ChoosenImgElement.setAttribute("src", imageUrl);
   }
 }
+
+// Add click event listener to the "Next" button.
 nextButton.addEventListener("click", () => {
-  currentImageIndex = (currentImageIndex + 1 ) % productSlider.childElementCount;
-  updateDisplayedImage()
+  // Calculate the next index with circular wrapping.
+  currentImageIndex = (currentImageIndex + 1) % productSlider.childElementCount;
+  
+  // Update the displayed image.
+  updateDisplayedImage();
 });
+
+// Add click event listener to the "Previous" button.
 prevButton.addEventListener("click", () => {
-  currentImageIndex = (currentImageIndex - 1 + productSlider.childElementCount ) % productSlider.childElementCount;
-  updateDisplayedImage()
-});
-
-//replace boot photo on click on it
-let  sliderImages = document.querySelectorAll('.productSliderElement');
-
-
-sliderImages.forEach(function(image, index) { //make call on every sliderImage element with argument image, index
-  image.addEventListener('click', function() { // on on every sliderImage element  add addEventListener 
-    currentImageIndex = index;// if currentImageIndex was clicked then assign to currentImageIndex  this index 
-    updateDisplayedImage();//call    updateDisplayedImage()
-
-  })
-
+  // Calculate the previous index with circular wrapping.
+  currentImageIndex = (currentImageIndex - 1 + productSlider.childElementCount) % productSlider.childElementCount;
+  
+  // Update the displayed image.
+  updateDisplayedImage();
 });
 
 
-/*INDEX2.html */
+/*--------------------------------------------------------END INDEX2.HTML-------------------------------------------------------- */
 
 // Add event listeners for toggling elements' visibility and behavior
 
@@ -311,21 +332,25 @@ container_select.addEventListener('click', function()
 container_countries.addEventListener("click", function(event){changeElement(event)});
 
 
-
 header_content_info_container2.addEventListener('click', function(){showBlock(miniToolTip2)});
 header_content_info_container.addEventListener('click', function(){showBlock(miniToolTip1)});
 
 // Add event listeners to heart icons for counting and toggling
 
+// Iterate through each heart icon element.
 for (let heart of hearts) {
+  // Add a click event listener to each heart icon.
   heart.addEventListener('click', function(event) {
+    // Call the 'count' function to update the favorite count and toggle classes.
     count(favorite, event, heart);
+    
+    // Iterate through each product item within 'bootsProductSlider' and 'bootsProduct'.
     for (let item of bootsProductSlider && bootsProduct) {
-        if ((item == event.target.parentNode.parentNode.parentNode) && (event.target == heart)) {
-          item.classList.toggle("disabledBootsProduct")
+      // Check if the current item matches the clicked heart's parent hierarchy.
+      if ((item == event.target.parentNode.parentNode.parentNode) && (event.target == heart)) {
+        // Toggle the "disabledBootsProduct" class on the item.
+        item.classList.toggle("disabledBootsProduct");
       }
-       
     }
-  }
-  )
+  });
 }
