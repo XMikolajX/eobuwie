@@ -190,18 +190,20 @@ containerSelectSize.addEventListener("click", () => {
   chooseSize.style.display = "block";
   
 });
+
+
+closeBtn.addEventListener("click", () =>{
+ 
+  chooseSize.style.display = "none";
+
+
+}); 
+
 sizeChart.addEventListener("click", () => {
  
   sizeChartMenu.style.display = "block";
   
 });
-
-closeBtn.addEventListener("click", () =>{
-
-  chooseSize.style.display = "none";
-
-
-}); 
 
 Array.from(chooseSizeListItem).forEach((item) =>{
   item.addEventListener("click", () => {
@@ -243,7 +245,7 @@ purchaseButton.addEventListener("click", () => {
 
   // Display the selected size in the minicart product.
   if (!isNaN(containerSelectSize.textContent)) {
-    minicart_size.textContent =  "Size: " +  containerSelectSize.textContent; // Display the selected size
+    minicart_size.textContent =  "Rozmiar: " +  containerSelectSize.textContent; // Display the selected size
   }
 
   // Clone and replace product details for the minicart display.
