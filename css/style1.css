@@ -1522,16 +1522,21 @@ animation: slideup 0.2s linear forwards alternate;
     align-items: center;
     margin: 1vh 1vw 1vh 1vw;
  }
- #closeBtn, .chooseSizeListItem {
+ #closeBtn, .chooseSizeListItem, #closeBtnSize {
     cursor: pointer;
 
  }
-#closeBtn {
+#closeBtn, #closeBtnSize {
    
    opacity: 0.5;
     
 }
 #closeBtn:hover {
+   
+    opacity: 1;
+     
+ }
+ #closeBtnSize:hover {
    
     opacity: 1;
      

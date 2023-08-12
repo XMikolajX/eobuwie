@@ -45,6 +45,7 @@ closeBtn = document.getElementById("closeBtn"),
 chooseSize  = document.getElementById("chooseSize"),
 sizeChart  = document.getElementById("sizeChart"),
 sizeChartMenu =  document.getElementById("sizeChartMenu"),
+closeBtnSize = document.getElementById("closeBtnSize"),
 containerSelectSize = document.getElementById("containerSelectSize"),
 chooseSizeListItem = document.getElementsByClassName("chooseSizeListItem"),
 ChoosenImgElement = document.getElementById("ChoosenImgElement"),
@@ -198,12 +199,22 @@ closeBtn.addEventListener("click", () =>{
 
 
 }); 
+closeBtnSize.addEventListener("click", () =>{
+
+ 
+  sizeChartMenu.style.display = "none";
+
+
+
+}); 
 
 sizeChart.addEventListener("click", () => {
  
   sizeChartMenu.style.display = "block";
   
 });
+
+
 
 Array.from(chooseSizeListItem).forEach((item) =>{
   item.addEventListener("click", () => {
