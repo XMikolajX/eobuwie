@@ -199,22 +199,25 @@ closeBtn.addEventListener("click", () =>{
 
 
 }); 
-closeBtnSize.addEventListener("click", () =>{
 
- 
-  sizeChartMenu.style.display = "none";
+
+sizeChart.addEventListener("click", () =>{
+
+
+  sizeChartMenu.classList.add("sizeChartMenuShow")
 
 
 
 }); 
 
-sizeChart.addEventListener("click", () => {
- 
-  sizeChartMenu.style.display = "block";
-  
-});
+closeBtnSize.addEventListener("click", () =>{
 
 
+  sizeChartMenu.classList.remove("sizeChartMenuShow")
+
+
+
+}); 
 
 Array.from(chooseSizeListItem).forEach((item) =>{
   item.addEventListener("click", () => {

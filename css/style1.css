@@ -1549,6 +1549,7 @@ animation: slideup 0.2s linear forwards alternate;
         width: 30vh;
     }
  }
+
  #chooseSize, #sizeChartMenu {
     
     display: none;
@@ -1563,6 +1564,9 @@ animation: slideup 0.2s linear forwards alternate;
 
     animation: show-from-left 1s ease 1 forwards ;
     z-index: 99999;
+ }
+ .sizeChartMenuShow{
+    display: block !important;
  }
  #chooseSize ul {
     display: flex;
