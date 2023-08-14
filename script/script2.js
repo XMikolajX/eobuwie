@@ -204,7 +204,8 @@ closeBtn.addEventListener("click", () =>{
 sizeChart.addEventListener("click", () =>{
 
 
-  sizeChartMenu.classList.add("sizeChartMenuShow")
+
+  sizeChartMenu.style.display = "block";
 
 
 
@@ -213,7 +214,7 @@ sizeChart.addEventListener("click", () =>{
 closeBtnSize.addEventListener("click", () =>{
 
 
-  sizeChartMenu.classList.remove("sizeChartMenuShow")
+  sizeChartMenu.style.display = "none";
 
 
 
