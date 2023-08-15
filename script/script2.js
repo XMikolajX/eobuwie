@@ -237,7 +237,9 @@ function updateMinicartCount() {
 
 
 // Handles the click event on the purchase button.
-purchaseButton.addEventListener("click", () => {
+purchaseButton.addEventListener("click", (e) => {
+
+  eventPreventDefault = e.preventDefault
 
   // Display the purchase confirmation message for a brief duration.
   purchaseButtonAfter.style.display = "flex";

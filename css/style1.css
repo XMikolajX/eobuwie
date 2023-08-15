@@ -1413,7 +1413,7 @@ animation: slideup 0.2s linear forwards alternate;
   .prev-button:hover {
     background-color: #ddd;
   }
-#purchaseDetails img {
+#purchaseDetails img:first-child {
     width: 19vh;
     
 }
@@ -1564,7 +1564,7 @@ animation: slideup 0.2s linear forwards alternate;
         width: 0;
     }
     to {
-        width: 40vh;
+        width: 16vw;
     }
  }
 
@@ -1573,13 +1573,10 @@ animation: slideup 0.2s linear forwards alternate;
     display: none;
     position: fixed;
     top:0;
-    right:0.1vw;
+    right:0;
     background-color: white;
-    z-index: 999;
-    height: 100%;
-    width: 100vw;
+    height: 100vh;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-
     animation: show-from-left 1s ease 1 forwards ;
     z-index: 99999;
  }
@@ -1592,7 +1589,7 @@ animation: slideup 0.2s linear forwards alternate;
     align-items: flex-start;
     flex-direction: column;
     list-style-type: none  ;
-    width: 100vw;
+   
  }
  #chooseSize ul li {
     padding: 1vh 1vw 1vh 1vw;
