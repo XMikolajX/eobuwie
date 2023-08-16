@@ -233,13 +233,16 @@ function updateMinicartCount() {
   let minicart_products = document.querySelectorAll('.minicart_product');
   header_content_WalletSum.textContent = (minicart_products.length === 0) ? 0 : minicart_products.length;
 }
-
+function checkIfHasSize() {
+ if(!(containerSelectSize.value == minicart_size) ){
+  
+ }
+}
 
 
 // Handles the click event on the purchase button.
-purchaseButton.addEventListener("click", (e) => {
+purchaseButton.addEventListener("click", () => {
 
-  eventPreventDefault = e.preventDefault
 
   // Display the purchase confirmation message for a brief duration.
   purchaseButtonAfter.style.display = "flex";
@@ -261,7 +264,7 @@ purchaseButton.addEventListener("click", (e) => {
   minicart_productImg.appendChild(img);
 
   // Display the selected size in the minicart product.
-  if (!isNaN(containerSelectSize.textContent)) {
+  if (!isNaN(containerSelectSize.textContent )) {
     minicart_size.textContent =  "Rozmiar: " +  containerSelectSize.textContent; // Display the selected size
   }
 

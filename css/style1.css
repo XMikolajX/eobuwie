@@ -912,7 +912,7 @@ animation: slideup 0.2s linear forwards alternate;
 {
     display: flex;
     justify-content: flex-start;
-    margin: 0 0 0 3rem
+    margin: 0 0 0 3vw
 }
 .home_section_content h2.home_section_content_third
 {
@@ -1426,18 +1426,18 @@ animation: slideup 0.2s linear forwards alternate;
 #purchaseDetails p:nth-child(3)  {
    color:gray
 }
-#galleryContent #purchaseDetails section p:nth-child(1) {
+#subDetails > p:nth-child(1) {
     color: #c30000;
+
     font-weight: bold;
+    margin-bottom: 0;
 }
 #lowestPrince {
     color:#757575;
     font-size: 0.8rem;
     
 }
-#subDetails p:first-of-type {
-    margin-bottom: 0;
-}
+
 #ChoosenImgContainer{
     position: relative;
 }
@@ -1526,6 +1526,10 @@ animation: slideup 0.2s linear forwards alternate;
     margin: 1vh 1vw 1vh 1vw;
  }
 
+ #sizeChartMenu > div > h3 {
+    text-align: center;
+
+ }
  #sizeChartMenuTable {
     border: 1px solid #75757594;
     margin-right: 12vw;
@@ -1540,6 +1544,11 @@ animation: slideup 0.2s linear forwards alternate;
  #sizeChartMenuTable td {
     background-color: rgb(244 244 244);
  }
+#sizeChartMenuAdditionalInfo {
+  text-align: center;
+
+}
+
  #closeBtn, .chooseSizeListItem, #closeBtnSize {
     cursor: pointer;
 
@@ -1841,7 +1850,7 @@ Na chwile*/
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20vh 0 20vh 0 ;
+    margin: 11vh 0 11vh 0 ;
   
 }
 
