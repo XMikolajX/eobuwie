@@ -1423,7 +1423,7 @@ animation: slideup 0.2s linear forwards alternate;
 #purchaseDetails p{
     margin-top:  0;
 }
-#purchaseDetails p:nth-child(3)  {
+#purchaseDetails > p:nth-child(3)  {
    color:gray
 }
 #subDetails > p:nth-child(1) {
@@ -1526,9 +1526,10 @@ animation: slideup 0.2s linear forwards alternate;
     margin: 1vh 1vw 1vh 1vw;
  }
 
- #sizeChartMenu > div > h3 {
+ #sizeChartMenu > div > p {
     text-align: center;
-
+    white-space: nowrap;
+  
  }
  #sizeChartMenuTable {
     border: 1px solid #75757594;
