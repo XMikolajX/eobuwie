@@ -1648,7 +1648,7 @@ animation: slideup 0.2s linear forwards alternate;
         opacity: 0.9;
     }
 }
-.purchaseButtonAfter {
+#purchaseButtonAfter, #purchaseButtonAfterChooseSize {
     position: absolute;
     top: 50%;
     box-shadow: 0 0 30px rgb(0 0 0 / 20%);

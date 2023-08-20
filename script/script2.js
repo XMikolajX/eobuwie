@@ -63,7 +63,9 @@ nextButton = document.getElementsByClassName("next-button")[0],
 header_content_WalletSum = document.getElementById("header_content_WalletSum"),
 
 
-purchaseButtonAfter = document.getElementsByClassName("purchaseButtonAfter")[0];
+purchaseButtonAfter = document.getElementById("purchaseButtonAfter"),
+purchaseButtonAfterChooseSize = document.getElementById("purchaseButtonAfterChooseSize");
+
 
 
 
@@ -141,7 +143,7 @@ else
   };
  }
 
-// Calculates and returns the result of subtracting finalPrince from regularPrice.
+
 
  function count(favorite, event, heart) {
   if ((typeof favorite.textContent === "string")  && (event.target == heart && !event.target.classList.toggle("disabledBootsProduct"))) {
@@ -238,10 +240,14 @@ function updateMinicartCount() {
 // Handles the click event on the purchase button.
 purchaseButton.addEventListener("click", (event) => {
 
-  if (containerSelectSize.value.trim() === '') {
+  if (isNaN(containerSelectSize.textContent)) {
     event.preventDefault(); // Zatrzymujemy domyślne działanie przycisku
-    alert('Pole tekstowe nie może być puste!');
+    purchaseButtonAfterChooseSize.style.display = "flex";
+    setTimeout(() => {
+      purchaseButtonAfterChooseSize.style.display = "none";
+    }, 1000);
   }
+  else{
   // Display the purchase confirmation message for a brief duration.
   purchaseButtonAfter.style.display = "flex";
   setTimeout(() => {
@@ -300,6 +306,7 @@ purchaseButton.addEventListener("click", (event) => {
 
   // Update the minicart product count.
   updateMinicartCount();
+}
 });
 
 // Function to change the displayed boot image on clicking prev/next buttons
