@@ -30,8 +30,8 @@ hearts  = document.querySelectorAll('.fa-heart');
 /*--------------------------------------- INDEX2.html --------------------------------------- */
 
 let
-finalPrince = parseFloat(document.getElementById("final-prince").textContent),
-regularPrice = parseFloat(document.getElementById("regular-price").textContent),
+finalPrince = document.getElementById("final-prince").textContent,
+regularPrice = document.getElementById("regular-price").textContent,
 resultSubstraction = document.getElementById("resultSubstraction"),
 showMore = document.getElementsByClassName("showMore"),
 showButton = document.getElementsByClassName("showButton")[0],
@@ -162,7 +162,7 @@ else
 // Function to calculate and update the price subtraction result
 
 function substractionPrince(finalPrince, regularPrice) {
-	let result = regularPrice - finalPrince 
+	let result = parseFloat(regularPrice) - parseFloat(finalPrince) 
   return  result.toFixed(2) + " zł"
 }
 
@@ -268,7 +268,7 @@ purchaseButton.addEventListener("click", (event) => {
   minicart_productImg.appendChild(img);
 
   // Display the selected size in the minicart product.
-  if (!isNaN(containerSelectSize.textContent )) {
+  if (isFinite(containerSelectSize.textContent )) {
     minicart_size.textContent =  "Rozmiar: " +  containerSelectSize.textContent; // Display the selected size
   }
   // Clone and replace product details for the minicart display.
@@ -286,7 +286,7 @@ purchaseButton.addEventListener("click", (event) => {
   minicart_productInfo.appendChild(minicart_size);
   
   // Display the discounted price in the minicart product.
-  minicart_resultSubstraction.textContent =   finalPrince.toFixed(2) + " zł";
+  minicart_resultSubstraction.textContent =   finalPrince
   minicart_productInfo.appendChild(minicart_resultSubstraction);
   
   // Add classes for styling to minicart product elements.
