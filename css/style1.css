@@ -1371,7 +1371,7 @@ animation: slideup 0.2s linear forwards alternate;
 #productSlider {
     display: flex;
     flex-direction: column;
-    width: 8vh;
+
 
 
 }
@@ -1443,12 +1443,15 @@ animation: slideup 0.2s linear forwards alternate;
 }
 #productVariants #ChoosenImgContainer img {
     width: 30vw;
-    height:60vh;
+ 
    
 }
 
-#productVariants img {
-    width: 4vw;
+#productVariants img  {
+    width: 5vw;
+}
+.productSliderElement   {
+    width: 5vw;
 }
 #purchaseDetails {
     display: flex;
@@ -1891,7 +1894,32 @@ Na chwile*/
 .popularBrandsCategoriesHeader .footer_middle_container_headers li {
     color: rgb(66 68 90);
 }
+
+
+/*Responsive*/
+
+    /*Desktop media */
+    @media screen and (max-width: 800px) {
+        #galleryContent {
+          flex-direction:  column;
+          align-items: center;
+          
+        } 
+        #galleryContent #productSlider {
+            display: none;
+        }
+        #productVariants #ChoosenImgContainer img {
+            width:  50%;
+       
+       
+        }
+    }
+    /*Desktop media  END*/
+
+/*Responsive* END/
+
 /* index2.html END*/
+
  /*Desktop media */
 
  @media screen and (max-width: 1200px) {
