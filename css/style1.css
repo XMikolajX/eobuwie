@@ -1414,7 +1414,7 @@ animation: slideup 0.2s linear forwards alternate;
     background-color: #ddd;
   }
 #purchaseDetails img:first-child {
-    width: 19vh;
+    width: 13vw;
     
 }
 #purchaseDetails h1{
@@ -1426,7 +1426,7 @@ animation: slideup 0.2s linear forwards alternate;
 #purchaseDetails > p:nth-child(3)  {
    color:gray
 }
-#subDetails > p:nth-child(1) {
+#subDetailsContainer > p:nth-child(1) {
     color: #c30000;
 
     font-weight: bold;
@@ -1440,6 +1440,8 @@ animation: slideup 0.2s linear forwards alternate;
 
 #ChoosenImgContainer{
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 #productVariants #ChoosenImgContainer img {
     width: 30vw;
@@ -1448,10 +1450,10 @@ animation: slideup 0.2s linear forwards alternate;
 }
 
 #productVariants img  {
-    width: 5vw;
+    width: 6vw;
 }
 .productSliderElement   {
-    width: 5vw;
+    width: 6vw;
 }
 #purchaseDetails {
     display: flex;
@@ -1486,12 +1488,12 @@ animation: slideup 0.2s linear forwards alternate;
  
  #containerEsize #containerSelectSize {
 
-    width: 25vw;
+   
     background-color: white;
     border: 1px solid gray;
     display: flex;
     align-items: center;
-    height: 6vh;
+    
     white-space: nowrap;
  }
  #containerEsize #containerSelectSize .list-item .toLowerCase {
@@ -1577,7 +1579,7 @@ animation: slideup 0.2s linear forwards alternate;
         width: 0;
     }
     to {
-        width: 16vw;
+        width: 15%;
     }
  }
 
@@ -1896,27 +1898,7 @@ Na chwile*/
 }
 
 
-/*Responsive*/
 
-    /*Desktop media */
-    @media screen and (max-width: 800px) {
-        #galleryContent {
-          flex-direction:  column;
-          align-items: center;
-          
-        } 
-        #galleryContent #productSlider {
-            display: none;
-        }
-        #productVariants #ChoosenImgContainer img {
-            width:  50%;
-       
-       
-        }
-    }
-    /*Desktop media  END*/
-
-/*Responsive* END/
 
 /* index2.html END*/
 
@@ -2649,7 +2631,8 @@ Na chwile*/
         .mobile-app-ad-left h1 {
             font-size: 1.3rem
 }
-        .mobile-app-ad-left p, ul li {
+     
+        .mobile-app-ad-left >  ul li {
             font-size:0.5rem;
 }
        .footer_top {
@@ -4031,3 +4014,50 @@ Na chwile*/
  }
     
 /* SMALL media device END*/
+
+
+/*Responsive INDEX2 */
+
+    /*Desktop media */
+    @media screen and (max-width: 1000px) {
+        #gallery, #productVariants   {
+            width: 100%;
+        }
+        #galleryContent {
+          flex-direction:  column;
+          align-items: center;
+          margin: 0;
+          
+        } 
+        #productVariants img {
+            width: 10vw;
+        }
+        #galleryContent #productSlider {
+            display: none;
+        }
+        #productVariants #ChoosenImgContainer img {
+            width:  50%;
+       
+       
+        }
+        #productVariants {
+          justify-content: center;
+        }
+        #productSliderElementContainer,   #subDetails {
+            display: flex;
+            justify-content: center;
+        }
+        #subDetails {
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+        }
+        #purchaseDetails {
+            align-items: center;
+        }
+    }
+
+
+    /*Desktop media  END*/
+
+/*Responsive INDEX2 END/
