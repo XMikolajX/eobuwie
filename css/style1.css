@@ -4055,9 +4055,14 @@ Na chwile*/
         #purchaseDetails {
             align-items: center;
         }
+        #productSpecificationRow {
+            flex-direction: column;
+         
+            grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+        }
     }
 
-
+    
     /*Desktop media  END*/
 
 /*Responsive INDEX2 END/
