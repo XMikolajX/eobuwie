@@ -1762,12 +1762,9 @@ animation: slideup 0.2s linear forwards alternate;
  }
 
 #productSpecification {
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   position: relative;
-
+     display: flex;
+    position: relative;
+    justify-content: center;
 
 
    
@@ -1807,12 +1804,14 @@ animation: slideup 0.2s linear forwards alternate;
     margin: 0 0 3vh 0;
 }
 #productSpecificationSubContainer.transitionClass /*if has this class*/ {
+    display: flex;
+    flex-direction: column;
     opacity: 1;
 }
 #productSpecificationHeader {
     position: relative;
     z-index: 999;
-  
+   
 }
 
 .showButton {
@@ -4011,6 +4010,21 @@ Na chwile*/
             font-size: 0.5rem;
             width: 6rem;
  }
+
+        #productSpecificationHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+    
+}
+        .productSpecificationRowItem {
+        display: flex;
+        justify-content: center;
+}
  }
     
 /* SMALL media device END*/
@@ -4058,9 +4072,7 @@ Na chwile*/
         #productSpecificationRow {
             display: grid;
             grid-template-columns: 35vw 35vw;
-            align-items: center;
-       
-            justify-content: center;
+           
             
         }
     }
