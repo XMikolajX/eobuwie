@@ -3048,7 +3048,7 @@ Na chwile*/
         .mobile-app-ad-left h1 {
             font-size: 1.3rem
 }
-        .mobile-app-ad-left p, ul li {
+        .mobile-app-ad-left p, ul > li {
             font-size:0.5rem;
 }
        .footer_top {
@@ -3478,7 +3478,7 @@ Na chwile*/
             font-size: 1.3rem;
           
 }
-        .mobile-app-ad-left p, ul li {
+        .mobile-app-ad-left p, ul > li {
             font-size:0.5rem;
 }
        .footer_top {
@@ -3926,7 +3926,7 @@ Na chwile*/
             font-size: 1.3rem;
           
 }
-        .mobile-app-ad-left p, ul li {
+        .mobile-app-ad-left p, ul >  li {
             font-size:0.5rem;
 }
        .footer_top {
