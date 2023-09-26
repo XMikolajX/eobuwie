@@ -1824,7 +1824,7 @@ animation: slideup 0.2s linear forwards alternate;
     text-transform: uppercase;
     font-size: 0.8rem;
     position: absolute;
-
+    top: 100%;
     left:50%;
 
 }
@@ -3445,7 +3445,7 @@ Na chwile*/
             transition: all 0.2s ease-in-out ;
 }
         header h1 {
-            margin: 0 1rem ;
+          text-align: center;
             
         }
         .e_card_items{
@@ -4071,6 +4071,7 @@ Na chwile*/
         }
         #productSpecificationRow {
             display: grid;
+            justify-content: center;
             grid-template-columns: 35vw 35vw;
            
             
