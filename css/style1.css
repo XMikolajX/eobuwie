@@ -4076,8 +4076,17 @@ Na chwile*/
            
             
         }
+        @keyframes show-from-left {
+            from {
+                width: 0;
+            }
+            to {
+                width: 40%;
+            }
+         }
     }
 
+    
     
     /*Desktop media  END*/
 
