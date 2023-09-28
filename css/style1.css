@@ -1815,8 +1815,7 @@ animation: slideup 0.2s linear forwards alternate;
 }
 
 .showButton {
-    margin: 1vh 0 0 0;
-    padding: 0.7vw;
+   
     background-color: white;
     color: black;
     border: 1.3px solid black;
@@ -4086,8 +4085,13 @@ Na chwile*/
          }
     }
 
+ 
     
-    
-    /*Desktop media  END*/
-
+    /*small devices END*/
+    @media screen and (max-width: 320px) {
+        #subDetailsContainer p, #princeContainer, #containerSelectSize, #sizeChart {
+            text-align: center;
+            justify-content: center;
+        }
+    }
 /*Responsive INDEX2 END/
