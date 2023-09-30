@@ -245,7 +245,7 @@ html, body {
     right: 0;
     display: none;
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 2px solid #e0e0e0;
     border-top: 4px solid #289b38;
     line-height:1.8rem;
@@ -1728,7 +1728,7 @@ animation: slideup 0.2s linear forwards alternate;
  .hiddenShipment, .hiddenFreeDelivery, .hiddenSafety, .hiddenDelivery {
     position: absolute;
     background-color: #2F2F2F;
-  
+    z-index: 10;
     display: none;
     color:white;
     top:0;
@@ -1825,7 +1825,6 @@ animation: slideup 0.2s linear forwards alternate;
     position: absolute;
     top: 100%;
     left:50%;
-
 }
 
 
