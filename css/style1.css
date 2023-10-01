@@ -4069,9 +4069,16 @@ Na chwile*/
         #productSpecificationRow {
             display: grid;
             justify-content: center;
+            align-items: center;
             grid-template-columns: 35vw 35vw;
            
             
+        }
+        #productSpecificationHeader {
+          
+            display: flex;
+            flex-direction: column;
+            align-items: center
         }
         @keyframes show-from-left {
             from {
@@ -4119,6 +4126,7 @@ Na chwile*/
             display: flex;
             margin: 0;
             justify-content: center;
+            text-align: center;
           
         }
     }
@@ -4127,7 +4135,7 @@ Na chwile*/
             width: 40vw;
             line-height: 1.5rem;
         }
-     
+       
     }
     @media screen and (max-width: 600px) {
         #minicart_content {
